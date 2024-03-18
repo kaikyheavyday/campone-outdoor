@@ -341,7 +341,95 @@
         </div>
       </div>
     </nav>
-    <main class="bg-[#F8F8F8] h-[500px]"></main>
+    <main class="bg-[#F8F8F8]">
+      <div class="p-4 container mx-auto">
+        <div class="text-xs">
+          <p class="inline-block">หน้าแรก</p>
+          <span class="text-[#d9d9d9]"> / เข้าสู่ระบบหรือลงทะเบียน</span>
+        </div>
+      </div>
+    </main>
+    <main class="bg-primary">
+      <div class="container mx-auto px-2 md:px-0 py-4 md:py-[60px] flex justify-around">
+        <div
+          class="w-2/6 hidden md:flex flex-col justify-center items-center text-white text-center"
+        >
+          <img src="./images/logo-big-login.png" alt="logo" class="w-[300px]" />
+          <h1 class="text-[32px]">Camp One Outdoor</h1>
+          <p class="text-base px-4">
+            ร้านจำหน่ายอุปกรณ์แคมป์ปิ้ง คุณภาพดีจากต่างประเทศ
+            สำหรับผู้รักการท่องเที่ยว
+          </p>
+        </div>
+        <div class="w-full md:w-2/6 bg-white rounded-lg p-6">
+          <h2 class="text-2xl font-bold">เข้าสู่ระบบ</h2>
+          <div class="mt-4">
+            <label class="font-medium text-sm">
+              Username <span class="text-[#A8241B]">*</span>
+            </label>
+            <input
+              type="text"
+              class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+            />
+          </div>
+          <div class="mt-2">
+            <label class="font-medium text-sm">
+              Password <span class="text-[#A8241B]">*</span>
+            </label>
+            <input
+              type="password"
+              class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+            />
+          </div>
+          <button
+            class="mt-2 rounded h-[54px] w-full bg-primary text-base font-bold text-white"
+          >
+            เข้าสู่ระบบ
+          </button>
+          <div class="mt-2 flex justify-between items-center">
+            <div class="flex gap-1 items-center">
+              <input type="checkbox" />
+              <p class="text-sm">จำฉันไว้</p>
+            </div>
+            <a href="#" class="underline text-sm text-[#0A7ACC]"
+              >ลืมรหัสผ่าน?</a
+            >
+          </div>
+          <div class="mt-2 flex items-center justify-between gap-4">
+            <div class="w-4/6 h-[1px] bg-[#9F9F9F]"></div>
+            <p class="text-[#9F9F9F] text-xs">หรือ</p>
+            <div class="w-4/6 h-[1px] bg-[#9F9F9F]"></div>
+          </div>
+          <div class="mt-2 grid grid-cols-3 gap-2">
+            <button
+              class="border border-[#478978] bg-[#DDECE8] p-4 flex justify-center items-center gap-2 font-bold text-xs rounded"
+            >
+              <img src="./images/icons/icon-login/ico-face-color.svg" />
+              Facebook
+            </button>
+            <button
+              class="border border-[#478978] bg-[#DDECE8] p-4 flex justify-center items-center gap-2 font-bold text-xs rounded"
+            >
+              <img src="./images/icons/icon-login/ico-google-color.svg" />
+              Google
+            </button>
+            <button
+              class="border border-[#478978] bg-[#DDECE8] p-4 flex justify-center items-center gap-2 font-bold text-xs rounded"
+            >
+              <img src="./images/icons/icon-login/ico-line-color.svg" />
+              Line
+            </button>
+          </div>
+          <div class="mt-4 text-[#9F9F9F] text-xs text-center">
+            <p class="inline-block">ยังไม่เคยมีบัญชี</p>
+            <a href="./register.html" class="text-primary underline"
+              >ลงทะเบียนใหม่</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer class="container mx-auto hidden md:block">
       <div class="py-8 flex justify-between">
         <div class="flex gap-[68px]">
