@@ -341,7 +341,191 @@
         </div>
       </div>
     </nav>
-    <main class="bg-[#F8F8F8] h-[500px]"></main>
+    <main class="bg-[#F8F8F8]">
+      <div class="container mx-auto pb-4">
+        <section class="p-4">
+          <div class="text-xs">
+            <p class="inline-block">หน้าแรก</p>
+            <span class="text-[#d9d9d9]"> / ตะกร้า</span>
+          </div>
+        </section>
+        <section class="p-4 text-center text-[24px] md:text-[40px] font-medium">
+          ตะกร้า
+        </section>
+        <section class="mt-6 mx-2 md:mx-0 flex flex-wrap md:flex-nowrap gap-3 mb-4">
+          <div
+            class="w-full md:w-8/12 shadow-[0_1px_8px_0px_#C4C4C4] py-4 px-2 md:px-6 md:py-6 bg-white rounded-lg"
+          >
+            <div class="grid gap-2 md:gap-0 grid-cols-10">
+              <div class="hidden md:block"></div>
+              <div
+                class="font-bold text-sm md:text-base col-span-4 md:col-span-3 ml-0 md:ml-[80px]"
+              >
+                สินค้า
+              </div>
+              <div class="font-bold text-sm md:text-base col-span-2">ราคา</div>
+              <div class="font-bold text-sm md:text-base col-span-2">จำนวน</div>
+              <div class="font-bold text-sm md:text-base col-span-2">
+                ยอดรวม
+              </div>
+            </div>
+            <div class="h-[1px] bg-[#9F9F9F] w-full my-2"></div>
+            <div class="grid gap-2 md:gap-0 grid-cols-10 items-center">
+              <div class="hidden md:block">
+                <img src="./images/icons/ico-close.svg" alt="close" />
+              </div>
+              <div
+                class="col-span-4 md:col-span-3 flex items-center md:items-end gap-2 font-medium text-xs md:text-base"
+              >
+                <img
+                  src="./images/table.png"
+                  alt="table"
+                  class="w-[40px] md:w-[80px]"
+                />
+                <p class="max-w-[118px] truncate md:whitespace-normal">
+                  COSY FOLDING CHAIR (black)...
+                </p>
+              </div>
+              <div class="col-span-2 font-medium text-xs md:text-base">
+                ฿ 7,565
+              </div>
+              <div class="col-span-2 font-medium text-xs md:text-base">
+                <div class="flex">
+                  <button
+                    class="h-[20px] md:h-[38px] bg-[#F8F8F8] border border-[#9F9F9F] w-[40px]"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    value="1"
+                    class="w-[20px] md:w-[50px] text-center border-y border-[#9F9F9F]"
+                  />
+                  <button
+                    class="h-[20px] md:h-[38px] bg-[#F8F8F8] border border-[#9F9F9F] w-[40px]"
+                  >
+                    +
+                  </button>
+                </div>
+                <!-- <div class="flex justify-center md:hidden">1</div> -->
+              </div>
+              <div class="col-span-2 font-medium text-xs md:text-base">
+                ฿ 7,565
+              </div>
+            </div>
+            <div class="h-[1px] bg-[#9F9F9F] w-full my-4"></div>
+            <div class="flex text-sm md:text-base">
+              <input
+                type="text"
+                placeholder="ใส่รหัสคูปอง"
+                class="h-[30px] md:h-[54px] bg-[#F8F8F8] p-2 md:p-4 outline-none border-t border-l border-b border-[#9F9F9F] rounded-l w-[120px]"
+              />
+              <button
+                class="h-[30px] md:h-[54px] bg-primary text-white px-2 rounded-r"
+              >
+                ใช้คูปอง
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-full md:w-4/12 shadow-[0_1px_8px_0px_#C4C4C4] py-4 px-2 md:px-6 md:py-6 bg-white rounded-lg"
+          >
+            <h3 class="text-base md:text-2xl font-bold">ยอดรวม</h3>
+            <div
+              class="mt-4 flex justify-between text-sm md:text-base font-medium"
+            >
+              <p>ยอดรวม</p>
+              <p>฿ 7,565</p>
+            </div>
+            <div class="h-[1px] bg-[#9F9F9F] w-full my-4"></div>
+            <div
+              class="mt-4 flex justify-between text-sm md:text-base font-medium"
+            >
+              <p>การจัดส่ง</p>
+              <p>จัดส่งฟรี</p>
+            </div>
+            <div class="mt-4 text-end">
+              <p class="text-sm md:text-base">
+                จัดส่งไปที่ <span class="font-bold">กรุงเทพ</span>
+              </p>
+            </div>
+            <div class="mt-4 text-end text-sm md:text-base">
+              <a href="#" class="text-[#0D99FF] underline"> เปลี่ยนที่อยู่ </a>
+            </div>
+            <div class="h-[1px] bg-[#9F9F9F] w-full my-4"></div>
+            <div></div>
+            <div
+              class="mt-4 flex justify-between text-sm md:text-base font-bold"
+            >
+              <p>รวม</p>
+              <p>รวม</p>
+            </div>
+            <button
+              class="mt-4 rounded w-full flex justify-center items-center h-[30px] md:h-[56px] bg-[#A8241B] text-white text-sm md:text-base"
+            >
+              ดำเนินการคำสั่งซื้อ
+              <img src="./images/icons/ico-chev-right.svg" alt="rihg" />
+            </button>
+          </div>
+        </section>
+        <section
+          class="bg-primary text-white rounded py-2 md:py-6 grid grid-cols-2 md:grid-cols-4 m-4 md:m-0 px-2 md:px-[100px] gap-2"
+        >
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/1.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">ช้อปง่าย</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                ซื้อของได้ตลอด 24 ชม.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/2.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">จัดส่งทั่วไทย</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                ใกล้ไกลแค่ไหนก็จัดส่ง
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/3.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">จ่ายง่าย สะดวก</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                ช่องทางชำระเงินหลากหลาย
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/4.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">บริการช่วยเหลือ</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                09:00 - 21:00 ทุกวัน
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer class="container mx-auto hidden md:block">
       <div class="py-8 flex justify-between">
         <div class="flex gap-[68px]">
