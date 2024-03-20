@@ -3,9 +3,11 @@
 * {
   font-family: "IBM Plex Sans Thai", sans-serif;
 }
-p, span {
+p,
+span {
   font-weight: 500;
 }
+
 #drawer {
   width: 100%;
   min-height: 100vh;

@@ -16,6 +16,15 @@
         },
       };
     </script>
+    <style>
+      .radio-container {
+        border: 1px solid #478978;
+      }
+      .radio-container.active {
+        border: 2px solid #478978;
+        background: #d7eee8;
+      }
+    </style>
     <title>Document</title>
   </head>
   <body>
@@ -341,7 +350,625 @@
         </div>
       </div>
     </nav>
-    <main class="bg-[#F8F8F8] h-[500px]"></main>
+    <main class="bg-[#F8F8F8]">
+      <div class="container mx-auto pb-4">
+        <section class="p-4">
+          <div class="text-xs">
+            <p class="inline-block">หน้าแรก</p>
+            <span class="text-[#d9d9d9]"> / ติดต่อเรา</span>
+          </div>
+        </section>
+        <section class="p-4 text-center text-[24px] md:text-[40px] font-medium">
+          ติดต่อเรา
+        </section>
+        <section
+          class="flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row gap-4 mx-2 md:mx-0"
+        >
+          <div
+            class="w-full md:w-4/12 shadow-[0_1px_8px_0px_#C4C4C4] rounded bg-white p-2 md:p-6"
+          >
+            <p class="text-sm md:text-base font-bold">
+              ค้นหาสาขาใกล้บ้านคุณ (23 สาขา)
+            </p>
+            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+            <div
+              class="max-h-[300px] overflow-auto flex flex-col gap-2 radio-group"
+            >
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(1)"
+                id="radio-1"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-1"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp One NR - Ratchaphruek สาขา ราชพฤกษ์
+                  </p>
+                  <p class="text-sm mt-2">Contact: 095-4568535</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(2)"
+                id="radio-2"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-2"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp One NR - Nongkhaem สาขา หนองแขม
+                  </p>
+                  <p class="text-sm mt-2">Contact: 095-4568535</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(3)"
+                id="radio-3"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-3"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Victory Camp BKK - อนุสาวรีย์ พญาไท
+                  </p>
+                  <p class="text-sm mt-2">Contact: 097-0064171</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(4)"
+                id="radio-4"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-4"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    CM Tactical And Outdoor ภาคเหนือ เชียงใหม่
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 0909175167 (พื้นที่ สันป่าตอง เมือง เชียงใหม่)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(5)"
+                id="radio-5"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-5"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    JEEP FRESH MILK Camping ภาคกลาง
+                  </p>
+                  <p class="text-sm mt-2">Contact: 089-7750802 (นครปฐม)</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(6)"
+                id="radio-6"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-6"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    The Campaholic สาขา กรุงเทพ
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 097-0130999 (พื้นที่ประเสริฐมนูกิจ รามอินทรา
+                    บึงกุ่ม)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(7)"
+                id="radio-7"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-7"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp Home (ประเวศ พัฒนาการ ลาดกระบัง)
+                  </p>
+                  <p class="text-sm mt-2">Contact: 081-9234164</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(8)"
+                id="radio-8"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-8"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    US CAMP By ตะเกียงพาณิชย์
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 0924403066 (ลาดพร้าว เสนานิคม รามอินทรา)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(9)"
+                id="radio-9"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-9"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    We Camp Outdoor Life
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 062-1455965 (ลำลูกกา คลองสาม สายคลอง)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(10)"
+                id="radio-10"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-10"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp Safari / Camp ART
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 065-6494777 (คลองสามวา ซาฟารีเวิลด์)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(11)"
+                id="radio-11"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-11"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    The Campaholic สาขา นครนายก
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 097-0130999 (พื้นที่ บ้านนา นครนายก)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(12)"
+                id="radio-12"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-12"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">Hype outdoor</p>
+                  <p class="text-sm mt-2">Contact: 0625398666 (ทับมา ระยอง)</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(13)"
+                id="radio-13"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-13"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    BCamping นนทบุรี บางกรวย
+                  </p>
+                  <p class="text-sm mt-2">Contact: 081-6424616</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(14)"
+                id="radio-14"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-14"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp Home (ประเวศ พัฒนาการ ลาดกระบัง)
+                  </p>
+                  <p class="text-sm mt-2">Contact: 081-9234164</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(15)"
+                id="radio-15"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-15"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">Finn Camp</p>
+                  <p class="text-sm mt-2">Contact: 064-2969895</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(16)"
+                id="radio-16"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-16"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Prep Camping – Prep Coffee Camp ภาคตะวันออก
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 0861462664 (พื้นที่ โป่งน้ำร้อน จันทบุรี)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(17)"
+                id="radio-17"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-17"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    KAN CAMPING ภาคตะวันตก
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 0996962550 (พื้นที่ ปากแพรก กาญจนบุรี)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(18)"
+                id="radio-18"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-18"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    The North Camp ภาคเหนือ (เมืองเชียงราย)
+                  </p>
+                  <p class="text-sm mt-2">Contact: 0853255232</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(19)"
+                id="radio-19"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-19"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp One Outdoor Store Kanchanaburi
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 0996962550 (พื้นที่ ปากแพรก กาญจนบุรี)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(20)"
+                id="radio-20"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-20"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp One Outdoor Store Khonkaen
+                  </p>
+                  <p class="text-sm mt-2">
+                    Contact: 0909734156 (ภาคอีสาน กลาง (พื้นที่ เมือง ขอนแก่น)
+                  </p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(21)"
+                id="radio-21"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-21"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp One Outdoor Store LP
+                  </p>
+                  <p class="text-sm mt-2">พื้นที่ ลาดพร้าว</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(22)"
+                id="radio-22"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-22"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp One Outdoor Store BN
+                  </p>
+                  <p class="text-sm mt-2">พื้นที่ บางนา</p>
+                </div>
+              </div>
+              <div
+                class="radio-container flex gap-2 p-4 border border-primary rounded"
+                onclick="radioChecked(23)"
+                id="radio-23"
+              >
+                <input
+                  type="radio"
+                  name="contact"
+                  class="accent-primary w-4 h-4"
+                  id="radio-input-23"
+                />
+                <div class="">
+                  <p class="text-xs md:text-sm font-bold">
+                    Camp One Outdoor Store CM
+                  </p>
+                  <p class="text-sm mt-2">พื้นที่ เชียงใหม่</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-8/12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2706706511935!2d100.58889987576457!3d13.822778795644897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d0c41ce36f5%3A0xaf8f7d09d5296dd3!2z4LmB4LiE4Lih4Lib4LmM4Lin4Lix4LiZIOC4peC4suC4lOC4nuC4o-C5ieC4suC4pw!5e0!3m2!1sth!2sth!4v1710856798038!5m2!1sth!2sth"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="rounded"
+            ></iframe>
+          </div>
+        </section>
+        <section
+          class="mt-6 mb-4 mx-2 md:mx-0 shadow-[0_1px_8px_0px_#C4C4C4] bg-white p-6 rounded"
+        >
+          <p class="font-bold text-sm md:text-base">
+            Do you have any questions for us?
+          </p>
+          <div class="mt-2 md:mt-6">
+            <p class="font-bold text-sm md:text-base text-primary">ติดต่อเรา</p>
+            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+            <div class="flex items-center">
+              <img src="./images/icons/ico-tel.svg" alt="tel" />
+              <p class="ml-1 text-sm md:text-base">โทร 095-002-6622</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./images/icons/ico-email.svg" alt="mail" />
+              <p class="ml-1 text-sm md:text-base">
+                อีเมล camponeoutdoor@gmail.com
+              </p>
+            </div>
+            <p class="text-sm md:text-base">
+              เว็บไซต์นี้ ดูแลโดยสาขาราชพฤกษ์ และ หนองแขม
+            </p>
+            <p class="text-sm md:text-base gap-1">
+              หากพบปัญหาในการใช้เว็บไซต์ กรุณาติดต่อ:
+            </p>
+            <div class="mt-2 flex flex-wrap md:flex-nowrap">
+              <div class="w-full md:w-1/2">
+                <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
+                  <p class="text-primary font-bold text-sm">
+                    Camp One Outdoor Store Ratchaphruek: 
+                  </p>
+                  <p class="text-sm">
+                    5/1 Ratchaphruek Road, T.Bang Krang A. Muang-Nonthaburi
+                    11000 Thailand
+                  </p>
+                  <div class="flex items-start">
+                    <img
+                      src="./images/icons/ico-tel.svg"
+                      alt="tel"
+                      height="20"
+                    />
+                    <div class="ml-1">
+                      <p class="text-sm">062-495-5151 / 083-199-2974</p>
+                      <p class="text-sm">(Khun Anuwat M./ Khun Worachat K.)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="bg-[#F8F8F8] p-2 mt-1 rounded h-full">
+                  <p class="text-primary font-bold text-sm">
+                    Camp One Outdoor Store Nongkhaem: 
+                  </p>
+                  <p class="text-sm">
+                    626 Petchkrasem Nongkahaem Bangkok 10160 Thailand
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="./images/icons/ico-tel.svg"
+                      alt="tel"
+                      height="20"
+                    />
+                    <div class="ml-1">
+                      <p class="text-sm">095-456-8535 (Khun Thanawit T.)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 md:mt-6">
+              <h3 class="text-base font-medium">ติดตามเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex mt-2 gap-4">
+                <img
+                  src="./images/icons/icon-contact/ico-facebook.svg"
+                  alt="facebook"
+                />
+                <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
+                <img
+                  src="./images/icons/icon-contact/ico-pinterest.svg"
+                  alt="pinterest"
+                />
+                <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
+                <img
+                  src="./images/icons/icon-contact/ico-tiktok.svg"
+                  alt="tiktok"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-primary text-white rounded py-2 md:py-6 grid grid-cols-2 md:grid-cols-4 m-4 md:m-0 px-2 md:px-[100px] gap-2"
+        >
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/1.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">ช้อปง่าย</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                ซื้อของได้ตลอด 24 ชม.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/2.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">จัดส่งทั่วไทย</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                ใกล้ไกลแค่ไหนก็จัดส่ง
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/3.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">จ่ายง่าย สะดวก</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                ช่องทางชำระเงินหลากหลาย
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/4.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">บริการช่วยเหลือ</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                09:00 - 21:00 ทุกวัน
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer class="container mx-auto hidden md:block">
       <div class="py-8 flex justify-between">
         <div class="flex gap-[68px]">
@@ -553,4 +1180,21 @@
     </footer>
   </body>
   <script src="./script/layout.js"></script>
+  <script>
+    radioChecked(1);
+    function radioChecked(value) {
+      const radios = document.querySelectorAll(".radio-container");
+      for (let i = 0; i < radios.length; i++) {
+        const radio = radios[i];
+        const radioElement = document.getElementById(`radio-${value}`);
+        if (`radio-${value}` === radio.id) {
+          radio.classList.add("active");
+          const input = document.getElementById(`radio-input-${value}`);
+          input.checked = true;
+        } else {
+          radio.classList.remove("active");
+        }
+      }
+    }
+  </script>
 </html>
