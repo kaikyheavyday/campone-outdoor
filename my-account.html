@@ -341,7 +341,228 @@
         </div>
       </div>
     </nav>
-    <main class="bg-[#F8F8F8] h-[500px]"></main>
+    <main class="bg-[#F8F8F8]">
+      <div class="container mx-auto pb-4">
+        <section class="p-4">
+          <div class="text-xs">
+            <p class="inline-block">หน้าแรก</p>
+            <span class="text-[#d9d9d9]"> / โปรไฟล์</span>
+          </div>
+        </section>
+        <section class="mt-6 mb-4 mx-2 md:mx-0">
+          <div class="flex gap-3 flex-wrap md:flex-nowrap">
+            <div
+              class="w-full md:w-1/4 shadow-[0_1px_8px_0px_#C4C4C4] bg-white p-6 rounded"
+            >
+              <div class="flex items-center gap-2">
+                <img src="./images/profile.png" />
+                <div>
+                  <p class="text-base md:text-2xl">Sher Siris</p>
+                  <div class="flex gap-2 mt-2">
+                    <img src="./images/icons/ico-pencil.svg" />
+                    <p class="underline text-sm md:text-base">
+                      แก้ไขข้อมูลส่วนตัว
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full h-[1px] bg-[#9F9F9F] my-4"></div>
+              <div class="">
+                <p class="text-sm md:text-base font-bold">บัญชีของฉัน</p>
+                <div class="w-full h-[1px] bg-primary my-2"></div>
+                <div class="flex flex-col gap-1">
+                  <a
+                    href="./my-account.html"
+                    class="text-sm md:text-base text-primary font-bold"
+                    >ข้อมูลของฉัน</a
+                  >
+                  <a
+                    href="./my-address.html"
+                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                    >ที่อยู่ของฉัน</a
+                  >
+                  <a
+                    href="./my-credit.html"
+                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                    >บัตรเครดิต / บัตรเดบิต</a
+                  >
+                </div>
+              </div>
+              <div class="mt-4">
+                <p class="text-sm md:text-base font-bold">การซื้อของฉัน</p>
+                <div class="w-full h-[1px] bg-primary my-2"></div>
+                <div class="flex flex-col gap-1">
+                  <a
+                    href="./my-purchase.html"
+                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                    >ทั้งหมด</a
+                  >
+                  <a
+                    href="./my-purchase.html"
+                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                    >ที่ต้องชำระ</a
+                  >
+                  <a
+                    href="./my-purchase.html"
+                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                    >ที่ต้องจัดส่ง</a
+                  >
+                  <a
+                    href="./my-purchase.html"
+                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                    >ที่ต้องได้รับ</a
+                  >
+                  <a
+                    href="./my-purchase.html"
+                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                    >สำเร็จแล้ว</a
+                  >
+                  <a
+                    href="./my-purchase.html"
+                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                    >ยกเลิก</a
+                  >
+                  <a
+                    href="./my-purchase.html"
+                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                    >คืนเงิน คืนสินค้า</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full md:w-3/4 shadow-[0_1px_8px_0px_#C4C4C4] bg-white p-6 rounded"
+            >
+              <div>
+                <h3 class="text-base md:text-2xl font-bold">ข้อมูลของฉัน</h3>
+                <p class="text-xs md:text-sm mt-1">
+                  จัดการข้อมูลส่วนตัวคุณเพื่อความปลอดภัยของบัญชีผู้ใช้นี้
+                </p>
+              </div>
+              <div class="w-full h-[1px] bg-[#9F9F9F] my-4"></div>
+              <div class="flex p-2 gap-6 items-center">
+                <div class="relative">
+                  <img src="./images/profile.png" />
+                  <div
+                    class="p-2 bg-primary rounded-full w-10 absolute bottom-0 right-0"
+                  >
+                    <img
+                      src="./images/icons/ico-plus-white.svg"
+                      class="w-full"
+                    />
+                  </div>
+                </div>
+                <div class="">
+                  <p class="text-xs">ขนาดไฟล์: สูงสุด 1 MB</p>
+                  <p class="text-xs">ไฟล์ที่รองรับ: .JPEG, .PNG</p>
+                </div>
+              </div>
+              <form class="mt-4 flex flex-col gap-2">
+                <div class="w-full">
+                  <label class="font-medium text-sm">
+                    Username <span class="text-[#A8241B]">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                  />
+                </div>
+                <div class="w-full">
+                  <label class="font-medium text-sm">
+                    Name <span class="text-[#A8241B]">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                  />
+                </div>
+                <div class="w-full">
+                  <label class="font-medium text-sm">
+                    อีเมล <span class="text-[#A8241B]">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                  />
+                </div>
+                <div class="w-full">
+                  <label class="font-medium text-sm">
+                    เบอร์โทร <span class="text-[#A8241B]">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                  />
+                </div>
+                <div class="w-full flex justify-end mt-2">
+                  <button
+                    class="bg-primary w-[160px] h-[54px] rounded text-white font-bold"
+                  >
+                    บันทึก
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-primary text-white rounded py-2 md:py-6 grid grid-cols-2 md:grid-cols-4 m-4 md:m-0 px-2 md:px-[100px] gap-2"
+        >
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/1.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">ช้อปง่าย</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                ซื้อของได้ตลอด 24 ชม.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/2.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">จัดส่งทั่วไทย</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                ใกล้ไกลแค่ไหนก็จัดส่ง
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/3.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">จ่ายง่าย สะดวก</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                ช่องทางชำระเงินหลากหลาย
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-2 md:gap-4">
+            <img
+              src="./images/icons/icon-product/4.svg"
+              alt="test"
+              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+            />
+            <div class="">
+              <p class="text-sm md:text-base font-medium">บริการช่วยเหลือ</p>
+              <p class="text-[10px] md:text-sm mt-1 font-medium">
+                09:00 - 21:00 ทุกวัน
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer class="container mx-auto hidden md:block">
       <div class="py-8 flex justify-between">
         <div class="flex gap-[68px]">
