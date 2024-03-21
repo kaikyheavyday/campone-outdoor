@@ -648,7 +648,7 @@
         <p class="text-sm font-medium">Copyright © 2022 camponeoutdoor.com</p>
       </div>
     </footer>
-    <footer class="container mx-auto block md:hidden">
+   <footer class="container mx-auto block md:hidden">
       <div class="flex justify-center py-4">
         <img
           src="./images/logo-outline.svg"
@@ -660,42 +660,49 @@
       <div class="px-4 py-2">
         <div class="flex justify-between">
           <p class="font-medium">ติดต่อเรา</p>
-          <img src="./images/icons/ico-minus.svg" alt="-" />
+          <img
+            src="./images/icons/ico-plus.svg"
+            alt="-"
+            id="footer-1-button"
+            onclick="toggleFooter1(event)"
+          />
         </div>
         <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="flex items-center">
-          <img src="./images/icons/ico-tel.svg" alt="tel" />
-          <p class="ml-1 text-base">โทร 095-002-6622</p>
-        </div>
-        <div class="flex items-center">
-          <img src="./images/icons/ico-email.svg" alt="mail" />
-          <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
-        </div>
-        <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
-          <p class="text-primary font-bold text-sm">
-            Camp One Outdoor Store Ratchaphruek: 
-          </p>
-          <p class="text-sm">5/1 Ratchaphruek Road, T.Bang Krang A.</p>
-          <p class="text-sm">Muang-Nonthaburi 11000 Thailand</p>
-          <div class="flex items-start">
-            <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
-            <div class="ml-1">
-              <p class="text-sm">062-495-5151 / 083-199-2974</p>
-              <p class="text-sm">(Khun Anuwat M./ Khun Worachat K.)</p>
+        <div id="footer-1-container" class="hidden">
+          <div class="flex items-center">
+            <img src="./images/icons/ico-tel.svg" alt="tel" />
+            <p class="ml-1 text-base">โทร 095-002-6622</p>
+          </div>
+          <div class="flex items-center">
+            <img src="./images/icons/ico-email.svg" alt="mail" />
+            <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
+          </div>
+          <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
+            <p class="text-primary font-bold text-sm">
+              Camp One Outdoor Store Ratchaphruek: 
+            </p>
+            <p class="text-sm">5/1 Ratchaphruek Road, T.Bang Krang A.</p>
+            <p class="text-sm">Muang-Nonthaburi 11000 Thailand</p>
+            <div class="flex items-start">
+              <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
+              <div class="ml-1">
+                <p class="text-sm">062-495-5151 / 083-199-2974</p>
+                <p class="text-sm">(Khun Anuwat M./ Khun Worachat K.)</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
-          <p class="text-primary font-bold text-sm">
-            Camp One Outdoor Store Nongkhaem: 
-          </p>
-          <p class="text-sm">
-            626 Petchkrasem Nongkahaem Bangkok 10160 Thailand
-          </p>
-          <div class="flex items-center">
-            <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
-            <div class="ml-1">
-              <p class="text-sm">095-456-8535 (Khun Thanawit T.)</p>
+          <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
+            <p class="text-primary font-bold text-sm">
+              Camp One Outdoor Store Nongkhaem: 
+            </p>
+            <p class="text-sm">
+              626 Petchkrasem Nongkahaem Bangkok 10160 Thailand
+            </p>
+            <div class="flex items-center">
+              <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
+              <div class="ml-1">
+                <p class="text-sm">095-456-8535 (Khun Thanawit T.)</p>
+              </div>
             </div>
           </div>
         </div>
@@ -703,31 +710,80 @@
       <div class="px-4 py-2">
         <div class="flex justify-between">
           <p class="font-medium">ประเภทสินค้า</p>
-          <img src="./images/icons/ico-plus.svg" alt="-" />
+          <img
+            src="./images/icons/ico-plus.svg"
+            alt="-"
+            id="footer-2-button"
+            onclick="toggleFooter2(event)"
+          />
         </div>
         <div class="w-full h-[1px] bg-primary my-2"></div>
+        <div class="hidden flex-col gap-1" id="footer-2-container">
+          <a href="./products.html">เต้นท์และทาร์ป</a>
+          <a href="./products.html">เฟอร์นิเจอร์</a>
+          <a href="./products.html">เครื่องนอน</a>
+          <a href="./products.html">กระเป๋า เป้</a>
+          <a href="./products.html">เสื้อผ้า รองเท้า</a>
+          <a href="./products.html">อุปกรณ์ให้ความสว่าง</a>
+          <a href="./products.html">ถังน้ำแข็ง</a>
+          <a href="./products.html">มีดและของมีคม</a>
+          <a href="./products.html">แก๊สและเชื้อเพลิง</a>
+          <a href="./products.html">เตาแก็ส</a>
+          <a href="./products.html">เตาฟืน เตาย่าง BBQ</a>
+          <a href="./products.html">เครื่องครัว</a>
+          <a href="./products.html">อุปกรณ์ทำอาหาร</a>
+          <a href="./products.html">อาหารและเครื่องปรุง</a>
+          <a href="./products.html">อื่น ๆ</a>
+        </div>
       </div>
       <div class="px-4 py-2">
         <div class="flex justify-between">
           <p class="font-medium">บริการลูกค้า</p>
-          <img src="./images/icons/ico-plus.svg" alt="-" />
+          <img
+            src="./images/icons/ico-plus.svg"
+            alt="-"
+            id="footer-3-button"
+            onclick="toggleFooter3(event)"
+          />
         </div>
         <div class="w-full h-[1px] bg-primary my-2"></div>
+        <div class="hidden flex-col gap-1" id="footer-3-container">
+          <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
+          <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
+          <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
+          <a href="./personal-policy.html">นโยบายความเป็นส่วนตัว</a>
+          <a href="./shop-policy.html">นโยบายร้านค้า</a>
+        </div>
       </div>
       <div class="px-4 py-2">
         <div class="flex justify-between">
           <p class="font-medium">เกี่ยวกับเรา</p>
-          <img src="./images/icons/ico-plus.svg" alt="-" />
+          <img
+            src="./images/icons/ico-plus.svg"
+            alt="-"
+            id="footer-4-button"
+            onclick="toggleFooter4(event)"
+          />
         </div>
         <div class="w-full h-[1px] bg-primary my-2"></div>
+        <div class="hidden flex-col gap-1" id="footer-4-container">
+          <a href="./contact.html">ติดต่อเรา</a>
+          <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
+          <p href="./article.html">บทความ / ข่าวสาร</p>
+        </div>
       </div>
       <div class="px-4 py-2">
         <div class="flex justify-between">
           <p class="font-medium">ติดตามเรา</p>
-          <img src="./images/icons/ico-minus.svg" alt="-" />
+          <img
+            src="./images/icons/ico-plus.svg"
+            alt="-"
+            id="footer-5-button"
+            onclick="toggleFooter5(event)"
+          />
         </div>
         <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="flex mt-4 gap-4">
+        <div class="hidden mt-4 gap-4" id="footer-5-container">
           <img
             src="./images/icons/icon-contact/ico-facebook.svg"
             alt="facebook"
@@ -747,4 +803,5 @@
     </footer>
   </body>
   <script src="./script/layout.js"></script>
+  <script src="./script/footer.js"></script>
 </html>
