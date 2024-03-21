@@ -35,7 +35,6 @@
       .slideshow-container {
         width: 100%;
         position: relative;
-        margin: auto;
       }
 
       /* Next & previous buttons */
@@ -70,7 +69,7 @@
       .dot-container {
         position: absolute;
         width: 100%;
-        bottom: 0;
+        bottom: 12px;
       }
 
       .dot {
@@ -86,7 +85,7 @@
 
       .active,
       .dot:hover {
-        background-color: green;
+        background-color: #478978;
       }
 
       .fade {
@@ -152,6 +151,21 @@
         top: 40%;
         right: -16px !important;
       }
+      #review-carousel {
+        padding-bottom: 20px;
+      }
+      #review-carousel .splide__pagination.splide__pagination--ltr {
+        padding: 12px !important;
+        bottom: -32px !important;
+      }
+      .splide__pagination__page {
+        background-color: #478978 !important;
+      }
+      @media screen and (max-width: 768px) {
+        #review-carousel .splide__pagination.splide__pagination--ltr {
+          bottom: -12px !important;
+        }
+      }
     </style>
     <title>Document</title>
   </head>
@@ -180,7 +194,10 @@
           />
         </div>
         <div class="w-full h-[1px] bg-white my-2"></div>
-        <div class="text-white text-sm hidden flex flex-col gap-1" id="category-section">
+        <div
+          class="text-white text-sm hidden flex flex-col gap-1"
+          id="category-section"
+        >
           <a href="./products.html">เต้นท์และทาร์ป</a>
           <a href="./products.html">เฟอร์นิเจอร์</a>
           <a href="./products.html">เครื่องนอน</a>
@@ -215,7 +232,10 @@
           />
         </div>
         <div class="w-full h-[1px] bg-white my-2"></div>
-        <div class="text-white text-sm hidden flex flex-col gap-1" id="service-section">
+        <div
+          class="text-white text-sm hidden flex flex-col gap-1"
+          id="service-section"
+        >
           <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
           <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
           <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
@@ -240,7 +260,10 @@
           />
         </div>
         <div class="w-full h-[1px] bg-white my-2"></div>
-        <div class="text-white text-sm hidden flex flex-col gap-1" id="about-section">
+        <div
+          class="text-white text-sm hidden flex flex-col gap-1"
+          id="about-section"
+        >
           <a href="./contact.html">ติดต่อเรา</a>
           <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
           <p href="./article.html">บทความ / ข่าวสาร</p>
@@ -489,7 +512,7 @@
     </nav>
     <main class="bg-[#F8F8F8]">
       <div class="container mx-auto py-6 px-4 md:px-0">
-        <section class="flex gap-4 flex-wrap md:flex-nowrap">
+        <section class="flex gap-2 md:gap-4 flex-wrap md:flex-nowrap">
           <div class="slideshow-container w-full md:w-8/12">
             <div class="mySlides fade">
               <img src="./images/banner.png" style="width: 100%" />
@@ -541,12 +564,42 @@
               <span class="dot" onclick="showSlides(3,true)"></span>
             </div>
           </div>
-          <div class="w-full md:w-4/12 flex md:block gap-2">
-            <div>
-              <img src="./images/banner-1.png" class="w-full" />
+          <div class="w-full md:w-4/12 flex flex-row md:flex-col gap-2">
+            <div class="relative">
+              <img src="./images/banner.png" class="w-full" />
+              <div class="absolute top-2 md:top-4 left-2 md:left-4">
+                <p class="text-[10px] md:text-sm text-white">เต็นท์ & ทาร์ป</p>
+                <p
+                  class="mt-0 md:mt-2 text-base md:text-[32px] text-white font-bold"
+                >
+                  เต็นท์สวยมาใหม่
+                </p>
+                <a href="./products.html">
+                  <button
+                    class="hidden md:block mt-2 bg-white w-[124px] h-[48px] text-xs rounded-lg font-bold"
+                  >
+                    ดูสินค้าเพิ่มเติม
+                  </button>
+                </a>
+              </div>
             </div>
-            <div class="mt-0 md:mt-4">
-              <img src="./images/banner-2.png" class="w-full" />
+            <div class="relative">
+              <img src="./images/banner.png" class="w-full" />
+              <div class="absolute top-2 md:top-4 left-2 md:left-4">
+                <p class="text-[10px] md:text-sm text-white">Backpack/Hiking</p>
+                <p
+                  class="mt-0 md:mt-2 text-base md:text-[32px] text-white font-bold"
+                >
+                  ไอเทมแบ็คแพ็ก
+                </p>
+                <a href="./products.html">
+                  <button
+                    class="hidden md:block mt-2 bg-white w-[124px] h-[48px] text-xs rounded-lg font-bold"
+                  >
+                    ดูสินค้าเพิ่มเติม
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -1072,6 +1125,60 @@
                 <span class="font-bold">29</span> แบรนด์ชั้นนำ
               </p>
               <p class="text-[10px] md:text-xs mt-1">จำหน่ายอย่างเป็นทางการ</p>
+            </div>
+          </div>
+        </section>
+        <!-- section banner2 -->
+        <section class="hidden md:flex gap-5 mt-4">
+          <div class="w-1/3 relative">
+            <img src="./images/banner-1.png" class="w-full" />
+            <div class="absolute top-6 left-6">
+              <p class="text-sm text-white">อุปกรณ์ให้ความสว่าง</p>
+              <p class="text-[32px] text-white mt-1 font-bold">
+                รวมโคมไฟแคมปิ้ง
+              </p>
+              <a href="./products.html">
+                <button
+                  class="mt-4 rounded-lg w-[144px] flex justify-center w-[170px] items-center h-[52px] bg-white text-xs md:text-base font-bold"
+                >
+                  ดูสินค้าเพิ่มเติม
+                  <img src="./images/icons/ico-arrow-right.svg" alt="rihg" />
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="w-1/3 relative">
+            <img src="./images/banner-2.png" class="w-full" />
+            <div class="absolute top-6 left-6">
+              <p class="text-sm text-white">กระเป๋า</p>
+              <p class="text-[32px] text-white mt-1 font-bold">
+                ใส่ของแคมปิ้งจัดเต็ม
+              </p>
+              <a href="./products.html">
+                <button
+                  class="mt-4 rounded-lg w-[144px] flex justify-center w-[170px] items-center h-[52px] bg-white text-xs md:text-base font-bold"
+                >
+                  ดูสินค้าเพิ่มเติม
+                  <img src="./images/icons/ico-arrow-right.svg" alt="rihg" />
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="w-1/3 relative">
+            <img src="./images/banner-3.png" class="w-full" />
+            <div class="absolute top-6 left-6">
+              <p class="text-sm text-white">Van Camping</p>
+              <p class="text-[32px] text-white mt-1 font-bold">
+                ไอเทมแคมป์ปิ้งในรถบ้าน
+              </p>
+              <a href="./products.html">
+                <button
+                  class="mt-4 rounded-lg w-[144px] flex justify-center w-[170px] items-center h-[52px] bg-white text-xs md:text-base font-bold"
+                >
+                  ดูสินค้าเพิ่มเติม
+                  <img src="./images/icons/ico-arrow-right.svg" alt="rihg" />
+                </button>
+              </a>
             </div>
           </div>
         </section>
@@ -1695,6 +1802,137 @@
             </div>
           </div>
         </section>
+        <!-- section outlet -->
+        <section class="mt-4 rounded-lg bg-[#DDECE8] p-4 md:p-9">
+          <div class="flex gap-4">
+            <div class="w-1/2 md:w-1/4 p-0 md:p-4">
+              <p class="text-sm">Outlet</p>
+              <h3 class="mt-4 text-[20px] md:text-[32px] font-bold">
+                สินค้า Outlet ลดราคาเพื่อชาวแคมปิ้ง!
+              </h3>
+              <button
+                class="mt-4 rounded-lg w-full flex justify-center w-[170px] items-center h-[52px] bg-white text-xs md:text-base"
+              >
+                ดูสินค้าทั้งหมด
+                <img src="./images/icons/ico-arrow-right.svg" alt="rihg" />
+              </button>
+            </div>
+            <div class="w-3/4 flex flex-nowrap overflow-auto gap-2 md:gap-4">
+              <div
+                class="hover:shadow-[0_1px_8px_0px_#C4C4C4] bg-white min-w-[167px]"
+              >
+                <div>
+                  <img src="./images/table.png" class="w-full" />
+                </div>
+                <div class="p-1">
+                  <p class="text-base font-medium h-[44px]">
+                    END TABLE (beige)
+                  </p>
+                  <p class="font-medium text-base inline-block line-through">
+                    ฿ 2,000
+                  </p>
+                  <span class="text-[#A8241B] font-medium text-base"
+                    >฿ 1,500</span
+                  >
+                  <button
+                    class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                  >
+                    <img
+                      src="./images/icons/ico-cart.svg"
+                      alt="cart"
+                      class="w-[14px] h-[14px]"
+                    />
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+              <div
+                class="hover:shadow-[0_1px_8px_0px_#C4C4C4] bg-white min-w-[167px]"
+              >
+                <div>
+                  <img src="./images/table.png" class="w-full" />
+                </div>
+                <div class="p-1">
+                  <p class="text-base font-medium h-[44px]">
+                    END TABLE (beige)
+                  </p>
+                  <p class="font-medium text-base inline-block line-through">
+                    ฿ 2,000
+                  </p>
+                  <span class="text-[#A8241B] font-medium text-base"
+                    >฿ 1,500</span
+                  >
+                  <button
+                    class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                  >
+                    <img
+                      src="./images/icons/ico-cart.svg"
+                      alt="cart"
+                      class="w-[14px] h-[14px]"
+                    />
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+              <div
+                class="hover:shadow-[0_1px_8px_0px_#C4C4C4] bg-white min-w-[167px]"
+              >
+                <div>
+                  <img src="./images/table.png" class="w-full" />
+                </div>
+                <div class="p-1">
+                  <p class="text-base font-medium h-[44px]">
+                    END TABLE (beige)
+                  </p>
+                  <p class="font-medium text-base inline-block line-through">
+                    ฿ 2,000
+                  </p>
+                  <span class="text-[#A8241B] font-medium text-base"
+                    >฿ 1,500</span
+                  >
+                  <button
+                    class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                  >
+                    <img
+                      src="./images/icons/ico-cart.svg"
+                      alt="cart"
+                      class="w-[14px] h-[14px]"
+                    />
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+              <div
+                class="hover:shadow-[0_1px_8px_0px_#C4C4C4] bg-white min-w-[167px]"
+              >
+                <div>
+                  <img src="./images/table.png" class="w-full" />
+                </div>
+                <div class="p-1">
+                  <p class="text-base font-medium h-[44px]">
+                    END TABLE (beige)
+                  </p>
+                  <p class="font-medium text-base inline-block line-through">
+                    ฿ 2,000
+                  </p>
+                  <span class="text-[#A8241B] font-medium text-base"
+                    >฿ 1,500</span
+                  >
+                  <button
+                    class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                  >
+                    <img
+                      src="./images/icons/ico-cart.svg"
+                      alt="cart"
+                      class="w-[14px] h-[14px]"
+                    />
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- section article -->
         <section
           class="mt-4 bg-white p-4 md:p-9 shadow-[0_1px_8px_0px_#C4C4C4] rounded-lg"
@@ -1739,6 +1977,180 @@
                 </p>
                 <p class="text-[10px] text-[#B3B3B3] mt-2">Jan 02, 2024</p>
               </div>
+            </div>
+          </div>
+        </section>
+        <!-- section review -->
+        <section
+          class="mt-4 rounded-lg bg-white p-4 md:p-9 shadow-[0_1px_8px_0px_#C4C4C4]"
+        >
+          <h3 class="text-base md:text-2xl mb-2 md:mb-4">รีวิวจากลูกค้า</h3>
+          <div class="splide" id="review-carousel">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="w-full bg-[#F8F8F8] p-4 flex flex-col gap-4">
+                    <p class="text-sm md:text-2xl">“</p>
+                    <p class="text-sm md:text-base">
+                      จัดส่งสินค้าได้รวดเร็วดีมากๆเลยครับ สินค้าใช้ดีมากๆ
+                      คุณภาพดีจริงๆ ได้มีโอกาสเข้าไปเลือกซื้อที่ร้านเลยนะครับ
+                      ทางร้านบริการดีมากๆ ร้านก็สวย
+                      น่าเข้ามาเลือกซื้ออุปกรณ์มากๆครับ
+                    </p>
+                    <p class="text-sm md:text-2xl text-end">”</p>
+                    <div class="flex gap-6 items-center">
+                      <div class="relative">
+                        <img src="./images/profile.png" />
+                      </div>
+                      <div class="">
+                        <div class="text-xs flex">
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                        </div>
+                        <p class="text-xs md:text-base mt-1">Sher Siris</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="w-full bg-[#F8F8F8] p-4 flex flex-col gap-4">
+                    <p class="text-sm md:text-2xl">“</p>
+                    <p class="text-sm md:text-base">
+                      จัดส่งสินค้าได้รวดเร็วดีมากๆเลยครับ สินค้าใช้ดีมากๆ
+                      คุณภาพดีจริงๆ ได้มีโอกาสเข้าไปเลือกซื้อที่ร้านเลยนะครับ
+                      ทางร้านบริการดีมากๆ ร้านก็สวย
+                      น่าเข้ามาเลือกซื้ออุปกรณ์มากๆครับ
+                    </p>
+                    <p class="text-sm md:text-2xl text-end">”</p>
+                    <div class="flex gap-6 items-center">
+                      <div class="relative">
+                        <img src="./images/profile.png" />
+                      </div>
+                      <div class="">
+                        <div class="text-xs flex">
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                        </div>
+                        <p class="text-xs md:text-base mt-1">Sher Siris</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="w-full bg-[#F8F8F8] p-4 flex flex-col gap-4">
+                    <p class="text-sm md:text-2xl">“</p>
+                    <p class="text-sm md:text-base">
+                      จัดส่งสินค้าได้รวดเร็วดีมากๆเลยครับ สินค้าใช้ดีมากๆ
+                      คุณภาพดีจริงๆ ได้มีโอกาสเข้าไปเลือกซื้อที่ร้านเลยนะครับ
+                      ทางร้านบริการดีมากๆ ร้านก็สวย
+                      น่าเข้ามาเลือกซื้ออุปกรณ์มากๆครับ
+                    </p>
+                    <p class="text-sm md:text-2xl text-end">”</p>
+                    <div class="flex gap-6 items-center">
+                      <div class="relative">
+                        <img src="./images/profile.png" />
+                      </div>
+                      <div class="">
+                        <div class="text-xs flex">
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                        </div>
+                        <p class="text-xs md:text-base mt-1">Sher Siris</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="w-full bg-[#F8F8F8] p-4 flex flex-col gap-4">
+                    <p class="text-sm md:text-2xl">“</p>
+                    <p class="text-sm md:text-base">
+                      จัดส่งสินค้าได้รวดเร็วดีมากๆเลยครับ สินค้าใช้ดีมากๆ
+                      คุณภาพดีจริงๆ ได้มีโอกาสเข้าไปเลือกซื้อที่ร้านเลยนะครับ
+                      ทางร้านบริการดีมากๆ ร้านก็สวย
+                      น่าเข้ามาเลือกซื้ออุปกรณ์มากๆครับ
+                    </p>
+                    <p class="text-sm md:text-2xl text-end">”</p>
+                    <div class="flex gap-6 items-center">
+                      <div class="relative">
+                        <img src="./images/profile.png" />
+                      </div>
+                      <div class="">
+                        <div class="text-xs flex">
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                        </div>
+                        <p class="text-xs md:text-base mt-1">Sher Siris</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="w-full bg-[#F8F8F8] p-4 flex flex-col gap-4">
+                    <p class="text-sm md:text-2xl">“</p>
+                    <p class="text-sm md:text-base">
+                      จัดส่งสินค้าได้รวดเร็วดีมากๆเลยครับ สินค้าใช้ดีมากๆ
+                      คุณภาพดีจริงๆ ได้มีโอกาสเข้าไปเลือกซื้อที่ร้านเลยนะครับ
+                      ทางร้านบริการดีมากๆ ร้านก็สวย
+                      น่าเข้ามาเลือกซื้ออุปกรณ์มากๆครับ
+                    </p>
+                    <p class="text-sm md:text-2xl text-end">”</p>
+                    <div class="flex gap-6 items-center">
+                      <div class="relative">
+                        <img src="./images/profile.png" />
+                      </div>
+                      <div class="">
+                        <div class="text-xs flex">
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                        </div>
+                        <p class="text-xs md:text-base mt-1">Sher Siris</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="w-full bg-[#F8F8F8] p-4 flex flex-col gap-4">
+                    <p class="text-sm md:text-2xl">“</p>
+                    <p class="text-sm md:text-base">
+                      จัดส่งสินค้าได้รวดเร็วดีมากๆเลยครับ สินค้าใช้ดีมากๆ
+                      คุณภาพดีจริงๆ ได้มีโอกาสเข้าไปเลือกซื้อที่ร้านเลยนะครับ
+                      ทางร้านบริการดีมากๆ ร้านก็สวย
+                      น่าเข้ามาเลือกซื้ออุปกรณ์มากๆครับ
+                    </p>
+                    <p class="text-sm md:text-2xl text-end">”</p>
+                    <div class="flex gap-6 items-center">
+                      <div class="relative">
+                        <img src="./images/profile.png" />
+                      </div>
+                      <div class="">
+                        <div class="text-xs flex">
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                          <img src="./images/icons/ico-star.svg" />
+                        </div>
+                        <p class="text-xs md:text-base mt-1">Sher Siris</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -2024,6 +2436,18 @@
         gap: 32,
         rewind: true,
         pagination: false,
+      }).mount();
+      new Splide("#review-carousel", {
+        perPage: 2,
+        autoHeight: true,
+        rewind: true,
+        arrows: false,
+        gap: 16,
+        breakpoints: {
+          640: {
+            perPage: 1,
+          },
+        },
       }).mount();
     });
   </script>
