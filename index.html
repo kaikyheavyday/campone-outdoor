@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/layout.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -48,16 +53,10 @@
         border-radius: 0 3px 3px 0;
         user-select: none;
       }
-
-      /* Position the "next button" to the right */
       .next {
         right: 0;
         border-radius: 3px 0 0 3px;
       }
-
-      /* On hover, add a black background color with a little bit see-through */
-
-      /* Caption text */
       .text-slide {
         position: absolute;
         top: 33px;
@@ -85,7 +84,6 @@
         background-color: green;
       }
 
-      /* Fading animation */
       .fade {
         animation-name: fade;
         animation-duration: 1.5s;
@@ -99,6 +97,45 @@
         to {
           opacity: 1;
         }
+      }
+      #category-carousel {
+        margin-top: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      #category-carousel .splide__arrow--prev {
+        top: 40%;
+        left: -16px !important;
+      }
+      #category-carousel .splide__arrow--next {
+        top: 40%;
+        right: -16px !important;
+      }
+      #brand-carousel {
+        margin-top: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      #brand-carousel .splide__arrow--prev {
+        top: 40%;
+        left: -16px !important;
+      }
+      #brand-carousel .splide__arrow--next {
+        top: 40%;
+        right: -16px !important;
+      }
+      #lifestyle-carousel {
+        margin-top: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      #lifestyle-carousel .splide__arrow--prev {
+        top: 40%;
+        left: -16px !important;
+      }
+      #lifestyle-carousel .splide__arrow--next {
+        top: 40%;
+        right: -16px !important;
       }
     </style>
     <title>Document</title>
@@ -489,6 +526,255 @@
             </div>
           </div>
         </section>
+        <section
+          class="rounded shadow-[0_1px_8px_0px_#C4C4C4] p-9 mt-4 rounded-lg bg-white h-[300px]"
+        >
+          <h3 class="text-2xl font-medium mb-8">หมวดหมู่สินค้า</h3>
+          <div class="splide" id="category-carousel">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="relative rounded-full w-[112px] h-[112px] hover:w-[128px] hover:h-[128px] bg-[#F9F1E7]"
+                      >
+                        <img
+                          src="./images/category.png"
+                          class="absolute z-1 top-4 left-2 hover:left-4"
+                        />
+                      </div>
+                      <p class="text-center">เต็นท์ & ทาร์ป</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <!-- section new product -->
         <section
           class="hidden md:block shadow-[0_1px_8px_0px_#C4C4C4] p-9 mt-4 rounded-lg bg-white"
@@ -765,6 +1051,214 @@
             </div>
           </div>
         </section>
+        <!-- section brand -->
+        <section
+          class="rounded shadow-[0_1px_8px_0px_#C4C4C4] p-9 mt-4 rounded-lg bg-white h-[300px]"
+        >
+          <h3 class="text-2xl font-medium mb-8">แบรนด์สินค้า</h3>
+          <div class="splide" id="brand-carousel">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[#F9F1E7]"
+                      >
+                        <img src="./images/brand.png" class="w-full" />
+                      </div>
+                      <p class="text-center">UNIFLAME</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <!-- section promotion product -->
         <section
           class="hidden md:block shadow-[0_1px_8px_0px_#C4C4C4] p-9 mt-4 rounded-lg bg-white"
@@ -989,6 +1483,191 @@
                   ADD TO CART
                 </button>
               </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-[#F3EADA] rounded py-4 text-center mt-4 font-medium shadow-[0_1px_8px_0px_#C4C4C4] text-sm"
+        >
+          ซื้อครบ 5,000 ส่งฟรีทุกออเดอร์ !!!
+        </section>
+        <!-- section lifestyle -->
+        <section
+          class="rounded shadow-[0_1px_8px_0px_#C4C4C4] p-9 mt-4 rounded-lg bg-white h-[300px]"
+        >
+          <h3 class="text-2xl font-medium mb-8">ช้อปตามไลฟ์สไตล์</h3>
+          <div class="splide" id="lifestyle-carousel">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="./products.html">
+                    <div
+                      class="flex flex-col gap-3 justify-center items-center"
+                    >
+                      <div
+                        class="rounded-full flex items-center w-[112px] h-[112px] bg-[url('./images/lifestyle.png')] bg-cover"
+                      ></div>
+                      <p class="text-center">Motobike Camping</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -1299,5 +1978,29 @@
       }
     }
     timer = setInterval(showSlides, 5000);
+
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide("#category-carousel", {
+        fixedWidth: 128,
+        fixedHeight: 200,
+        gap: 32,
+        rewind: true,
+        pagination: false,
+      }).mount();
+      new Splide("#brand-carousel", {
+        fixedWidth: 128,
+        fixedHeight: 200,
+        gap: 32,
+        rewind: true,
+        pagination: false,
+      }).mount();
+      new Splide("#lifestyle-carousel", {
+        fixedWidth: 128,
+        fixedHeight: 200,
+        gap: 32,
+        rewind: true,
+        pagination: false,
+      }).mount();
+    });
   </script>
 </html>
