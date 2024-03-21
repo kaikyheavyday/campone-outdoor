@@ -36,10 +36,10 @@ window.onclick = function (event) {
     document.getElementById("dropdown-content").classList.add("hidden");
     document.getElementById("dropdown-content").classList.remove("block");
   }
-  if (!event.target.matches(".dropdown-new-product-button")) {
-    document.getElementById("dropdown-new-product").classList.add("hidden");
-    document.getElementById("dropdown-new-product").classList.remove("block");
-  }
+  // if (!event.target.matches(".dropdown-new-product-button")) {
+  //   document.getElementById("dropdown-new-product").classList.add("hidden");
+  //   document.getElementById("dropdown-new-product").classList.remove("block");
+  // }
 };
 
 searchIcon.addEventListener("click", () => {
