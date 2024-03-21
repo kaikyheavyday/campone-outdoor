@@ -24,6 +24,9 @@ const formSearch = document.getElementById("form-search");
 function clickDropdown() {
   document.getElementById("dropdown-content").classList.toggle("hidden");
 }
+function clickDropdownNewProduct() {
+  document.getElementById("dropdown-new-product").classList.toggle("hidden");
+}
 
 window.onclick = function (event) {
   if (
@@ -32,6 +35,10 @@ window.onclick = function (event) {
   ) {
     document.getElementById("dropdown-content").classList.add("hidden");
     document.getElementById("dropdown-content").classList.remove("block");
+  }
+  if (!event.target.matches(".dropdown-new-product-button")) {
+    document.getElementById("dropdown-new-product").classList.add("hidden");
+    document.getElementById("dropdown-new-product").classList.remove("block");
   }
 };
 
