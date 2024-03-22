@@ -27,7 +27,9 @@
   </head>
   <body>
     <div id="drawer" class="">
-      <img src="./images/icons/ico-close-white.svg" id="close" alt="close" />
+      <div class="mt-2 flex justify-end w-full">
+        <img src="./images/icons/ico-close-white.svg" id="close" alt="close" />
+      </div>
       <div class="flex text-white items-center">
         <img src="./images/logo.svg" alt="logo" />
         <p class="text-sm font-bold">Camp One Outdoor</p>
@@ -130,258 +132,169 @@
         </div>
       </div>
     </div>
-    <nav class="h-[52px] md:h-20 bg-primary flex items-center">
-      <div class="container flex mx-auto justify-between px-4 md:px-0">
-        <div class="flex items-center">
-          <img
-            id="burger"
-            src="./images/icons/ico-menu.svg"
-            alt="logo"
-            class="w-6 mr-2 block md:hidden"
-          />
-          <a href="./index.html">
+    <div class="" id="overlay">
+      <nav class="h-[52px] md:h-20 bg-primary flex items-center">
+        <div class="container flex mx-auto justify-between px-4 md:px-0">
+          <div class="flex items-center">
             <img
-              src="./images/logo.svg"
+              id="burger"
+              src="./images/icons/ico-menu.svg"
               alt="logo"
-              class="w-9 md:w-12 md:block"
-              id="logo"
+              class="w-6 mr-2 block md:hidden"
             />
-          </a>
-          <a href="./index.html">
-            <div
-              class="text-white text-sm md:text-xl font-bold ml-0 md:ml-2 md:block"
-              id="logo-text"
+            <a href="./index.html">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="w-9 md:w-12 md:block"
+                id="logo"
+              />
+            </a>
+            <a href="./index.html">
+              <div
+                class="text-white text-sm md:text-xl font-bold ml-0 md:ml-2 md:block"
+                id="logo-text"
+              >
+                Camp One Outdoor
+              </div>
+            </a>
+          </div>
+         <div class="flex items-center gap-3 md:gap-6" id="search-container">
+            <form
+              class="rounded-3xl px-4 py-2 bg-white hidden w-full md:flex items-center"
+              id="form-search"
             >
-              Camp One Outdoor
-            </div>
-          </a>
-        </div>
-        <div class="flex items-center gap-3 md:gap-6">
-          <form
-            class="rounded-3xl px-4 py-2 bg-white hidden md:flex items-center"
-            id="form-search"
-          >
-            <input
-              type="text"
-              class="bg-white md:w-[300px] lg:w-[533px]"
-              placeholder="ค้นหา"
-            />
-            <button type="submit">
-              <img src="./images/icons/ico-search.svg" alt="logo" />
-            </button>
-          </form>
+              <input
+                type="text"
+                class="bg-white w-full md:w-[300px] lg:w-[533px]"
+                placeholder="ค้นหา"
+              />
+              <button type="submit">
+                <img src="./images/icons/ico-search.svg" alt="logo" />
+              </button>
+            </form>
 
-          <img
-            src="./images/icons/ico-search-white.svg"
-            alt="logo"
-            class="w-5 block md:hidden"
-            id="icon-search"
-          />
-          <a href="./my-account.html">
             <img
-              src="./images/icons/ico-avatar.svg"
+              src="./images/icons/ico-search-white.svg"
               alt="logo"
-              class="w-5 md:w-6 md:block"
-              id="icon-avatar"
+              class="w-5 block md:hidden"
+              id="icon-search"
             />
-          </a>
-          <a href="./cart.html">
-            <img
-              src="./images/icons/ico-cart.svg"
-              alt="logo"
-              class="w-5 md:w-6 md:block"
-              id="icon-cart"
-            />
-          </a>
-        </div>
-      </div>
-    </nav>
-    <nav class="hidden md:block h-[48px] border-[#D9D9D9] border-b relative">
-      <div class="container mx-auto h-full flex items-center">
-        <div
-          class="flex h-full p-4 items-center border-[#D9D9D9] border-r dropdown"
-          onclick="clickDropdown()"
-        >
-          <img
-            src="./images/icons/icon-category/ico-menu-black.svg"
-            alt="menu"
-            class="dropdown-item"
-          />
-          <p class="text-xs ml-2 font-medium dropdown-item">
-            หมวดหมู่สินค้าทั้งหมด
-          </p>
-        </div>
-        <div class="flex items-center justify-around w-[calc(100%_-_170px)]">
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-new.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">สินค้ามาใหม่</p>
+            <a href="./my-account.html">
+              <img
+                src="./images/icons/ico-avatar.svg"
+                alt="logo"
+                class="w-5 md:w-6 md:block"
+                id="icon-avatar"
+              />
+            </a>
+            <a href="./cart.html">
+              <img
+                src="./images/icons/ico-cart.svg"
+                alt="logo"
+                class="w-5 md:w-6 md:block"
+                id="icon-cart"
+              />
+            </a>
           </div>
-          <div class="flex items-center">
+        </div>
+      </nav>
+      <nav class="hidden md:block h-[48px] border-[#D9D9D9] border-b relative">
+        <div class="container mx-auto h-full flex items-center">
+          <div
+            class="flex h-full p-4 items-center border-[#D9D9D9] border-r dropdown"
+            onclick="clickDropdown()"
+          >
             <img
-              src="./images/icons/icon-category/ico-percent.svg"
+              src="./images/icons/icon-category/ico-menu-black.svg"
               alt="menu"
+              class="dropdown-item"
             />
-            <p class="text-xs ml-2 font-medium">สินค้าโปรโมชัน</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-tent.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">เต็นท์ & ทาร์ป</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-chair.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">เฟอร์นิเจอร์</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-gas.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">แก๊สและเชื้อเพลิง</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-trash.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">ถังน้ำแข็ง</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-knife.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">มีดและของมีคม</p>
-          </div>
-          <div class="flex items-center">
-            <img
-              src="./images/icons/icon-category/ico-lightbulb.svg"
-              alt="menu"
-            />
-            <p class="text-xs ml-2 font-medium">อุปกรณ์ให้ความสว่าง</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="dropdown-content hidden w-full absolute bg-white mt-[2px]"
-        id="dropdown-content"
-      >
-        <div class="container mx-auto py-6 flex gap-8">
-          <div class="py-5 bg-primary w-[182px] text-center text-white rounded">
-            <img src="./images/logo-big.svg" alt="logo" class="mx-auto" />
-            <p class="mt-2 text-sm font-medium">Camp One Outdoor</p>
-            <p class="mt-2 text-xs px-4 font-medium">
-              ร้านจำหน่ายอุปกรณ์แคมป์ปิ้ง คุณภาพดีจากต่างประเทศ
-              สำหรับผู้รักการท่องเที่ยว
+            <p class="text-xs ml-2 font-medium dropdown-item">
+              หมวดหมู่สินค้าทั้งหมด
             </p>
           </div>
-          <div class="flex flex-col">
-            <h4 class="text-base font-medium">มาใหม่และลดราคา</h4>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold"
-              >สินค้ามาใหม่</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold mt-1"
-              >สินค้าโปรโมชัน</a
-            >
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-base font-medium">ของใช้แคมป์ปิ้ง</h4>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold"
-              >เต้นท์และทาร์ป</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เฟอร์นิเจอร์</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เครื่องนอน</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >กระเป๋า เป้</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เสื้อผ้า รองเท้า</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >ตะเกียงและโคมไฟ</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >อื่น ๆ</a
-            >
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-base font-medium">เครื่องครัว ทำอาหาร</h4>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold"
-              >เตาแก็ส</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เตาฟืน เตาย่าง BBQ</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เชื้อเพลิง แก๊สกระป๋อง</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >อุปกรณ์ทำอาหาร</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เครื่องครัว</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >คูลเลอร์</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >มีดและของมีคม</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >อาหาร</a
-            >
+          <div class="flex items-center justify-around w-[calc(100%_-_170px)]">
+            <div class="flex items-center">
+              <img src="./images/icons/icon-category/ico-new.svg" alt="menu" />
+              <p class="text-xs ml-2 font-medium">สินค้ามาใหม่</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-percent.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">สินค้าโปรโมชัน</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./images/icons/icon-category/ico-tent.svg" alt="menu" />
+              <p class="text-xs ml-2 font-medium">เต็นท์ & ทาร์ป</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-chair.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">เฟอร์นิเจอร์</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./images/icons/icon-category/ico-gas.svg" alt="menu" />
+              <p class="text-xs ml-2 font-medium">แก๊สและเชื้อเพลิง</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-trash.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">ถังน้ำแข็ง</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-knife.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">มีดและของมีคม</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-lightbulb.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">อุปกรณ์ให้ความสว่าง</p>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <main class="bg-[#F8F8F8]">
-      <div class="container mx-auto pb-2 md:pb-6">
-        <section class="p-4">
-          <div class="text-xs">
-            <p class="inline-block">หน้าแรก</p>
-            <span class="text-[#d9d9d9]"> / เฟอร์นิเจอร์</span>
-          </div>
-        </section>
-        <section class="p-4 text-center text-[24px] md:text-[40px] font-medium">
-          เฟอร์นิเจอร์
-        </section>
-        <section class="py-0 md:py-4 flex gap-2">
-          <div
-            class="shadow-[0_1px_8px_0px_#C4C4C4] rounded-lg bg-white w-3/12 xl:w-2/12 py-6 px-4 font-medium hidden md:block"
-          >
-            <div class="flex flex-col gap-1">
-              <h3 class="text-base">ประเภทสินค้า</h3>
+        <div
+          class="dropdown-content hidden w-full absolute bg-white mt-[2px]"
+          id="dropdown-content"
+        >
+          <div class="container mx-auto py-6 flex gap-8">
+            <div
+              class="py-5 bg-primary w-[182px] text-center text-white rounded"
+            >
+              <img src="./images/logo-big.svg" alt="logo" class="mx-auto" />
+              <p class="mt-2 text-sm font-medium">Camp One Outdoor</p>
+              <p class="mt-2 text-xs px-4 font-medium">
+                ร้านจำหน่ายอุปกรณ์แคมป์ปิ้ง คุณภาพดีจากต่างประเทศ
+                สำหรับผู้รักการท่องเที่ยว
+              </p>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="text-base font-medium">มาใหม่และลดราคา</h4>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold"
+                >สินค้ามาใหม่</a
+              >
+              <a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold mt-1"
+                >สินค้าโปรโมชัน</a
+              >
+            </div>
+            <div class="flex flex-col">
+              <h4 class="text-base font-medium">ของใช้แคมป์ปิ้ง</h4>
               <div class="w-[80px] h-[1px] bg-primary my-2"></div>
               <a
                 href="./products.html"
@@ -390,44 +303,38 @@
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เฟอร์นิเจอร์</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เครื่องนอน</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >กระเป๋า เป้</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เสื้อผ้า รองเท้า</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >อุปกรณ์ให้ความสว่าง</a
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >ตะเกียงและโคมไฟ</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >ถังน้ำแข็ง</a
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >อื่น ๆ</a
               >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >มีดและของมีคม</a
-              >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >แก๊สและเชื้อเพลิง</a
-              >
+            </div>
+            <div class="flex flex-col">
+              <h4 class="text-base font-medium">เครื่องครัว ทำอาหาร</h4>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
               <a
                 href="./products.html"
                 class="text-sm hover:text-primary hover:font-bold"
@@ -435,1196 +342,1415 @@
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เตาฟืน เตาย่าง BBQ</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >เครื่องครัว</a
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >เชื้อเพลิง แก๊สกระป๋อง</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >อุปกรณ์ทำอาหาร</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >อาหารและเครื่องปรุง</a
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >เครื่องครัว</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >อื่น ๆ</a
-              >
-            </div>
-            <div class="flex flex-col gap-1 mt-4">
-              <h3 class="text-base">แบรนด์สินค้า</h3>
-              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >Trangia</a
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >คูลเลอร์</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >Comma Nine</a
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >มีดและของมีคม</a
               >
               <a
                 href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >outlet</a
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >อาหาร</a
               >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >JACKLAH</a
-              >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >เสื้อผ้า รองเท้า</a
-              >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >Cargo Container</a
-              >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >Helinox</a
-              >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >Feuerhand</a
-              >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >Minimal Works</a
-              >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >Petromax</a
-              >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >Snowline Outdoor Gear</a
-              >
-              <a
-                href="./products.html"
-                class="text-sm hover:text-primary hover:font-bold"
-                >Uniflame</a
-              >
-            </div>
-            <div class="flex flex-col gap-1 mt-4">
-              <h3 class="text-base">ประเทศสินค้านำเข้า</h3>
-              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-              <p class="text-sm">SWEDEN (23)</p>
-              <p class="text-sm">CAMPONE (61)</p>
-              <p class="text-sm">EU/ GERMANY (23)</p>
-              <p class="text-sm">JAPAN (230)</p>
-              <p class="text-sm">KOREA (23)</p>
-            </div>
-            <div class="flex flex-col gap-1 mt-4">
-              <h3 class="text-base">ไลฟ์สไตล์</h3>
-              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-              <p class="text-sm">Motobike Camping (23)</p>
-              <p class="text-sm">Car Camping (61)</p>
-              <p class="text-sm">Van Camping (23)</p>
-              <p class="text-sm">Solo Camping Style (230)</p>
-              <p class="text-sm">Family & Friend Style (23)</p>
-              <p class="text-sm">Easy Going Style (23)</p>
-              <p class="text-sm">Ultralight Camping (23)</p>
-              <p class="text-sm">Backpack/Hiking (23)</p>
-            </div>
-            <div class="flex flex-col gap-1 mt-4">
-              <h3 class="text-base">Sale & Promotion</h3>
-              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-              <p class="text-sm">Promotion (56)</p>
-              <p class="text-sm">Outlet Sale (616)</p>
-            </div>
-            <div class="flex flex-col gap-1 mt-4">
-              <h3 class="text-base">Price Range</h3>
-              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-              <div class="flex items-center gap-2">
-                <div class="w-5/12">
-                  <input
-                    placeholder="฿ Min"
-                    class="w-full text-center border border-[#9F9F9F] h-[38px] rounded bg-[#F8F8F8] outline-none"
-                  />
-                </div>
-                <div class="w-[32px] h-[2px] bg-primary"></div>
-                <div class="w-5/12">
-                  <input
-                    placeholder="฿ Max"
-                    class="w-full text-center border border-[#9F9F9F] h-[38px] rounded bg-[#F8F8F8] outline-none"
-                  />
-                </div>
-              </div>
-              <button class="w-full bg-primary text-white mt-4 py-2 rounded">
-                Apply
-              </button>
             </div>
           </div>
-          <div
-            class="bg-transparent md:bg-white w-full md:w-9/12 xl:w-10/12 shadow-none md:shadow-[0_1px_8px_0px_#C4C4C4] rounded-lg p-4 md:p-6"
+        </div>
+      </nav>
+      <main class="bg-[#F8F8F8]">
+        <div class="container mx-auto pb-2 md:pb-6">
+          <section class="p-4">
+            <div class="text-xs">
+              <p class="inline-block">หน้าแรก</p>
+              <span class="text-[#d9d9d9]"> / เฟอร์นิเจอร์</span>
+            </div>
+          </section>
+          <section
+            class="p-4 text-center text-[24px] md:text-[40px] font-medium"
           >
+            เฟอร์นิเจอร์
+          </section>
+          <section class="py-0 md:py-4 flex gap-2">
             <div
-              class="flex justify-between items-center bg-white md:bg-transparent p-2 rounded"
+              class="shadow-[0_1px_8px_0px_#C4C4C4] rounded-lg bg-white w-3/12 xl:w-2/12 py-6 px-4 font-medium hidden md:block"
             >
-              <p class="text-base font-medium hidden md:block">
-                Showing 1–40 of 113 results
-              </p>
-              <p class="text-base font-medium block md:hidden">113 results</p>
-              <div class="flex gap-2">
-                <select
-                  class="outline-none w-[128px] md:w-auto bg-[#F8F8F8] h-[38px] p-1 font-medium text-base rounded"
+              <div class="flex flex-col gap-1">
+                <h3 class="text-base">ประเภทสินค้า</h3>
+                <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >เต้นท์และทาร์ป</a
                 >
-                  <option value="volvo">Default Sorting</option>
-                  <option value="saab">Sort by popularity</option>
-                  <option value="mercedes">Sort by average rating</option>
-                  <option value="audi">Sort by latest</option>
-                  <option value="ww">Sort by price: low to high</option>
-                  <option value="223">Sort by price: high to low</option>
-                </select>
-                <button
-                  class="block md:hidden bg-[#F8F8F8] p-2 rounded font-medium flex items-center justify-center gap-1"
-                  onclick="toggleFilter()"
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >เฟอร์นิเจอร์</a
                 >
-                  Filter <img src="./images/icons/ico-filter.svg" />
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >เครื่องนอน</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >กระเป๋า เป้</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >เสื้อผ้า รองเท้า</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >อุปกรณ์ให้ความสว่าง</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >ถังน้ำแข็ง</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >มีดและของมีคม</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >แก๊สและเชื้อเพลิง</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >เตาแก็ส</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >เตาฟืน เตาย่าง BBQ</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >เครื่องครัว</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >อุปกรณ์ทำอาหาร</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >อาหารและเครื่องปรุง</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >อื่น ๆ</a
+                >
+              </div>
+              <div class="flex flex-col gap-1 mt-4">
+                <h3 class="text-base">แบรนด์สินค้า</h3>
+                <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >Trangia</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >Comma Nine</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >outlet</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >JACKLAH</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >เสื้อผ้า รองเท้า</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >Cargo Container</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >Helinox</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >Feuerhand</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >Minimal Works</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >Petromax</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >Snowline Outdoor Gear</a
+                >
+                <a
+                  href="./products.html"
+                  class="text-sm hover:text-primary hover:font-bold"
+                  >Uniflame</a
+                >
+              </div>
+              <div class="flex flex-col gap-1 mt-4">
+                <h3 class="text-base">ประเทศสินค้านำเข้า</h3>
+                <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+                <p class="text-sm">SWEDEN (23)</p>
+                <p class="text-sm">CAMPONE (61)</p>
+                <p class="text-sm">EU/ GERMANY (23)</p>
+                <p class="text-sm">JAPAN (230)</p>
+                <p class="text-sm">KOREA (23)</p>
+              </div>
+              <div class="flex flex-col gap-1 mt-4">
+                <h3 class="text-base">ไลฟ์สไตล์</h3>
+                <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+                <p class="text-sm">Motobike Camping (23)</p>
+                <p class="text-sm">Car Camping (61)</p>
+                <p class="text-sm">Van Camping (23)</p>
+                <p class="text-sm">Solo Camping Style (230)</p>
+                <p class="text-sm">Family & Friend Style (23)</p>
+                <p class="text-sm">Easy Going Style (23)</p>
+                <p class="text-sm">Ultralight Camping (23)</p>
+                <p class="text-sm">Backpack/Hiking (23)</p>
+              </div>
+              <div class="flex flex-col gap-1 mt-4">
+                <h3 class="text-base">Sale & Promotion</h3>
+                <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+                <p class="text-sm">Promotion (56)</p>
+                <p class="text-sm">Outlet Sale (616)</p>
+              </div>
+              <div class="flex flex-col gap-1 mt-4">
+                <h3 class="text-base">Price Range</h3>
+                <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+                <div class="flex items-center gap-2">
+                  <div class="w-5/12">
+                    <input
+                      placeholder="฿ Min"
+                      class="w-full text-center border border-[#9F9F9F] h-[38px] rounded bg-[#F8F8F8] outline-none"
+                    />
+                  </div>
+                  <div class="w-[32px] h-[2px] bg-primary"></div>
+                  <div class="w-5/12">
+                    <input
+                      placeholder="฿ Max"
+                      class="w-full text-center border border-[#9F9F9F] h-[38px] rounded bg-[#F8F8F8] outline-none"
+                    />
+                  </div>
+                </div>
+                <button class="w-full bg-primary text-white mt-4 py-2 rounded">
+                  Apply
                 </button>
               </div>
             </div>
             <div
-              class="mt-2 rounded hidden bg-white md:hidden py-2 px-4"
-              id="filter"
+              class="bg-transparent md:bg-white w-full md:w-9/12 xl:w-10/12 shadow-none md:shadow-[0_1px_8px_0px_#C4C4C4] rounded-lg p-4 md:p-6"
             >
-              <div class="shadow-[0_1px_8px_0px_#C4C4C4] p-6 rounded">
-                <div class="flex justify-end">
-                  <img
-                    src="./images/icons/ico-close.svg"
-                    onclick="closeFilter()"
-                  />
-                </div>
-                <div class="mt-6">
-                  <div class="flex justify-between">
-                    <p>ประเภทสินค้า</p>
-                    <img
-                      src="./images/icons/ico-plus.svg"
-                      id="img-category"
-                      onclick="toggleCategory(event)"
-                    />
-                  </div>
-                  <div class="w-full mt-2 h-[1px] bg-primary"></div>
-                  <div id="filter-category" class="hidden flex-col mt-2 gap-1">
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >เต้นท์และทาร์ป</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >เฟอร์นิเจอร์</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >เครื่องนอน</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >กระเป๋า เป้</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >เสื้อผ้า รองเท้า</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >อุปกรณ์ให้ความสว่าง</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >ถังน้ำแข็ง</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >มีดและของมีคม</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >แก๊สและเชื้อเพลิง</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >เตาแก็ส</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >เตาฟืน เตาย่าง BBQ</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >เครื่องครัว</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >อุปกรณ์ทำอาหาร</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >อาหารและเครื่องปรุง</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >อื่น ๆ</a
-                    >
-                  </div>
-                </div>
-                <div class="mt-6">
-                  <div class="flex justify-between">
-                    <p>แบรนด์สินค้า</p>
-                    <img
-                      src="./images/icons/ico-plus.svg"
-                      id="img-brand"
-                      onclick="toggleBrand(event)"
-                    />
-                  </div>
-                  <div class="w-full mt-2 h-[1px] bg-primary"></div>
-                  <div id="filter-brand" class="hidden flex-col mt-2 gap-1">
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Trangia</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Comma Nine</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >outlet</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >JACKLAH</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >เสื้อผ้า รองเท้า</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Cargo Container</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Helinox</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Feuerhand</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Minimal Works</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Petromax</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Snowline Outdoor Gear</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Uniflame</a
-                    >
-                  </div>
-                </div>
-                <div class="mt-6">
-                  <div class="flex justify-between">
-                    <p>ประเทศสินค้านำเข้า</p>
-                    <img
-                      src="./images/icons/ico-plus.svg"
-                      id="img-country"
-                      onclick="toggleCountry(event)"
-                    />
-                  </div>
-                  <div class="w-full mt-2 h-[1px] bg-primary"></div>
-                  <div id="filter-country" class="hidden flex-col mt-2 gap-1">
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >SWEDEN (23)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >CAMPONE (61)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >EU/ GERMANY (23)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >JAPAN (230)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >KOREA (23)</a
-                    >
-                  </div>
-                </div>
-                <div class="mt-6">
-                  <div class="flex justify-between">
-                    <p>ไลฟ์สไตล์</p>
-                    <img
-                      src="./images/icons/ico-plus.svg"
-                      id="img-lifestyle"
-                      onclick="toggleLifestyle(event)"
-                    />
-                  </div>
-                  <div class="w-full mt-2 h-[1px] bg-primary"></div>
-                  <div id="filter-lifestyle" class="hidden flex-col mt-2 gap-1">
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Motobike Camping (23)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Car Camping (61)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Van Camping (23)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Solo Camping Style (230)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Family & Friend Style (23)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Easy Going Style (23)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Ultralight Camping (23)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Backpack/Hiking (23)</a
-                    >
-                  </div>
-                </div>
-                <div class="mt-6">
-                  <div class="flex justify-between">
-                    <p>Sale & Promotion</p>
-                    <img
-                      src="./images/icons/ico-plus.svg"
-                      id="img-promotion"
-                      onclick="togglePromotion(event)"
-                    />
-                  </div>
-                  <div class="w-full mt-2 h-[1px] bg-primary"></div>
-                  <div id="filter-promotion" class="hidden flex-col mt-2 gap-1">
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Promotion (56)</a
-                    >
-                    <a
-                      href="./products.html"
-                      class="text-sm hover:text-primary hover:font-bold"
-                      >Outlet Sale (616)</a
-                    >
-                  </div>
-                </div>
-                <div class="mt-6">
-                  <p>Price range</p>
-                  <div class="w-[80px] mt-2 h-[1px] bg-primary"></div>
-                  <div class="flex items-center gap-2 mt-2">
-                    <div class="w-5/12">
-                      <input
-                        placeholder="฿ Min"
-                        class="w-full text-center border border-[#9F9F9F] h-[38px] rounded bg-[#F8F8F8] outline-none"
-                      />
-                    </div>
-                    <div class="w-[32px] h-[2px] bg-primary"></div>
-                    <div class="w-5/12">
-                      <input
-                        placeholder="฿ Max"
-                        class="w-full text-center border border-[#9F9F9F] h-[38px] rounded bg-[#F8F8F8] outline-none"
-                      />
-                    </div>
-                  </div>
-                  <button
-                    class="w-full bg-primary text-white mt-4 py-2 rounded"
+              <div
+                class="flex justify-between items-center bg-white md:bg-transparent p-2 rounded"
+              >
+                <p class="text-base font-medium hidden md:block">
+                  Showing 1–40 of 113 results
+                </p>
+                <p class="text-base font-medium block md:hidden">113 results</p>
+                <div class="flex gap-2">
+                  <select
+                    class="outline-none w-[128px] md:w-auto bg-[#F8F8F8] h-[38px] p-1 font-medium text-base rounded"
                   >
-                    Apply
+                    <option value="volvo">Default Sorting</option>
+                    <option value="saab">Sort by popularity</option>
+                    <option value="mercedes">Sort by average rating</option>
+                    <option value="audi">Sort by latest</option>
+                    <option value="ww">Sort by price: low to high</option>
+                    <option value="223">Sort by price: high to low</option>
+                  </select>
+                  <button
+                    class="block md:hidden bg-[#F8F8F8] p-2 rounded font-medium flex items-center justify-center gap-1"
+                    onclick="toggleFilter()"
+                  >
+                    Filter <img src="./images/icons/ico-filter.svg" />
                   </button>
                 </div>
               </div>
-            </div>
-            <div class="mt-4 md:mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
               <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                class="mt-2 rounded hidden bg-white md:hidden py-2 px-4"
+                id="filter"
               >
-                <div class="relative">
+                <div class="shadow-[0_1px_8px_0px_#C4C4C4] p-6 rounded">
+                  <div class="flex justify-end">
+                    <img
+                      src="./images/icons/ico-close.svg"
+                      onclick="closeFilter()"
+                    />
+                  </div>
+                  <div class="mt-6">
+                    <div class="flex justify-between">
+                      <p>ประเภทสินค้า</p>
+                      <img
+                        src="./images/icons/ico-plus.svg"
+                        id="img-category"
+                        onclick="toggleCategory(event)"
+                      />
+                    </div>
+                    <div class="w-full mt-2 h-[1px] bg-primary"></div>
+                    <div
+                      id="filter-category"
+                      class="hidden flex-col mt-2 gap-1"
+                    >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >เต้นท์และทาร์ป</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >เฟอร์นิเจอร์</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >เครื่องนอน</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >กระเป๋า เป้</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >เสื้อผ้า รองเท้า</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >อุปกรณ์ให้ความสว่าง</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >ถังน้ำแข็ง</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >มีดและของมีคม</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >แก๊สและเชื้อเพลิง</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >เตาแก็ส</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >เตาฟืน เตาย่าง BBQ</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >เครื่องครัว</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >อุปกรณ์ทำอาหาร</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >อาหารและเครื่องปรุง</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >อื่น ๆ</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <div class="flex justify-between">
+                      <p>แบรนด์สินค้า</p>
+                      <img
+                        src="./images/icons/ico-plus.svg"
+                        id="img-brand"
+                        onclick="toggleBrand(event)"
+                      />
+                    </div>
+                    <div class="w-full mt-2 h-[1px] bg-primary"></div>
+                    <div id="filter-brand" class="hidden flex-col mt-2 gap-1">
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Trangia</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Comma Nine</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >outlet</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >JACKLAH</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >เสื้อผ้า รองเท้า</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Cargo Container</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Helinox</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Feuerhand</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Minimal Works</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Petromax</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Snowline Outdoor Gear</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Uniflame</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <div class="flex justify-between">
+                      <p>ประเทศสินค้านำเข้า</p>
+                      <img
+                        src="./images/icons/ico-plus.svg"
+                        id="img-country"
+                        onclick="toggleCountry(event)"
+                      />
+                    </div>
+                    <div class="w-full mt-2 h-[1px] bg-primary"></div>
+                    <div id="filter-country" class="hidden flex-col mt-2 gap-1">
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >SWEDEN (23)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >CAMPONE (61)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >EU/ GERMANY (23)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >JAPAN (230)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >KOREA (23)</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <div class="flex justify-between">
+                      <p>ไลฟ์สไตล์</p>
+                      <img
+                        src="./images/icons/ico-plus.svg"
+                        id="img-lifestyle"
+                        onclick="toggleLifestyle(event)"
+                      />
+                    </div>
+                    <div class="w-full mt-2 h-[1px] bg-primary"></div>
+                    <div
+                      id="filter-lifestyle"
+                      class="hidden flex-col mt-2 gap-1"
+                    >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Motobike Camping (23)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Car Camping (61)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Van Camping (23)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Solo Camping Style (230)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Family & Friend Style (23)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Easy Going Style (23)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Ultralight Camping (23)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Backpack/Hiking (23)</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <div class="flex justify-between">
+                      <p>Sale & Promotion</p>
+                      <img
+                        src="./images/icons/ico-plus.svg"
+                        id="img-promotion"
+                        onclick="togglePromotion(event)"
+                      />
+                    </div>
+                    <div class="w-full mt-2 h-[1px] bg-primary"></div>
+                    <div
+                      id="filter-promotion"
+                      class="hidden flex-col mt-2 gap-1"
+                    >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Promotion (56)</a
+                      >
+                      <a
+                        href="./products.html"
+                        class="text-sm hover:text-primary hover:font-bold"
+                        >Outlet Sale (616)</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <p>Price range</p>
+                    <div class="w-[80px] mt-2 h-[1px] bg-primary"></div>
+                    <div class="flex items-center gap-2 mt-2">
+                      <div class="w-5/12">
+                        <input
+                          placeholder="฿ Min"
+                          class="w-full text-center border border-[#9F9F9F] h-[38px] rounded bg-[#F8F8F8] outline-none"
+                        />
+                      </div>
+                      <div class="w-[32px] h-[2px] bg-primary"></div>
+                      <div class="w-5/12">
+                        <input
+                          placeholder="฿ Max"
+                          class="w-full text-center border border-[#9F9F9F] h-[38px] rounded bg-[#F8F8F8] outline-none"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="w-full bg-primary text-white mt-4 py-2 rounded"
+                    >
+                      Apply
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <div class="relative">
+                    <a href="./product-detail.html">
+                      <img src="./images/table.png" class="w-full" />
+                    </a>
+                    <div
+                      class="badge-product bg-[#A8241B] text-white py-1 px-2 text-[10px] rounded font-medium"
+                    >
+                      Sale
+                    </div>
+                  </div>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p
+                      class="font-medium text-sm md:text-base inline-block line-through"
+                    >
+                      ฿ 2,000
+                    </p>
+                    <span
+                      class="text-[#A8241B] font-medium text-sm md:text-base"
+                      >฿ 1,500</span
+                    >
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <div class="relative">
+                    <a href="./product-detail.html">
+                      <img src="./images/table.png" class="w-full" />
+                    </a>
+                    <div
+                      class="badge-product bg-[#C4C4C4] py-1 px-2 text-[10px] rounded font-medium"
+                    >
+                      Out of stock
+                    </div>
+                  </div>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p
+                      class="font-medium text-sm md:text-base text-[#9F9F9F] inline-block"
+                    >
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <div class="relative">
+                    <a href="./product-detail.html">
+                      <img src="./images/table.png" class="w-full" />
+                    </a>
+                    <div
+                      class="badge-product bg-[#FFB800] py-1 px-2 text-[10px] rounded font-medium"
+                    >
+                      New
+                    </div>
+                  </div>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
                   <a href="./product-detail.html">
                     <img src="./images/table.png" class="w-full" />
                   </a>
-                  <div
-                    class="badge-product bg-[#A8241B] text-white py-1 px-2 text-[10px] rounded font-medium"
-                  >
-                    Sale
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
                   </div>
                 </div>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p
-                    class="font-medium text-sm md:text-base inline-block line-through"
-                  >
-                    ฿ 2,000
-                  </p>
-                  <span class="text-[#A8241B] font-medium text-sm md:text-base"
-                    >฿ 1,500</span
-                  >
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <div class="relative">
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
                   <a href="./product-detail.html">
                     <img src="./images/table.png" class="w-full" />
                   </a>
-                  <div
-                    class="badge-product bg-[#C4C4C4] py-1 px-2 text-[10px] rounded font-medium"
-                  >
-                    Out of stock
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
                   </div>
                 </div>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p
-                    class="font-medium text-sm md:text-base text-[#9F9F9F] inline-block"
-                  >
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <div class="relative">
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
                   <a href="./product-detail.html">
                     <img src="./images/table.png" class="w-full" />
                   </a>
-                  <div
-                    class="badge-product bg-[#FFB800] py-1 px-2 text-[10px] rounded font-medium"
-                  >
-                    New
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
                   </div>
                 </div>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
+                    >
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
+                <div
+                  class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
+                >
+                  <a href="./product-detail.html">
+                    <img src="./images/table.png" class="w-full" />
                   </a>
-                </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                  <div class="p-1">
+                    <p
+                      class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
                     >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="bg-white md:bg-transparent hover:shadow-[0_1px_8px_0px_#C4C4C4]"
-              >
-                <a href="./product-detail.html">
-                  <img src="./images/table.png" class="w-full" />
-                </a>
-                <div class="p-1">
-                  <p
-                    class="text-xs md:text-base font-medium h-[32px] md:h-[44px]"
-                  >
-                    END TABLE (beige)
-                  </p>
-                  <p class="font-medium text-sm md:text-base inline-block">
-                    ฿ 2,000
-                  </p>
-                  <a href="./cart.html">
-                    <button
-                      class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
-                    >
-                      <img
-                        src="./images/icons/ico-cart.svg"
-                        alt="cart"
-                        class="w-[14px] h-[14px]"
-                      />
-                      ADD TO CART
-                    </button>
-                  </a>
+                      END TABLE (beige)
+                    </p>
+                    <p class="font-medium text-sm md:text-base inline-block">
+                      ฿ 2,000
+                    </p>
+                    <a href="./cart.html">
+                      <button
+                        class="w-full bg-primary py-4 text-xs text-white font-medium rounded mt-2 flex justify-center items-center gap-2"
+                      >
+                        <img
+                          src="./images/icons/ico-cart.svg"
+                          alt="cart"
+                          class="w-[14px] h-[14px]"
+                        />
+                        ADD TO CART
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="flex justify-center items-center gap-2 p-4">
-          <img src="./images/icons/ico-arrow-left.svg" />
-          <div
-            class="bg-primary p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center text-white"
+          </section>
+          <section class="flex justify-center items-center gap-2 p-4">
+            <img src="./images/icons/ico-arrow-left.svg" />
+            <div
+              class="bg-primary p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center text-white"
+            >
+              1
+            </div>
+            <div
+              class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
+            >
+              2
+            </div>
+            <div
+              class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
+            >
+              3
+            </div>
+            <div
+              class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
+            >
+              4
+            </div>
+            <div
+              class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
+            >
+              5
+            </div>
+            <div
+              class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
+            >
+              ...
+            </div>
+            <img src="./images/icons/ico-arrow-right.svg" />
+          </section>
+          <section
+            class="bg-primary text-white rounded py-2 md:py-6 grid grid-cols-2 md:grid-cols-4 m-4 md:m-0 px-2 md:px-[100px] gap-2"
           >
-            1
+            <div class="flex gap-2 md:gap-4">
+              <img
+                src="./images/icons/icon-product/1.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+              />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">ช้อปง่าย</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  ซื้อของได้ตลอด 24 ชม.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 md:gap-4">
+              <img
+                src="./images/icons/icon-product/2.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+              />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">จัดส่งทั่วไทย</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  ใกล้ไกลแค่ไหนก็จัดส่ง
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 md:gap-4">
+              <img
+                src="./images/icons/icon-product/3.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+              />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">จ่ายง่าย สะดวก</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  ช่องทางชำระเงินหลากหลาย
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 md:gap-4">
+              <img
+                src="./images/icons/icon-product/4.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+              />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">บริการช่วยเหลือ</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  09:00 - 21:00 ทุกวัน
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="container mx-auto hidden md:block">
+        <div class="py-8 flex justify-between">
+          <div class="flex gap-[68px]">
+            <div>
+              <h3 class="text-base font-medium">ประเภทสินค้า</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex flex-col gap-1">
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เต้นท์และทาร์ป</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เฟอร์นิเจอร์</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เครื่องนอน</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >กระเป๋า เป้</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เสื้อผ้า รองเท้า</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อุปกรณ์ให้ความสว่าง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >ถังน้ำแข็ง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >มีดและของมีคม</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >แก๊สและเชื้อเพลิง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เตาแก็ส</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เตาฟืน เตาย่าง BBQ</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เครื่องครัว</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อุปกรณ์ทำอาหาร</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อาหารและเครื่องปรุง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อื่น ๆ</a
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="text-base font-medium">บริการลูกค้า</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex flex-col gap-1">
+                <a
+                  href="./warantee-policy.html"
+                  class="text-sm hover:text-primary"
+                  >ขอเปลี่ยนสินค้า</a
+                >
+                <a
+                  href="./warantee-policy.html"
+                  class="text-sm hover:text-primary"
+                  >ลงทะเบียนรับประกันสินค้า</a
+                >
+                <a
+                  href="./warantee-policy.html"
+                  class="text-sm hover:text-primary"
+                  >นโยบายการรับประกัน</a
+                >
+                <a
+                  href="./personal-policy.html"
+                  class="text-sm hover:text-primary"
+                  >นโยบายความเป็นส่วนตัว</a
+                >
+                <a href="./shop-policy.html" class="text-sm hover:text-primary"
+                  >นโยบายร้านค้า</a
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="text-base font-medium">เกี่ยวกับเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex flex-col gap-1">
+                <a href="./contact.html" class="text-sm hover:text-primary"
+                  >ติดต่อเรา</a
+                >
+                <a href="./contact.html" class="text-sm hover:text-primary"
+                  >สาขาและสถานที่ตั้ง</a
+                >
+                <a href="./article.html" class="text-sm hover:text-primary">
+                  บทความ / ข่าวสาร
+                </a>
+              </div>
+            </div>
           </div>
-          <div
-            class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
-          >
-            2
-          </div>
-          <div
-            class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
-          >
-            3
-          </div>
-          <div
-            class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
-          >
-            4
-          </div>
-          <div
-            class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
-          >
-            5
-          </div>
-          <div
-            class="bg-white p-2 rounded-full w-[30px] h-[30px] flex items-center justify-center"
-          >
-            ...
-          </div>
-          <img src="./images/icons/ico-arrow-right.svg" />
-        </section>
-        <section
-          class="bg-primary text-white rounded py-2 md:py-6 grid grid-cols-2 md:grid-cols-4 m-4 md:m-0 px-2 md:px-[100px] gap-2"
-        >
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/1.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">ช้อปง่าย</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                ซื้อของได้ตลอด 24 ชม.
+          <div class="max-w-[324px]">
+            <div>
+              <h3 class="text-base font-medium">ติดตามเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex mt-2 gap-4">
+                <img
+                  src="./images/icons/icon-contact/ico-facebook.svg"
+                  alt="facebook"
+                />
+                <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
+                <img
+                  src="./images/icons/icon-contact/ico-pinterest.svg"
+                  alt="pinterest"
+                />
+                <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
+                <img
+                  src="./images/icons/icon-contact/ico-tiktok.svg"
+                  alt="tiktok"
+                />
+              </div>
+            </div>
+            <div class="mt-[36px]">
+              <h3 class="text-base font-medium">ติดต่อเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex items-center">
+                <img src="./images/icons/ico-tel.svg" alt="tel" />
+                <p class="ml-1 text-base">โทร 095-002-6622</p>
+              </div>
+              <div class="flex items-center">
+                <img src="./images/icons/ico-email.svg" alt="mail" />
+                <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
+              </div>
+              <p class="text-sm">
+                เว็บไซต์นี้ ดูแลโดยสาขาราชพฤกษ์ และ
+                หนองแขมหากพบปัญหาในการใช้เว็บไซต์ กรุณาติดต่อ:
               </p>
-            </div>
-          </div>
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/2.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">จัดส่งทั่วไทย</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                ใกล้ไกลแค่ไหนก็จัดส่ง
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/3.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">จ่ายง่าย สะดวก</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                ช่องทางชำระเงินหลากหลาย
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/4.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">บริการช่วยเหลือ</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                09:00 - 21:00 ทุกวัน
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="container mx-auto hidden md:block">
-      <div class="py-8 flex justify-between">
-        <div class="flex gap-[68px]">
-          <div>
-            <h3 class="text-base font-medium">ประเภทสินค้า</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex flex-col gap-1">
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เต้นท์และทาร์ป</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เฟอร์นิเจอร์</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เครื่องนอน</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >กระเป๋า เป้</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เสื้อผ้า รองเท้า</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อุปกรณ์ให้ความสว่าง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >ถังน้ำแข็ง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >มีดและของมีคม</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >แก๊สและเชื้อเพลิง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เตาแก็ส</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เตาฟืน เตาย่าง BBQ</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เครื่องครัว</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อุปกรณ์ทำอาหาร</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อาหารและเครื่องปรุง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อื่น ๆ</a
-              >
-            </div>
-          </div>
-          <div>
-            <h3 class="text-base font-medium">บริการลูกค้า</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex flex-col gap-1">
-              <a
-                href="./warantee-policy.html"
-                class="text-sm hover:text-primary"
-                >ขอเปลี่ยนสินค้า</a
-              >
-              <a
-                href="./warantee-policy.html"
-                class="text-sm hover:text-primary"
-                >ลงทะเบียนรับประกันสินค้า</a
-              >
-              <a
-                href="./warantee-policy.html"
-                class="text-sm hover:text-primary"
-                >นโยบายการรับประกัน</a
-              >
-              <a
-                href="./personal-policy.html"
-                class="text-sm hover:text-primary"
-                >นโยบายความเป็นส่วนตัว</a
-              >
-              <a href="./shop-policy.html" class="text-sm hover:text-primary"
-                >นโยบายร้านค้า</a
-              >
-            </div>
-          </div>
-          <div>
-            <h3 class="text-base font-medium">เกี่ยวกับเรา</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex flex-col gap-1">
-              <a href="./contact.html" class="text-sm hover:text-primary"
-                >ติดต่อเรา</a
-              >
-              <a href="./contact.html" class="text-sm hover:text-primary"
-                >สาขาและสถานที่ตั้ง</a
-              >
-               <a href="./article.html" class="text-sm hover:text-primary">
-                บทความ / ข่าวสาร
-              </a>
+              <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
+                <p class="text-primary font-bold text-sm">
+                  Camp One Outdoor Store Ratchaphruek: 
+                </p>
+                <p class="text-sm">5/1 Ratchaphruek Road, T.Bang Krang A.</p>
+                <p class="text-sm">Muang-Nonthaburi 11000 Thailand</p>
+                <div class="flex items-start">
+                  <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
+                  <div class="ml-1">
+                    <p class="text-sm">062-495-5151 / 083-199-2974</p>
+                    <p class="text-sm">(Khun Anuwat M./ Khun Worachat K.)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
+                <p class="text-primary font-bold text-sm">
+                  Camp One Outdoor Store Nongkhaem: 
+                </p>
+                <p class="text-sm">
+                  626 Petchkrasem Nongkahaem Bangkok 10160 Thailand
+                </p>
+                <div class="flex items-center">
+                  <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
+                  <div class="ml-1">
+                    <p class="text-sm">095-456-8535 (Khun Thanawit T.)</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="max-w-[324px]">
-          <div>
-            <h3 class="text-base font-medium">ติดตามเรา</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex mt-2 gap-4">
-              <img
-                src="./images/icons/icon-contact/ico-facebook.svg"
-                alt="facebook"
-              />
-              <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
-              <img
-                src="./images/icons/icon-contact/ico-pinterest.svg"
-                alt="pinterest"
-              />
-              <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
-              <img
-                src="./images/icons/icon-contact/ico-tiktok.svg"
-                alt="tiktok"
-              />
-            </div>
+        <hr />
+        <div class="text-center py-[30px] flex justify-center items-center">
+          <img src="./images/logo-outline.svg" alt="logo" />
+          <p class="text-sm font-medium">Copyright © 2022 camponeoutdoor.com</p>
+        </div>
+      </footer>
+      <footer class="container mx-auto block md:hidden">
+        <div class="flex justify-center py-4">
+          <img
+            src="./images/logo-outline.svg"
+            width="60"
+            height="60"
+            alt="logo"
+          />
+        </div>
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">ติดต่อเรา</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-1-button"
+              onclick="toggleFooter1(event)"
+            />
           </div>
-          <div class="mt-[36px]">
-            <h3 class="text-base font-medium">ติดต่อเรา</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div id="footer-1-container" class="hidden">
             <div class="flex items-center">
               <img src="./images/icons/ico-tel.svg" alt="tel" />
               <p class="ml-1 text-base">โทร 095-002-6622</p>
@@ -1633,10 +1759,6 @@
               <img src="./images/icons/ico-email.svg" alt="mail" />
               <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
             </div>
-            <p class="text-sm">
-              เว็บไซต์นี้ ดูแลโดยสาขาราชพฤกษ์ และ
-              หนองแขมหากพบปัญหาในการใช้เว็บไซต์ กรุณาติดต่อ:
-            </p>
             <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
               <p class="text-primary font-bold text-sm">
                 Camp One Outdoor Store Ratchaphruek: 
@@ -1667,166 +1789,104 @@
             </div>
           </div>
         </div>
-      </div>
-      <hr />
-      <div class="text-center py-[30px] flex justify-center items-center">
-        <img src="./images/logo-outline.svg" alt="logo" />
-        <p class="text-sm font-medium">Copyright © 2022 camponeoutdoor.com</p>
-      </div>
-    </footer>
-   <footer class="container mx-auto block md:hidden">
-      <div class="flex justify-center py-4">
-        <img
-          src="./images/logo-outline.svg"
-          width="60"
-          height="60"
-          alt="logo"
-        />
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">ติดต่อเรา</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-1-button"
-            onclick="toggleFooter1(event)"
-          />
-        </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div id="footer-1-container" class="hidden">
-          <div class="flex items-center">
-            <img src="./images/icons/ico-tel.svg" alt="tel" />
-            <p class="ml-1 text-base">โทร 095-002-6622</p>
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">ประเภทสินค้า</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-2-button"
+              onclick="toggleFooter2(event)"
+            />
           </div>
-          <div class="flex items-center">
-            <img src="./images/icons/ico-email.svg" alt="mail" />
-            <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
-          </div>
-          <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
-            <p class="text-primary font-bold text-sm">
-              Camp One Outdoor Store Ratchaphruek: 
-            </p>
-            <p class="text-sm">5/1 Ratchaphruek Road, T.Bang Krang A.</p>
-            <p class="text-sm">Muang-Nonthaburi 11000 Thailand</p>
-            <div class="flex items-start">
-              <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
-              <div class="ml-1">
-                <p class="text-sm">062-495-5151 / 083-199-2974</p>
-                <p class="text-sm">(Khun Anuwat M./ Khun Worachat K.)</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
-            <p class="text-primary font-bold text-sm">
-              Camp One Outdoor Store Nongkhaem: 
-            </p>
-            <p class="text-sm">
-              626 Petchkrasem Nongkahaem Bangkok 10160 Thailand
-            </p>
-            <div class="flex items-center">
-              <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
-              <div class="ml-1">
-                <p class="text-sm">095-456-8535 (Khun Thanawit T.)</p>
-              </div>
-            </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden flex-col gap-1" id="footer-2-container">
+            <a href="./products.html">เต้นท์และทาร์ป</a>
+            <a href="./products.html">เฟอร์นิเจอร์</a>
+            <a href="./products.html">เครื่องนอน</a>
+            <a href="./products.html">กระเป๋า เป้</a>
+            <a href="./products.html">เสื้อผ้า รองเท้า</a>
+            <a href="./products.html">อุปกรณ์ให้ความสว่าง</a>
+            <a href="./products.html">ถังน้ำแข็ง</a>
+            <a href="./products.html">มีดและของมีคม</a>
+            <a href="./products.html">แก๊สและเชื้อเพลิง</a>
+            <a href="./products.html">เตาแก็ส</a>
+            <a href="./products.html">เตาฟืน เตาย่าง BBQ</a>
+            <a href="./products.html">เครื่องครัว</a>
+            <a href="./products.html">อุปกรณ์ทำอาหาร</a>
+            <a href="./products.html">อาหารและเครื่องปรุง</a>
+            <a href="./products.html">อื่น ๆ</a>
           </div>
         </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">ประเภทสินค้า</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-2-button"
-            onclick="toggleFooter2(event)"
-          />
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">บริการลูกค้า</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-3-button"
+              onclick="toggleFooter3(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden flex-col gap-1" id="footer-3-container">
+            <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
+            <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
+            <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
+            <a href="./personal-policy.html">นโยบายความเป็นส่วนตัว</a>
+            <a href="./shop-policy.html">นโยบายร้านค้า</a>
+          </div>
         </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden flex-col gap-1" id="footer-2-container">
-          <a href="./products.html">เต้นท์และทาร์ป</a>
-          <a href="./products.html">เฟอร์นิเจอร์</a>
-          <a href="./products.html">เครื่องนอน</a>
-          <a href="./products.html">กระเป๋า เป้</a>
-          <a href="./products.html">เสื้อผ้า รองเท้า</a>
-          <a href="./products.html">อุปกรณ์ให้ความสว่าง</a>
-          <a href="./products.html">ถังน้ำแข็ง</a>
-          <a href="./products.html">มีดและของมีคม</a>
-          <a href="./products.html">แก๊สและเชื้อเพลิง</a>
-          <a href="./products.html">เตาแก็ส</a>
-          <a href="./products.html">เตาฟืน เตาย่าง BBQ</a>
-          <a href="./products.html">เครื่องครัว</a>
-          <a href="./products.html">อุปกรณ์ทำอาหาร</a>
-          <a href="./products.html">อาหารและเครื่องปรุง</a>
-          <a href="./products.html">อื่น ๆ</a>
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">เกี่ยวกับเรา</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-4-button"
+              onclick="toggleFooter4(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden flex-col gap-1" id="footer-4-container">
+            <a href="./contact.html">ติดต่อเรา</a>
+            <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
+            <p href="./article.html">บทความ / ข่าวสาร</p>
+          </div>
         </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">บริการลูกค้า</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-3-button"
-            onclick="toggleFooter3(event)"
-          />
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">ติดตามเรา</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-5-button"
+              onclick="toggleFooter5(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden mt-4 gap-4" id="footer-5-container">
+            <img
+              src="./images/icons/icon-contact/ico-facebook.svg"
+              alt="facebook"
+            />
+            <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
+            <img
+              src="./images/icons/icon-contact/ico-pinterest.svg"
+              alt="pinterest"
+            />
+            <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
+            <img
+              src="./images/icons/icon-contact/ico-tiktok.svg"
+              alt="tiktok"
+            />
+          </div>
         </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden flex-col gap-1" id="footer-3-container">
-          <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
-          <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
-          <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
-          <a href="./personal-policy.html">นโยบายความเป็นส่วนตัว</a>
-          <a href="./shop-policy.html">นโยบายร้านค้า</a>
+        <div class="text-center py-4 flex justify-center items-center">
+          <p class="text-xs font-medium">Copyright © 2022 camponeoutdoor.com</p>
         </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">เกี่ยวกับเรา</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-4-button"
-            onclick="toggleFooter4(event)"
-          />
-        </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden flex-col gap-1" id="footer-4-container">
-          <a href="./contact.html">ติดต่อเรา</a>
-          <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
-          <p href="./article.html">บทความ / ข่าวสาร</p>
-        </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">ติดตามเรา</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-5-button"
-            onclick="toggleFooter5(event)"
-          />
-        </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden mt-4 gap-4" id="footer-5-container">
-          <img
-            src="./images/icons/icon-contact/ico-facebook.svg"
-            alt="facebook"
-          />
-          <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
-          <img
-            src="./images/icons/icon-contact/ico-pinterest.svg"
-            alt="pinterest"
-          />
-          <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
-          <img src="./images/icons/icon-contact/ico-tiktok.svg" alt="tiktok" />
-        </div>
-      </div>
-      <div class="text-center py-4 flex justify-center items-center">
-        <p class="text-xs font-medium">Copyright © 2022 camponeoutdoor.com</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
   <script src="./script/layout.js"></script>
   <script src="./script/footer.js"></script>

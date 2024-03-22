@@ -43,6 +43,9 @@ window.onclick = function (event) {
 };
 
 searchIcon.addEventListener("click", () => {
+  document.getElementById("search-container").classList.remove("gap-3");
+  document.getElementById("search-container").classList.remove("w-full");
+  document.getElementById("search-container").classList.add("w-[277px]");
   logo.classList.add("hidden");
   logoText.classList.add("hidden");
   searchIcon.classList.add("hidden");
@@ -102,9 +105,13 @@ aboutMinusButton.addEventListener("click", () => {
   aboutMinusButton.classList.remove("block");
   aboutMinusButton.classList.add("hidden");
 });
+
+const overlay = document.getElementById("overlay")
 burger.addEventListener("click", () => {
   drawer.classList.toggle("active");
+  overlay.classList.toggle("overlay")
 });
 close.addEventListener("click", () => {
   drawer.classList.remove("active");
+  overlay.classList.remove("overlay")
 });

@@ -35,7 +35,9 @@
   </head>
   <body>
     <div id="drawer" class="">
-      <img src="./images/icons/ico-close-white.svg" id="close" alt="close" />
+      <div class="mt-2 flex justify-end w-full">
+        <img src="./images/icons/ico-close-white.svg" id="close" alt="close" />
+      </div>
       <div class="flex text-white items-center">
         <img src="./images/logo.svg" alt="logo" />
         <p class="text-sm font-bold">Camp One Outdoor</p>
@@ -57,7 +59,10 @@
           />
         </div>
         <div class="w-full h-[1px] bg-white my-2"></div>
-         <div class="text-white text-sm hidden flex flex-col gap-1" id="category-section">
+        <div
+          class="text-white text-sm hidden flex flex-col gap-1"
+          id="category-section"
+        >
           <a href="./products.html">เต้นท์และทาร์ป</a>
           <a href="./products.html">เฟอร์นิเจอร์</a>
           <a href="./products.html">เครื่องนอน</a>
@@ -92,7 +97,10 @@
           />
         </div>
         <div class="w-full h-[1px] bg-white my-2"></div>
-       <div class="text-white text-sm hidden flex flex-col gap-1" id="service-section">
+        <div
+          class="text-white text-sm hidden flex flex-col gap-1"
+          id="service-section"
+        >
           <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
           <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
           <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
@@ -117,7 +125,10 @@
           />
         </div>
         <div class="w-full h-[1px] bg-white my-2"></div>
-       <div class="text-white text-sm hidden flex flex-col gap-1" id="about-section">
+        <div
+          class="text-white text-sm hidden flex flex-col gap-1"
+          id="about-section"
+        >
           <a href="./contact.html">ติดต่อเรา</a>
           <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
           <p href="./article.html">บทความ / ข่าวสาร</p>
@@ -129,1209 +140,1334 @@
         </div>
       </div>
     </div>
-    <nav class="h-[52px] md:h-20 bg-primary flex items-center">
-      <div class="container flex mx-auto justify-between px-4 md:px-0">
-        <div class="flex items-center">
-          <img
-            id="burger"
-            src="./images/icons/ico-menu.svg"
-            alt="logo"
-            class="w-6 mr-2 block md:hidden"
-          />
-           <a href="./index.html">
+    <div class="" id="overlay">
+      <nav class="h-[52px] md:h-20 bg-primary flex items-center">
+        <div class="container flex mx-auto justify-between px-4 md:px-0">
+          <div class="flex items-center">
             <img
-              src="./images/logo.svg"
+              id="burger"
+              src="./images/icons/ico-menu.svg"
               alt="logo"
-              class="w-9 md:w-12 md:block"
-              id="logo"
+              class="w-6 mr-2 block md:hidden"
             />
-          </a>
-          <a href="./index.html">
-            <div
-              class="text-white text-sm md:text-xl font-bold ml-0 md:ml-2 md:block"
-              id="logo-text"
+            <a href="./index.html">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="w-9 md:w-12 md:block"
+                id="logo"
+              />
+            </a>
+            <a href="./index.html">
+              <div
+                class="text-white text-sm md:text-xl font-bold ml-0 md:ml-2 md:block"
+                id="logo-text"
+              >
+                Camp One Outdoor
+              </div>
+            </a>
+          </div>
+         <div class="flex items-center gap-3 md:gap-6" id="search-container">
+            <form
+              class="rounded-3xl px-4 py-2 bg-white hidden w-full md:flex items-center"
+              id="form-search"
             >
-              Camp One Outdoor
-            </div>
-          </a>
-        </div>
-        <div class="flex items-center gap-3 md:gap-6">
-          <form
-            class="rounded-3xl px-4 py-2 bg-white hidden md:flex items-center"
-            id="form-search"
-          >
-            <input
-              type="text"
-              class="bg-white md:w-[300px] lg:w-[533px]"
-              placeholder="ค้นหา"
-            />
-            <button type="submit">
-              <img src="./images/icons/ico-search.svg" alt="logo" />
-            </button>
-          </form>
+              <input
+                type="text"
+                class="bg-white w-full md:w-[300px] lg:w-[533px]"
+                placeholder="ค้นหา"
+              />
+              <button type="submit">
+                <img src="./images/icons/ico-search.svg" alt="logo" />
+              </button>
+            </form>
 
-          <img
-            src="./images/icons/ico-search-white.svg"
-            alt="logo"
-            class="w-5 block md:hidden"
-            id="icon-search"
-          />
-          <a href="./my-account.html">
             <img
-              src="./images/icons/ico-avatar.svg"
+              src="./images/icons/ico-search-white.svg"
               alt="logo"
-              class="w-5 md:w-6 md:block"
-              id="icon-avatar"
+              class="w-5 block md:hidden"
+              id="icon-search"
             />
-          </a>
-           <a href="./cart.html">
-            <img
-              src="./images/icons/ico-cart.svg"
-              alt="logo"
-              class="w-5 md:w-6 md:block"
-              id="icon-cart"
-            />
-          </a>
+            <a href="./my-account.html">
+              <img
+                src="./images/icons/ico-avatar.svg"
+                alt="logo"
+                class="w-5 md:w-6 md:block"
+                id="icon-avatar"
+              />
+            </a>
+            <a href="./cart.html">
+              <img
+                src="./images/icons/ico-cart.svg"
+                alt="logo"
+                class="w-5 md:w-6 md:block"
+                id="icon-cart"
+              />
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
-    <nav class="hidden md:block h-[48px] border-[#D9D9D9] border-b relative">
-      <div class="container mx-auto h-full flex items-center">
+      </nav>
+      <nav class="hidden md:block h-[48px] border-[#D9D9D9] border-b relative">
+        <div class="container mx-auto h-full flex items-center">
+          <div
+            class="flex h-full p-4 items-center border-[#D9D9D9] border-r dropdown"
+            onclick="clickDropdown()"
+          >
+            <img
+              src="./images/icons/icon-category/ico-menu-black.svg"
+              alt="menu"
+              class="dropdown-item"
+            />
+            <p class="text-xs ml-2 font-medium dropdown-item">
+              หมวดหมู่สินค้าทั้งหมด
+            </p>
+          </div>
+          <div class="flex items-center justify-around w-[calc(100%_-_170px)]">
+            <div class="flex items-center">
+              <img src="./images/icons/icon-category/ico-new.svg" alt="menu" />
+              <p class="text-xs ml-2 font-medium">สินค้ามาใหม่</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-percent.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">สินค้าโปรโมชัน</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./images/icons/icon-category/ico-tent.svg" alt="menu" />
+              <p class="text-xs ml-2 font-medium">เต็นท์ & ทาร์ป</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-chair.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">เฟอร์นิเจอร์</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./images/icons/icon-category/ico-gas.svg" alt="menu" />
+              <p class="text-xs ml-2 font-medium">แก๊สและเชื้อเพลิง</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-trash.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">ถังน้ำแข็ง</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-knife.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">มีดและของมีคม</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-lightbulb.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">อุปกรณ์ให้ความสว่าง</p>
+            </div>
+          </div>
+        </div>
         <div
-          class="flex h-full p-4 items-center border-[#D9D9D9] border-r dropdown"
-          onclick="clickDropdown()"
+          class="dropdown-content hidden w-full absolute bg-white mt-[2px]"
+          id="dropdown-content"
         >
-          <img
-            src="./images/icons/icon-category/ico-menu-black.svg"
-            alt="menu"
-            class="dropdown-item"
-          />
-          <p class="text-xs ml-2 font-medium dropdown-item">
-            หมวดหมู่สินค้าทั้งหมด
-          </p>
-        </div>
-        <div class="flex items-center justify-around w-[calc(100%_-_170px)]">
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-new.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">สินค้ามาใหม่</p>
-          </div>
-          <div class="flex items-center">
-            <img
-              src="./images/icons/icon-category/ico-percent.svg"
-              alt="menu"
-            />
-            <p class="text-xs ml-2 font-medium">สินค้าโปรโมชัน</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-tent.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">เต็นท์ & ทาร์ป</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-chair.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">เฟอร์นิเจอร์</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-gas.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">แก๊สและเชื้อเพลิง</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-trash.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">ถังน้ำแข็ง</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-knife.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">มีดและของมีคม</p>
-          </div>
-          <div class="flex items-center">
-            <img
-              src="./images/icons/icon-category/ico-lightbulb.svg"
-              alt="menu"
-            />
-            <p class="text-xs ml-2 font-medium">อุปกรณ์ให้ความสว่าง</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="dropdown-content hidden w-full absolute bg-white mt-[2px]"
-        id="dropdown-content"
-      >
-        <div class="container mx-auto py-6 flex gap-8">
-          <div class="py-5 bg-primary w-[182px] text-center text-white rounded">
-            <img src="./images/logo-big.svg" alt="logo" class="mx-auto" />
-            <p class="mt-2 text-sm font-medium">Camp One Outdoor</p>
-            <p class="mt-2 text-xs px-4 font-medium">
-              ร้านจำหน่ายอุปกรณ์แคมป์ปิ้ง คุณภาพดีจากต่างประเทศ
-              สำหรับผู้รักการท่องเที่ยว
-            </p>
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-base font-medium">มาใหม่และลดราคา</h4>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold"
-              >สินค้ามาใหม่</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold mt-1"
-              >สินค้าโปรโมชัน</a
-            >
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-base font-medium">ของใช้แคมป์ปิ้ง</h4>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold"
-              >เต้นท์และทาร์ป</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เฟอร์นิเจอร์</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เครื่องนอน</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >กระเป๋า เป้</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เสื้อผ้า รองเท้า</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >ตะเกียงและโคมไฟ</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >อื่น ๆ</a
-            >
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-base font-medium">เครื่องครัว ทำอาหาร</h4>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold"
-              >เตาแก็ส</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เตาฟืน เตาย่าง BBQ</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เชื้อเพลิง แก๊สกระป๋อง</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >อุปกรณ์ทำอาหาร</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เครื่องครัว</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >คูลเลอร์</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >มีดและของมีคม</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >อาหาร</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
-    <main class="bg-[#F8F8F8]">
-      <div class="container mx-auto pb-4">
-        <section class="p-4">
-          <div class="text-xs">
-            <p class="inline-block">หน้าแรก</p>
-            <span class="text-[#d9d9d9]"> / สั่งซื้อ</span>
-          </div>
-        </section>
-        <section class="p-4 text-center text-[24px] md:text-[40px] font-medium">
-          สั่งซื้อ
-        </section>
-        <section class="mx-2 md:mx-0">
-          <div
-            class="w-full border border-[#0A7ACC] bg-[#DAEAF6] p-4 flex gap-2 text-xs items-center rounded"
-          >
-            <img src="./images/icons/ico-info.svg" alt="info" />
-            <p>
-              หากคุณเป็นลูกค้าเก่า กรุณา
-              <a href="./login.html" class="underline text-[#0A7ACC] font-bold"
-                >คลิกที่นี่เพื่อเข้าสู่ระบบ</a
-              >
-            </p>
-          </div>
-          <div
-            class="mt-2 w-full border border-[#0A7ACC] bg-[#DAEAF6] p-4 flex gap-2 text-xs items-center rounded"
-          >
-            <img src="./images/icons/ico-info.svg" alt="info" />
-            <p>
-              หากคุณมีคูปองส่วนลด
-              <a href="./login.html" class="underline text-[#0A7ACC] font-bold"
-                >คลิกที่นี่ใส่รหัสคูปอง</a
-              >
-            </p>
-          </div>
-          <div class="my-6 flex flex-wrap md:flex-nowrap gap-3">
+          <div class="container mx-auto py-6 flex gap-8">
             <div
-              class="w-full md:w-8/12 rounded shadow-[0_1px_8px_0px_#C4C4C4] p-6 bg-white"
+              class="py-5 bg-primary w-[182px] text-center text-white rounded"
             >
-              <div class="text-base md:text-2xl font-bold">ข้อมูลผู้ซื้อ</div>
-              <div class="flex gap-2 mt-4 flex-wrap md:flex-nowrap">
-                <button
-                  class="w-full md:w-1/3 border border-[#9F9F9F] bg-[#F8F8F8] py-4 flex justify-center items-center gap-2 rounded"
-                >
-                  <img src="./images/icons/icon-login/ico-face-color.svg" />
-                  <div class="text-xs font-medium">
-                    เข้าสู่ระบบด้วย <span class="font-bold">Facebook</span>
-                  </div>
-                </button>
-                <button
-                  class="w-full md:w-1/3 border border-[#9F9F9F] bg-[#F8F8F8] py-4 flex justify-center items-center gap-2 rounded"
-                >
-                  <img src="./images/icons/icon-login/ico-google-color.svg" />
-                  <div class="text-xs font-medium">
-                    เข้าสู่ระบบด้วย <span class="font-bold">Google</span>
-                  </div>
-                </button>
-                <button
-                  class="w-full md:w-1/3 border border-[#9F9F9F] bg-[#F8F8F8] py-4 flex justify-center items-center gap-2 rounded"
-                >
-                  <img src="./images/icons/icon-login/ico-line-color.svg" />
-                  <div class="text-xs font-medium">
-                    เข้าสู่ระบบด้วย <span class="font-bold">Line</span>
-                  </div>
-                </button>
-              </div>
-              <div class="bg-[#9F9F9F] w-full h-[1px] my-4"></div>
-              <form>
-                <div class="flex flex-wrap">
-                  <div class="w-full md:w-1/2 p-1">
-                    <label class="font-medium text-sm">
-                      ชื่อจริง <span class="text-[#A8241B]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                    />
-                  </div>
-                  <div class="w-full md:w-1/2 p-1">
-                    <label class="font-medium text-sm">
-                      นามสกุล <span class="text-[#A8241B]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                    />
-                  </div>
-                  <div class="w-full p-1">
-                    <label class="font-medium text-sm">
-                      ประเทศ <span class="text-[#A8241B]">*</span>
-                    </label>
-                    <select
-                      class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                    >
-                      <option value="volvo">ไทย</option>
-                      <option value="volvo">ลาว</option>
-                      <option value="volvo">มาเลเซีย</option>
-                      <option value="volvo">สิงคโปร์</option>
-                    </select>
-                  </div>
-                  <div class="w-full p-1">
-                    <label class="font-medium text-sm">
-                      ที่อยู่ <span class="text-[#A8241B]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                    />
-                  </div>
-                  <div class="w-full md:w-1/2 p-1">
-                    <label class="font-medium text-sm">
-                      อำเภอ <span class="text-[#A8241B]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                    />
-                  </div>
-                  <div class="w-full md:w-1/2 p-1">
-                    <label class="font-medium text-sm">
-                      จังหวัด <span class="text-[#A8241B]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                    />
-                  </div>
-                  <div class="w-full p-1">
-                    <label class="font-medium text-sm">
-                      รหัสไปรษณีย์ <span class="text-[#A8241B]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                    />
-                  </div>
-                  <div class="w-full p-1">
-                    <label class="font-medium text-sm">
-                      อีเมล <span class="text-[#A8241B]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                    />
-                  </div>
-                  <div class="w-full p-1">
-                    <label class="font-medium text-sm">
-                      ที่อยู่ <span class="text-[#A8241B]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                    />
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div
-              class="w-full md:w-4/12 rounded shadow-[0_1px_8px_0px_#C4C4C4] p-6 bg-white"
-            >
-              <div class="text-base md:text-2xl font-bold">
-                รายการสั่งซื้อของคุณ
-              </div>
-              <div class="flex flex-col gap-4 my-4">
-                <div class="flex justify-between">
-                  <p class="text-sm md:text-base">สินค้า</p>
-                  <p class="text-sm md:text-base">ยอดรวม</p>
-                </div>
-                <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
-                <div class="flex justify-between">
-                  <p class="text-sm md:text-base">
-                    COSY FOLDING CHAIR (black)...
-                  </p>
-                  <p class="text-sm md:text-base">฿ 7,565</p>
-                </div>
-                <div class="flex justify-between">
-                  <p class="text-sm md:text-base">
-                    COSY FOLDING CHAIR (black)...
-                  </p>
-                  <p class="text-sm md:text-base">฿ 7,565</p>
-                </div>
-                <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
-                <div class="flex justify-between">
-                  <p class="text-sm md:text-base font-bold">ยอดรวม</p>
-                  <p class="text-sm md:text-base font-bold">฿ 15,130</p>
-                </div>
-                <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
-                <div class="flex justify-between">
-                  <p class="text-sm md:text-base font-bold">การจัดส่ง</p>
-                  <p class="text-sm md:text-base font-bold">จัดส่งฟรี</p>
-                </div>
-                <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
-                <div class="flex justify-between">
-                  <p class="text-sm md:text-base font-bold">รวม</p>
-                  <p class="text-sm md:text-base font-bold">฿ 15,130</p>
-                </div>
-                <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
-              </div>
-              <div class="text-base md:text-2xl font-bold">
-                เลือกวิธีการชำระเงิน
-              </div>
-              <div class="flex flex-col gap-2 my-4">
-                <div
-                  class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
-                  id="radio-box-1"
-                  onclick="radioChecked(1)"
-                >
-                  <div
-                    class="radio-container flex gap-2 cursor-pointer"
-                    id="radio-1"
-                  >
-                    <input
-                      type="radio"
-                      name="contact"
-                      class="accent-primary w-4 h-4"
-                      id="radio-input-1"
-                    />
-                    <p class="text-xs md:text-sm inline-block">
-                      โอนเงินเข้าบัญชีธนาคาร
-                    </p>
-                  </div>
-                  <div class="radio-tile pl-6" id="radio-tile-1">
-                    <p class="text-[10px] mt-2">
-                      เมื่อโอนเงิน แจ้งชำระเงินพร้อมสลิปโอนเงินเรียบร้อย ผ่านทาง
-                      LineOfficial หรือ Facebook
-                      ทางเราจะตรวจสอบและดำเนินการจัดส่งสินค้าให้คุณต่อไป
-                    </p>
-                    <div class="p-2 rounded bg-white flex gap-2 mt-2">
-                      <div class="w-1/3">
-                        <img src="./images/scb.png" class="w-full" />
-                      </div>
-                      <div class="w-2/3 flex-col gap-1">
-                        <div class="flex gap-1">
-                          <p class="text-xs">
-                            เลขที่บัญชี:
-                            <span class="font-bold">162-417226-9</span>
-                          </p>
-                          <img src="./images/icons/ico-copy.svg" />
-                        </div>
-                        <p class="text-xs">
-                          ชื่อบัญชี: คุณ ฉัตรมงคล ตั้งประเสริฐ
-                        </p>
-                        <p class="text-xs">
-                          ธนาคาร: ธ.ไทยพาณิชย์ (SCB) สาขาเดอะมอลล์ บางแค
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
-                  id="radio-box-2"
-                  onclick="radioChecked(2)"
-                >
-                  <div
-                    class="radio-container flex gap-2 cursor-pointer"
-                    id="radio-2"
-                  >
-                    <input
-                      type="radio"
-                      name="contact"
-                      class="accent-primary w-4 h-4"
-                      id="radio-input-2"
-                    />
-                    <p class="text-xs md:text-sm inline-block">
-                      Credit Card / Debit Card
-                    </p>
-                  </div>
-                  <div class="radio-tile mt-2 pl-6" id="radio-tile-2">
-                    <div class="flex flex-col gap-1">
-                      <div class="w-full">
-                        <label class="font-medium text-sm">
-                          Card number <span class="text-[#A8241B]">*</span>
-                        </label>
-                        <input
-                          type="text"
-                          class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                        />
-                      </div>
-                      <div class="w-full">
-                        <label class="font-medium text-sm">
-                          Name on card <span class="text-[#A8241B]">*</span>
-                        </label>
-                        <input
-                          type="text"
-                          class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                        />
-                      </div>
-                      <div class="w-full">
-                        <label class="font-medium text-sm">
-                          Expiry date <span class="text-[#A8241B]">*</span>
-                        </label>
-                        <input
-                          type="text"
-                          class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                        />
-                      </div>
-                      <div class="w-full">
-                        <label class="font-medium text-sm">
-                          Security code <span class="text-[#A8241B]">*</span>
-                        </label>
-                        <input
-                          type="text"
-                          class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
-                  id="radio-box-3"
-                  onclick="radioChecked(3)"
-                >
-                  <div
-                    class="radio-container flex gap-2 cursor-pointer"
-                    id="radio-3"
-                  >
-                    <input
-                      type="radio"
-                      name="contact"
-                      class="accent-primary w-4 h-4"
-                      id="radio-input-3"
-                    />
-                    <p class="text-xs md:text-sm inline-block">Installments</p>
-                  </div>
-                  <div class="radio-tile mt-2 pl-6" id="radio-tile-3">
-                    <div class="flex flex-col gap-2">
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-1"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/kbank.png"
-                              alt="kbank"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">Kasikorn Bank</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                (Interest 0.65%)
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="ml-6 mt-2">
-                          <select
-                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                          >
-                            <option value="volvo">
-                              3 months (฿1,408 / months)
-                            </option>
-                          </select>
-                        </div>
-                      </div>
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/scb.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">Siam Commercial Bank (SCB)</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                (Interest 0.74%)
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="ml-6 mt-2">
-                          <select
-                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                          >
-                            <option value="volvo">
-                              3 months (฿1,408 / months)
-                            </option>
-                          </select>
-                        </div>
-                      </div>
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/bangkok.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">Bangkok Bank</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                (Interest 0.74%)
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="ml-6 mt-2">
-                          <select
-                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                          >
-                            <option value="volvo">
-                              3 months (฿1,408 / months)
-                            </option>
-                          </select>
-                        </div>
-                      </div>
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/krungsri.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">Krungsri</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                (Interest 0.74%)
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="ml-6 mt-2">
-                          <select
-                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                          >
-                            <option value="volvo">
-                              3 months (฿1,408 / months)
-                            </option>
-                          </select>
-                        </div>
-                      </div>
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/first-choice.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">Krungsri First Choice</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                (Interest 1.16%)
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="ml-6 mt-2">
-                          <select
-                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                          >
-                            <option value="volvo">
-                              3 months (฿1,408 / months)
-                            </option>
-                          </select>
-                        </div>
-                      </div>
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/ktc.png"
-                              alt="ktc"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">Krungthai Card (KTC))</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                (Interest 0.74%)
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="ml-6 mt-2">
-                          <select
-                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
-                          >
-                            <option value="volvo">
-                              3 months (฿1,408 / months)
-                            </option>
-                          </select>
-                        </div>
-                      </div>
-                      <p class="text-[10px]">
-                        Monthly payment rates shown may be inaccurate as
-                        interest rates are subject to change by its bank issuer.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
-                  id="radio-box-4"
-                  onclick="radioChecked(4)"
-                >
-                  <div
-                    class="radio-container flex gap-2 cursor-pointer"
-                    id="radio-4"
-                  >
-                    <input
-                      type="radio"
-                      name="contact"
-                      class="accent-primary w-4 h-4"
-                      id="radio-input-4"
-                    />
-                    <p class="text-xs md:text-sm inline-block">
-                      Internet Banking
-                    </p>
-                  </div>
-                  <div class="radio-tile mt-2 pl-6" id="radio-tile-4">
-                    <div class="flex flex-col gap-2">
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/bangkok.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">Bangkok Bank</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                Fee: ฿10 (same zone) / ฿20 (out zone)
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/krungsri.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">Krungsri</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                Fee: ฿10 (same zone) / ฿20 (out zone)
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
-                  id="radio-box-5"
-                  onclick="radioChecked(5)"
-                >
-                  <div
-                    class="radio-container flex gap-2 cursor-pointer"
-                    id="radio-5"
-                  >
-                    <input
-                      type="radio"
-                      name="contact"
-                      class="accent-primary w-4 h-4"
-                      id="radio-input-5"
-                    />
-                    <p class="text-xs md:text-sm inline-block">
-                      Mobile Banking
-                    </p>
-                  </div>
-                  <div class="radio-tile mt-2 pl-6" id="radio-tile-5">
-                    <div class="flex flex-col gap-2">
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/kbank.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">K PLUS</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                Kasikorn Bank Application
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/scb.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">SCB EASY</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                Siam Commercial Bank Application
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/bangkok.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">Bualuang mBanking</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                Bangkok Bank Application
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="p-4 bg-[#F8F8F8] border border-primary rounded"
-                      >
-                        <div class="flex gap-2">
-                          <input
-                            type="radio"
-                            name="bank"
-                            class="accent-primary w-4 h-4"
-                            id="radio-bank-2"
-                          />
-                          <div class="flex gap-2">
-                            <img
-                              src="./images/krungsri.png"
-                              alt="scb"
-                              class="w-[38px]"
-                            />
-                            <div>
-                              <p class="text-sm">KMA</p>
-                              <p class="text-[10px] text-[#9F9F9F]">
-                                Krungsri Application
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
-                  id="radio-box-6"
-                  onclick="radioChecked(6)"
-                >
-                  <div
-                    class="radio-container flex gap-2 cursor-pointer"
-                    id="radio-6"
-                  >
-                    <input
-                      type="radio"
-                      name="contact"
-                      class="accent-primary w-4 h-4"
-                      id="radio-input-6"
-                    />
-                    <p class="text-xs md:text-sm inline-block">
-                      TrueMoney Wallet
-                    </p>
-                  </div>
-                  <div class="radio-tile mt-2 pl-6" id="radio-tile-6">
-                    <div class="p-2 rounded bg-white flex flex-col gap-1">
-                      <p class="text-xs">TrueMoney phone number</p>
-                      <div class="flex items-center">
-                        <input type="checkbox" class="w-3 h-3" />
-                        <p class="text-xs ml-2">Same as Billing Detail</p>
-                      </div>
-                      <p class="text-[10px] text-[#9F9F9F]">
-                        One-Time Password (OTP) will be sent to the phone number
-                        above
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <p class="text-[10px]">
-                  Your personal data will be used to process your order, support
-                  your experience throughout this website, and for other
-                  purposes described in our นโยบายความเป็นส่วนตัว.
-                </p>
-                <div class="my-4 flex gap-1 items-start">
-                  <input type="checkbox" class="w-4 h-4" />
-                  <p class="text-[10px]">
-                    ฉันได้อ่านและยอมรับข้อตกลงและกฏระเบียบของเว็บไซต์นี้ ข้อกำหนดและเงื่อนไข*
-                  </p>
-                </div>
-                <button class="w-full bg-[#A8241B] h-[54px] rounded text-white">
-                  สั่งซื้อ
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          class="bg-primary text-white rounded py-2 md:py-6 grid grid-cols-2 md:grid-cols-4 m-4 md:m-0 px-2 md:px-[100px] gap-2"
-        >
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/1.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">ช้อปง่าย</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                ซื้อของได้ตลอด 24 ชม.
+              <img src="./images/logo-big.svg" alt="logo" class="mx-auto" />
+              <p class="mt-2 text-sm font-medium">Camp One Outdoor</p>
+              <p class="mt-2 text-xs px-4 font-medium">
+                ร้านจำหน่ายอุปกรณ์แคมป์ปิ้ง คุณภาพดีจากต่างประเทศ
+                สำหรับผู้รักการท่องเที่ยว
               </p>
             </div>
-          </div>
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/2.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">จัดส่งทั่วไทย</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                ใกล้ไกลแค่ไหนก็จัดส่ง
-              </p>
+            <div class="flex flex-col">
+              <h4 class="text-base font-medium">มาใหม่และลดราคา</h4>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold"
+                >สินค้ามาใหม่</a
+              >
+              <a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold mt-1"
+                >สินค้าโปรโมชัน</a
+              >
             </div>
-          </div>
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/3.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">จ่ายง่าย สะดวก</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                ช่องทางชำระเงินหลากหลาย
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/4.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">บริการช่วยเหลือ</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                09:00 - 21:00 ทุกวัน
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="container mx-auto hidden md:block">
-      <div class="py-8 flex justify-between">
-        <div class="flex gap-[68px]">
-          <div>
-            <h3 class="text-base font-medium">ประเภทสินค้า</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex flex-col gap-1">
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+            <div class="flex flex-col">
+              <h4 class="text-base font-medium">ของใช้แคมป์ปิ้ง</h4>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold"
                 >เต้นท์และทาร์ป</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เฟอร์นิเจอร์</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เครื่องนอน</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >กระเป๋า เป้</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เสื้อผ้า รองเท้า</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อุปกรณ์ให้ความสว่าง</a
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >ตะเกียงและโคมไฟ</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >ถังน้ำแข็ง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >มีดและของมีคม</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >แก๊สและเชื้อเพลิง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เตาแก็ส</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เตาฟืน เตาย่าง BBQ</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เครื่องครัว</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อุปกรณ์ทำอาหาร</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อาหารและเครื่องปรุง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >อื่น ๆ</a
               >
             </div>
-          </div>
-          <div>
-            <h3 class="text-base font-medium">บริการลูกค้า</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col">
+              <h4 class="text-base font-medium">เครื่องครัว ทำอาหาร</h4>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
               <a
-                href="./warantee-policy.html"
-                class="text-sm hover:text-primary"
-                >ขอเปลี่ยนสินค้า</a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold"
+                >เตาแก็ส</a
               >
               <a
-                href="./warantee-policy.html"
-                class="text-sm hover:text-primary"
-                >ลงทะเบียนรับประกันสินค้า</a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >เตาฟืน เตาย่าง BBQ</a
               >
               <a
-                href="./warantee-policy.html"
-                class="text-sm hover:text-primary"
-                >นโยบายการรับประกัน</a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >เชื้อเพลิง แก๊สกระป๋อง</a
               >
               <a
-                href="./personal-policy.html"
-                class="text-sm hover:text-primary"
-                >นโยบายความเป็นส่วนตัว</a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >อุปกรณ์ทำอาหาร</a
               >
-              <a href="./shop-policy.html" class="text-sm hover:text-primary"
-                >นโยบายร้านค้า</a
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >เครื่องครัว</a
               >
-            </div>
-          </div>
-          <div>
-            <h3 class="text-base font-medium">เกี่ยวกับเรา</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex flex-col gap-1">
-              <a href="./contact.html" class="text-sm hover:text-primary"
-                >ติดต่อเรา</a
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >คูลเลอร์</a
               >
-              <a href="./contact.html" class="text-sm hover:text-primary"
-                >สาขาและสถานที่ตั้ง</a
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >มีดและของมีคม</a
               >
-               <a href="./article.html" class="text-sm hover:text-primary">
-                บทความ / ข่าวสาร
-              </a>
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >อาหาร</a
+              >
             </div>
           </div>
         </div>
-        <div class="max-w-[324px]">
-          <div>
-            <h3 class="text-base font-medium">ติดตามเรา</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex mt-2 gap-4">
+      </nav>
+      <main class="bg-[#F8F8F8]">
+        <div class="container mx-auto pb-4">
+          <section class="p-4">
+            <div class="text-xs">
+              <p class="inline-block">หน้าแรก</p>
+              <span class="text-[#d9d9d9]"> / สั่งซื้อ</span>
+            </div>
+          </section>
+          <section
+            class="p-4 text-center text-[24px] md:text-[40px] font-medium"
+          >
+            สั่งซื้อ
+          </section>
+          <section class="mx-2 md:mx-0">
+            <div
+              class="w-full border border-[#0A7ACC] bg-[#DAEAF6] p-4 flex gap-2 text-xs items-center rounded"
+            >
+              <img src="./images/icons/ico-info.svg" alt="info" />
+              <p>
+                หากคุณเป็นลูกค้าเก่า กรุณา
+                <a
+                  href="./login.html"
+                  class="underline text-[#0A7ACC] font-bold"
+                  >คลิกที่นี่เพื่อเข้าสู่ระบบ</a
+                >
+              </p>
+            </div>
+            <div
+              class="mt-2 w-full border border-[#0A7ACC] bg-[#DAEAF6] p-4 flex gap-2 text-xs items-center rounded"
+            >
+              <img src="./images/icons/ico-info.svg" alt="info" />
+              <p>
+                หากคุณมีคูปองส่วนลด
+                <a
+                  href="./login.html"
+                  class="underline text-[#0A7ACC] font-bold"
+                  >คลิกที่นี่ใส่รหัสคูปอง</a
+                >
+              </p>
+            </div>
+            <div class="my-6 flex flex-wrap md:flex-nowrap gap-3">
+              <div
+                class="w-full md:w-8/12 rounded shadow-[0_1px_8px_0px_#C4C4C4] p-6 bg-white"
+              >
+                <div class="text-base md:text-2xl font-bold">ข้อมูลผู้ซื้อ</div>
+                <div class="flex gap-2 mt-4 flex-wrap md:flex-nowrap">
+                  <button
+                    class="w-full md:w-1/3 border border-[#9F9F9F] bg-[#F8F8F8] py-4 flex justify-center items-center gap-2 rounded"
+                  >
+                    <img src="./images/icons/icon-login/ico-face-color.svg" />
+                    <div class="text-xs font-medium">
+                      เข้าสู่ระบบด้วย <span class="font-bold">Facebook</span>
+                    </div>
+                  </button>
+                  <button
+                    class="w-full md:w-1/3 border border-[#9F9F9F] bg-[#F8F8F8] py-4 flex justify-center items-center gap-2 rounded"
+                  >
+                    <img src="./images/icons/icon-login/ico-google-color.svg" />
+                    <div class="text-xs font-medium">
+                      เข้าสู่ระบบด้วย <span class="font-bold">Google</span>
+                    </div>
+                  </button>
+                  <button
+                    class="w-full md:w-1/3 border border-[#9F9F9F] bg-[#F8F8F8] py-4 flex justify-center items-center gap-2 rounded"
+                  >
+                    <img src="./images/icons/icon-login/ico-line-color.svg" />
+                    <div class="text-xs font-medium">
+                      เข้าสู่ระบบด้วย <span class="font-bold">Line</span>
+                    </div>
+                  </button>
+                </div>
+                <div class="bg-[#9F9F9F] w-full h-[1px] my-4"></div>
+                <form>
+                  <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 p-1">
+                      <label class="font-medium text-sm">
+                        ชื่อจริง <span class="text-[#A8241B]">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                      />
+                    </div>
+                    <div class="w-full md:w-1/2 p-1">
+                      <label class="font-medium text-sm">
+                        นามสกุล <span class="text-[#A8241B]">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                      />
+                    </div>
+                    <div class="w-full p-1">
+                      <label class="font-medium text-sm">
+                        ประเทศ <span class="text-[#A8241B]">*</span>
+                      </label>
+                      <select
+                        class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                      >
+                        <option value="volvo">ไทย</option>
+                        <option value="volvo">ลาว</option>
+                        <option value="volvo">มาเลเซีย</option>
+                        <option value="volvo">สิงคโปร์</option>
+                      </select>
+                    </div>
+                    <div class="w-full p-1">
+                      <label class="font-medium text-sm">
+                        ที่อยู่ <span class="text-[#A8241B]">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                      />
+                    </div>
+                    <div class="w-full md:w-1/2 p-1">
+                      <label class="font-medium text-sm">
+                        อำเภอ <span class="text-[#A8241B]">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                      />
+                    </div>
+                    <div class="w-full md:w-1/2 p-1">
+                      <label class="font-medium text-sm">
+                        จังหวัด <span class="text-[#A8241B]">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                      />
+                    </div>
+                    <div class="w-full p-1">
+                      <label class="font-medium text-sm">
+                        รหัสไปรษณีย์ <span class="text-[#A8241B]">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                      />
+                    </div>
+                    <div class="w-full p-1">
+                      <label class="font-medium text-sm">
+                        อีเมล <span class="text-[#A8241B]">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                      />
+                    </div>
+                    <div class="w-full p-1">
+                      <label class="font-medium text-sm">
+                        ที่อยู่ <span class="text-[#A8241B]">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="w-full md:w-4/12 rounded shadow-[0_1px_8px_0px_#C4C4C4] p-6 bg-white"
+              >
+                <div class="text-base md:text-2xl font-bold">
+                  รายการสั่งซื้อของคุณ
+                </div>
+                <div class="flex flex-col gap-4 my-4">
+                  <div class="flex justify-between">
+                    <p class="text-sm md:text-base">สินค้า</p>
+                    <p class="text-sm md:text-base">ยอดรวม</p>
+                  </div>
+                  <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
+                  <div class="flex justify-between">
+                    <p class="text-sm md:text-base">
+                      COSY FOLDING CHAIR (black)...
+                    </p>
+                    <p class="text-sm md:text-base">฿ 7,565</p>
+                  </div>
+                  <div class="flex justify-between">
+                    <p class="text-sm md:text-base">
+                      COSY FOLDING CHAIR (black)...
+                    </p>
+                    <p class="text-sm md:text-base">฿ 7,565</p>
+                  </div>
+                  <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
+                  <div class="flex justify-between">
+                    <p class="text-sm md:text-base font-bold">ยอดรวม</p>
+                    <p class="text-sm md:text-base font-bold">฿ 15,130</p>
+                  </div>
+                  <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
+                  <div class="flex justify-between">
+                    <p class="text-sm md:text-base font-bold">การจัดส่ง</p>
+                    <p class="text-sm md:text-base font-bold">จัดส่งฟรี</p>
+                  </div>
+                  <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
+                  <div class="flex justify-between">
+                    <p class="text-sm md:text-base font-bold">รวม</p>
+                    <p class="text-sm md:text-base font-bold">฿ 15,130</p>
+                  </div>
+                  <div class="h-[1px] bg-[#9F9F9F] w-full"></div>
+                </div>
+                <div class="text-base md:text-2xl font-bold">
+                  เลือกวิธีการชำระเงิน
+                </div>
+                <div class="flex flex-col gap-2 my-4">
+                  <div
+                    class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
+                    id="radio-box-1"
+                    onclick="radioChecked(1)"
+                  >
+                    <div
+                      class="radio-container flex gap-2 cursor-pointer"
+                      id="radio-1"
+                    >
+                      <input
+                        type="radio"
+                        name="contact"
+                        class="accent-primary w-4 h-4"
+                        id="radio-input-1"
+                      />
+                      <p class="text-xs md:text-sm inline-block">
+                        โอนเงินเข้าบัญชีธนาคาร
+                      </p>
+                    </div>
+                    <div class="radio-tile pl-6" id="radio-tile-1">
+                      <p class="text-[10px] mt-2">
+                        เมื่อโอนเงิน แจ้งชำระเงินพร้อมสลิปโอนเงินเรียบร้อย
+                        ผ่านทาง LineOfficial หรือ Facebook
+                        ทางเราจะตรวจสอบและดำเนินการจัดส่งสินค้าให้คุณต่อไป
+                      </p>
+                      <div class="p-2 rounded bg-white flex gap-2 mt-2">
+                        <div class="w-1/3">
+                          <img src="./images/scb.png" class="w-full" />
+                        </div>
+                        <div class="w-2/3 flex-col gap-1">
+                          <div class="flex gap-1">
+                            <p class="text-xs">
+                              เลขที่บัญชี:
+                              <span class="font-bold">162-417226-9</span>
+                            </p>
+                            <img src="./images/icons/ico-copy.svg" />
+                          </div>
+                          <p class="text-xs">
+                            ชื่อบัญชี: คุณ ฉัตรมงคล ตั้งประเสริฐ
+                          </p>
+                          <p class="text-xs">
+                            ธนาคาร: ธ.ไทยพาณิชย์ (SCB) สาขาเดอะมอลล์ บางแค
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
+                    id="radio-box-2"
+                    onclick="radioChecked(2)"
+                  >
+                    <div
+                      class="radio-container flex gap-2 cursor-pointer"
+                      id="radio-2"
+                    >
+                      <input
+                        type="radio"
+                        name="contact"
+                        class="accent-primary w-4 h-4"
+                        id="radio-input-2"
+                      />
+                      <p class="text-xs md:text-sm inline-block">
+                        Credit Card / Debit Card
+                      </p>
+                    </div>
+                    <div class="radio-tile mt-2 pl-6" id="radio-tile-2">
+                      <div class="flex flex-col gap-1">
+                        <div class="w-full">
+                          <label class="font-medium text-sm">
+                            Card number <span class="text-[#A8241B]">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                          />
+                        </div>
+                        <div class="w-full">
+                          <label class="font-medium text-sm">
+                            Name on card <span class="text-[#A8241B]">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                          />
+                        </div>
+                        <div class="w-full">
+                          <label class="font-medium text-sm">
+                            Expiry date <span class="text-[#A8241B]">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                          />
+                        </div>
+                        <div class="w-full">
+                          <label class="font-medium text-sm">
+                            Security code <span class="text-[#A8241B]">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
+                    id="radio-box-3"
+                    onclick="radioChecked(3)"
+                  >
+                    <div
+                      class="radio-container flex gap-2 cursor-pointer"
+                      id="radio-3"
+                    >
+                      <input
+                        type="radio"
+                        name="contact"
+                        class="accent-primary w-4 h-4"
+                        id="radio-input-3"
+                      />
+                      <p class="text-xs md:text-sm inline-block">
+                        Installments
+                      </p>
+                    </div>
+                    <div class="radio-tile mt-2 pl-6" id="radio-tile-3">
+                      <div class="flex flex-col gap-2">
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-1"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/kbank.png"
+                                alt="kbank"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">Kasikorn Bank</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  (Interest 0.65%)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ml-6 mt-2">
+                            <select
+                              class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                            >
+                              <option value="volvo">
+                                3 months (฿1,408 / months)
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/scb.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">
+                                  Siam Commercial Bank (SCB)
+                                </p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  (Interest 0.74%)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ml-6 mt-2">
+                            <select
+                              class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                            >
+                              <option value="volvo">
+                                3 months (฿1,408 / months)
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/bangkok.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">Bangkok Bank</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  (Interest 0.74%)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ml-6 mt-2">
+                            <select
+                              class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                            >
+                              <option value="volvo">
+                                3 months (฿1,408 / months)
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/krungsri.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">Krungsri</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  (Interest 0.74%)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ml-6 mt-2">
+                            <select
+                              class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                            >
+                              <option value="volvo">
+                                3 months (฿1,408 / months)
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/first-choice.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">Krungsri First Choice</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  (Interest 1.16%)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ml-6 mt-2">
+                            <select
+                              class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                            >
+                              <option value="volvo">
+                                3 months (฿1,408 / months)
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/ktc.png"
+                                alt="ktc"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">Krungthai Card (KTC))</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  (Interest 0.74%)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ml-6 mt-2">
+                            <select
+                              class="w-full border border-[#9F9F9F] h-[48px] rounded bg-[#F8F8F8] outline-none p-2"
+                            >
+                              <option value="volvo">
+                                3 months (฿1,408 / months)
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <p class="text-[10px]">
+                          Monthly payment rates shown may be inaccurate as
+                          interest rates are subject to change by its bank
+                          issuer.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
+                    id="radio-box-4"
+                    onclick="radioChecked(4)"
+                  >
+                    <div
+                      class="radio-container flex gap-2 cursor-pointer"
+                      id="radio-4"
+                    >
+                      <input
+                        type="radio"
+                        name="contact"
+                        class="accent-primary w-4 h-4"
+                        id="radio-input-4"
+                      />
+                      <p class="text-xs md:text-sm inline-block">
+                        Internet Banking
+                      </p>
+                    </div>
+                    <div class="radio-tile mt-2 pl-6" id="radio-tile-4">
+                      <div class="flex flex-col gap-2">
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/bangkok.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">Bangkok Bank</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  Fee: ฿10 (same zone) / ฿20 (out zone)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/krungsri.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">Krungsri</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  Fee: ฿10 (same zone) / ฿20 (out zone)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
+                    id="radio-box-5"
+                    onclick="radioChecked(5)"
+                  >
+                    <div
+                      class="radio-container flex gap-2 cursor-pointer"
+                      id="radio-5"
+                    >
+                      <input
+                        type="radio"
+                        name="contact"
+                        class="accent-primary w-4 h-4"
+                        id="radio-input-5"
+                      />
+                      <p class="text-xs md:text-sm inline-block">
+                        Mobile Banking
+                      </p>
+                    </div>
+                    <div class="radio-tile mt-2 pl-6" id="radio-tile-5">
+                      <div class="flex flex-col gap-2">
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/kbank.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">K PLUS</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  Kasikorn Bank Application
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/scb.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">SCB EASY</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  Siam Commercial Bank Application
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/bangkok.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">Bualuang mBanking</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  Bangkok Bank Application
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 bg-[#F8F8F8] border border-primary rounded"
+                        >
+                          <div class="flex gap-2">
+                            <input
+                              type="radio"
+                              name="bank"
+                              class="accent-primary w-4 h-4"
+                              id="radio-bank-2"
+                            />
+                            <div class="flex gap-2">
+                              <img
+                                src="./images/krungsri.png"
+                                alt="scb"
+                                class="w-[38px]"
+                              />
+                              <div>
+                                <p class="text-sm">KMA</p>
+                                <p class="text-[10px] text-[#9F9F9F]">
+                                  Krungsri Application
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="radio-box p-4 bg-[#F8F8F8] border border-primary rounded"
+                    id="radio-box-6"
+                    onclick="radioChecked(6)"
+                  >
+                    <div
+                      class="radio-container flex gap-2 cursor-pointer"
+                      id="radio-6"
+                    >
+                      <input
+                        type="radio"
+                        name="contact"
+                        class="accent-primary w-4 h-4"
+                        id="radio-input-6"
+                      />
+                      <p class="text-xs md:text-sm inline-block">
+                        TrueMoney Wallet
+                      </p>
+                    </div>
+                    <div class="radio-tile mt-2 pl-6" id="radio-tile-6">
+                      <div class="p-2 rounded bg-white flex flex-col gap-1">
+                        <p class="text-xs">TrueMoney phone number</p>
+                        <div class="flex items-center">
+                          <input type="checkbox" class="w-3 h-3" />
+                          <p class="text-xs ml-2">Same as Billing Detail</p>
+                        </div>
+                        <p class="text-[10px] text-[#9F9F9F]">
+                          One-Time Password (OTP) will be sent to the phone
+                          number above
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-[10px]">
+                    Your personal data will be used to process your order,
+                    support your experience throughout this website, and for
+                    other purposes described in our นโยบายความเป็นส่วนตัว.
+                  </p>
+                  <div class="my-4 flex gap-1 items-start">
+                    <input type="checkbox" class="w-4 h-4" />
+                    <p class="text-[10px]">
+                      ฉันได้อ่านและยอมรับข้อตกลงและกฏระเบียบของเว็บไซต์นี้ ข้อกำหนดและเงื่อนไข*
+                    </p>
+                  </div>
+                  <button
+                    class="w-full bg-[#A8241B] h-[54px] rounded text-white"
+                  >
+                    สั่งซื้อ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="bg-primary text-white rounded py-2 md:py-6 grid grid-cols-2 md:grid-cols-4 m-4 md:m-0 px-2 md:px-[100px] gap-2"
+          >
+            <div class="flex gap-2 md:gap-4">
               <img
-                src="./images/icons/icon-contact/ico-facebook.svg"
-                alt="facebook"
+                src="./images/icons/icon-product/1.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
               />
-              <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">ช้อปง่าย</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  ซื้อของได้ตลอด 24 ชม.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 md:gap-4">
               <img
-                src="./images/icons/icon-contact/ico-pinterest.svg"
-                alt="pinterest"
+                src="./images/icons/icon-product/2.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
               />
-              <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">จัดส่งทั่วไทย</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  ใกล้ไกลแค่ไหนก็จัดส่ง
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 md:gap-4">
               <img
-                src="./images/icons/icon-contact/ico-tiktok.svg"
-                alt="tiktok"
+                src="./images/icons/icon-product/3.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
               />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">จ่ายง่าย สะดวก</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  ช่องทางชำระเงินหลากหลาย
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 md:gap-4">
+              <img
+                src="./images/icons/icon-product/4.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+              />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">บริการช่วยเหลือ</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  09:00 - 21:00 ทุกวัน
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="container mx-auto hidden md:block">
+        <div class="py-8 flex justify-between">
+          <div class="flex gap-[68px]">
+            <div>
+              <h3 class="text-base font-medium">ประเภทสินค้า</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex flex-col gap-1">
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เต้นท์และทาร์ป</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เฟอร์นิเจอร์</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เครื่องนอน</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >กระเป๋า เป้</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เสื้อผ้า รองเท้า</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อุปกรณ์ให้ความสว่าง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >ถังน้ำแข็ง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >มีดและของมีคม</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >แก๊สและเชื้อเพลิง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เตาแก็ส</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เตาฟืน เตาย่าง BBQ</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เครื่องครัว</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อุปกรณ์ทำอาหาร</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อาหารและเครื่องปรุง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อื่น ๆ</a
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="text-base font-medium">บริการลูกค้า</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex flex-col gap-1">
+                <a
+                  href="./warantee-policy.html"
+                  class="text-sm hover:text-primary"
+                  >ขอเปลี่ยนสินค้า</a
+                >
+                <a
+                  href="./warantee-policy.html"
+                  class="text-sm hover:text-primary"
+                  >ลงทะเบียนรับประกันสินค้า</a
+                >
+                <a
+                  href="./warantee-policy.html"
+                  class="text-sm hover:text-primary"
+                  >นโยบายการรับประกัน</a
+                >
+                <a
+                  href="./personal-policy.html"
+                  class="text-sm hover:text-primary"
+                  >นโยบายความเป็นส่วนตัว</a
+                >
+                <a href="./shop-policy.html" class="text-sm hover:text-primary"
+                  >นโยบายร้านค้า</a
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="text-base font-medium">เกี่ยวกับเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex flex-col gap-1">
+                <a href="./contact.html" class="text-sm hover:text-primary"
+                  >ติดต่อเรา</a
+                >
+                <a href="./contact.html" class="text-sm hover:text-primary"
+                  >สาขาและสถานที่ตั้ง</a
+                >
+                <a href="./article.html" class="text-sm hover:text-primary">
+                  บทความ / ข่าวสาร
+                </a>
+              </div>
             </div>
           </div>
-          <div class="mt-[36px]">
-            <h3 class="text-base font-medium">ติดต่อเรา</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+          <div class="max-w-[324px]">
+            <div>
+              <h3 class="text-base font-medium">ติดตามเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex mt-2 gap-4">
+                <img
+                  src="./images/icons/icon-contact/ico-facebook.svg"
+                  alt="facebook"
+                />
+                <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
+                <img
+                  src="./images/icons/icon-contact/ico-pinterest.svg"
+                  alt="pinterest"
+                />
+                <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
+                <img
+                  src="./images/icons/icon-contact/ico-tiktok.svg"
+                  alt="tiktok"
+                />
+              </div>
+            </div>
+            <div class="mt-[36px]">
+              <h3 class="text-base font-medium">ติดต่อเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex items-center">
+                <img src="./images/icons/ico-tel.svg" alt="tel" />
+                <p class="ml-1 text-base">โทร 095-002-6622</p>
+              </div>
+              <div class="flex items-center">
+                <img src="./images/icons/ico-email.svg" alt="mail" />
+                <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
+              </div>
+              <p class="text-sm">
+                เว็บไซต์นี้ ดูแลโดยสาขาราชพฤกษ์ และ
+                หนองแขมหากพบปัญหาในการใช้เว็บไซต์ กรุณาติดต่อ:
+              </p>
+              <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
+                <p class="text-primary font-bold text-sm">
+                  Camp One Outdoor Store Ratchaphruek: 
+                </p>
+                <p class="text-sm">5/1 Ratchaphruek Road, T.Bang Krang A.</p>
+                <p class="text-sm">Muang-Nonthaburi 11000 Thailand</p>
+                <div class="flex items-start">
+                  <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
+                  <div class="ml-1">
+                    <p class="text-sm">062-495-5151 / 083-199-2974</p>
+                    <p class="text-sm">(Khun Anuwat M./ Khun Worachat K.)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
+                <p class="text-primary font-bold text-sm">
+                  Camp One Outdoor Store Nongkhaem: 
+                </p>
+                <p class="text-sm">
+                  626 Petchkrasem Nongkahaem Bangkok 10160 Thailand
+                </p>
+                <div class="flex items-center">
+                  <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
+                  <div class="ml-1">
+                    <p class="text-sm">095-456-8535 (Khun Thanawit T.)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center py-[30px] flex justify-center items-center">
+          <img src="./images/logo-outline.svg" alt="logo" />
+          <p class="text-sm font-medium">Copyright © 2022 camponeoutdoor.com</p>
+        </div>
+      </footer>
+      <footer class="container mx-auto block md:hidden">
+        <div class="flex justify-center py-4">
+          <img
+            src="./images/logo-outline.svg"
+            width="60"
+            height="60"
+            alt="logo"
+          />
+        </div>
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">ติดต่อเรา</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-1-button"
+              onclick="toggleFooter1(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div id="footer-1-container" class="hidden">
             <div class="flex items-center">
               <img src="./images/icons/ico-tel.svg" alt="tel" />
               <p class="ml-1 text-base">โทร 095-002-6622</p>
@@ -1340,10 +1476,6 @@
               <img src="./images/icons/ico-email.svg" alt="mail" />
               <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
             </div>
-            <p class="text-sm">
-              เว็บไซต์นี้ ดูแลโดยสาขาราชพฤกษ์ และ
-              หนองแขมหากพบปัญหาในการใช้เว็บไซต์ กรุณาติดต่อ:
-            </p>
             <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
               <p class="text-primary font-bold text-sm">
                 Camp One Outdoor Store Ratchaphruek: 
@@ -1374,166 +1506,104 @@
             </div>
           </div>
         </div>
-      </div>
-      <hr />
-      <div class="text-center py-[30px] flex justify-center items-center">
-        <img src="./images/logo-outline.svg" alt="logo" />
-        <p class="text-sm font-medium">Copyright © 2022 camponeoutdoor.com</p>
-      </div>
-    </footer>
-   <footer class="container mx-auto block md:hidden">
-      <div class="flex justify-center py-4">
-        <img
-          src="./images/logo-outline.svg"
-          width="60"
-          height="60"
-          alt="logo"
-        />
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">ติดต่อเรา</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-1-button"
-            onclick="toggleFooter1(event)"
-          />
-        </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div id="footer-1-container" class="hidden">
-          <div class="flex items-center">
-            <img src="./images/icons/ico-tel.svg" alt="tel" />
-            <p class="ml-1 text-base">โทร 095-002-6622</p>
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">ประเภทสินค้า</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-2-button"
+              onclick="toggleFooter2(event)"
+            />
           </div>
-          <div class="flex items-center">
-            <img src="./images/icons/ico-email.svg" alt="mail" />
-            <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
-          </div>
-          <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
-            <p class="text-primary font-bold text-sm">
-              Camp One Outdoor Store Ratchaphruek: 
-            </p>
-            <p class="text-sm">5/1 Ratchaphruek Road, T.Bang Krang A.</p>
-            <p class="text-sm">Muang-Nonthaburi 11000 Thailand</p>
-            <div class="flex items-start">
-              <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
-              <div class="ml-1">
-                <p class="text-sm">062-495-5151 / 083-199-2974</p>
-                <p class="text-sm">(Khun Anuwat M./ Khun Worachat K.)</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
-            <p class="text-primary font-bold text-sm">
-              Camp One Outdoor Store Nongkhaem: 
-            </p>
-            <p class="text-sm">
-              626 Petchkrasem Nongkahaem Bangkok 10160 Thailand
-            </p>
-            <div class="flex items-center">
-              <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
-              <div class="ml-1">
-                <p class="text-sm">095-456-8535 (Khun Thanawit T.)</p>
-              </div>
-            </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden flex-col gap-1" id="footer-2-container">
+            <a href="./products.html">เต้นท์และทาร์ป</a>
+            <a href="./products.html">เฟอร์นิเจอร์</a>
+            <a href="./products.html">เครื่องนอน</a>
+            <a href="./products.html">กระเป๋า เป้</a>
+            <a href="./products.html">เสื้อผ้า รองเท้า</a>
+            <a href="./products.html">อุปกรณ์ให้ความสว่าง</a>
+            <a href="./products.html">ถังน้ำแข็ง</a>
+            <a href="./products.html">มีดและของมีคม</a>
+            <a href="./products.html">แก๊สและเชื้อเพลิง</a>
+            <a href="./products.html">เตาแก็ส</a>
+            <a href="./products.html">เตาฟืน เตาย่าง BBQ</a>
+            <a href="./products.html">เครื่องครัว</a>
+            <a href="./products.html">อุปกรณ์ทำอาหาร</a>
+            <a href="./products.html">อาหารและเครื่องปรุง</a>
+            <a href="./products.html">อื่น ๆ</a>
           </div>
         </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">ประเภทสินค้า</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-2-button"
-            onclick="toggleFooter2(event)"
-          />
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">บริการลูกค้า</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-3-button"
+              onclick="toggleFooter3(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden flex-col gap-1" id="footer-3-container">
+            <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
+            <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
+            <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
+            <a href="./personal-policy.html">นโยบายความเป็นส่วนตัว</a>
+            <a href="./shop-policy.html">นโยบายร้านค้า</a>
+          </div>
         </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden flex-col gap-1" id="footer-2-container">
-          <a href="./products.html">เต้นท์และทาร์ป</a>
-          <a href="./products.html">เฟอร์นิเจอร์</a>
-          <a href="./products.html">เครื่องนอน</a>
-          <a href="./products.html">กระเป๋า เป้</a>
-          <a href="./products.html">เสื้อผ้า รองเท้า</a>
-          <a href="./products.html">อุปกรณ์ให้ความสว่าง</a>
-          <a href="./products.html">ถังน้ำแข็ง</a>
-          <a href="./products.html">มีดและของมีคม</a>
-          <a href="./products.html">แก๊สและเชื้อเพลิง</a>
-          <a href="./products.html">เตาแก็ส</a>
-          <a href="./products.html">เตาฟืน เตาย่าง BBQ</a>
-          <a href="./products.html">เครื่องครัว</a>
-          <a href="./products.html">อุปกรณ์ทำอาหาร</a>
-          <a href="./products.html">อาหารและเครื่องปรุง</a>
-          <a href="./products.html">อื่น ๆ</a>
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">เกี่ยวกับเรา</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-4-button"
+              onclick="toggleFooter4(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden flex-col gap-1" id="footer-4-container">
+            <a href="./contact.html">ติดต่อเรา</a>
+            <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
+            <p href="./article.html">บทความ / ข่าวสาร</p>
+          </div>
         </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">บริการลูกค้า</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-3-button"
-            onclick="toggleFooter3(event)"
-          />
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">ติดตามเรา</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-5-button"
+              onclick="toggleFooter5(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden mt-4 gap-4" id="footer-5-container">
+            <img
+              src="./images/icons/icon-contact/ico-facebook.svg"
+              alt="facebook"
+            />
+            <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
+            <img
+              src="./images/icons/icon-contact/ico-pinterest.svg"
+              alt="pinterest"
+            />
+            <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
+            <img
+              src="./images/icons/icon-contact/ico-tiktok.svg"
+              alt="tiktok"
+            />
+          </div>
         </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden flex-col gap-1" id="footer-3-container">
-          <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
-          <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
-          <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
-          <a href="./personal-policy.html">นโยบายความเป็นส่วนตัว</a>
-          <a href="./shop-policy.html">นโยบายร้านค้า</a>
+        <div class="text-center py-4 flex justify-center items-center">
+          <p class="text-xs font-medium">Copyright © 2022 camponeoutdoor.com</p>
         </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">เกี่ยวกับเรา</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-4-button"
-            onclick="toggleFooter4(event)"
-          />
-        </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden flex-col gap-1" id="footer-4-container">
-          <a href="./contact.html">ติดต่อเรา</a>
-          <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
-          <p href="./article.html">บทความ / ข่าวสาร</p>
-        </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">ติดตามเรา</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-5-button"
-            onclick="toggleFooter5(event)"
-          />
-        </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden mt-4 gap-4" id="footer-5-container">
-          <img
-            src="./images/icons/icon-contact/ico-facebook.svg"
-            alt="facebook"
-          />
-          <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
-          <img
-            src="./images/icons/icon-contact/ico-pinterest.svg"
-            alt="pinterest"
-          />
-          <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
-          <img src="./images/icons/icon-contact/ico-tiktok.svg" alt="tiktok" />
-        </div>
-      </div>
-      <div class="text-center py-4 flex justify-center items-center">
-        <p class="text-xs font-medium">Copyright © 2022 camponeoutdoor.com</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
   <script src="./script/layout.js"></script>
   <script src="./script/footer.js"></script>

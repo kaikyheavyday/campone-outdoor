@@ -20,7 +20,9 @@
   </head>
   <body>
     <div id="drawer" class="">
-      <img src="./images/icons/ico-close-white.svg" id="close" alt="close" />
+      <div class="mt-2 flex justify-end w-full">
+        <img src="./images/icons/ico-close-white.svg" id="close" alt="close" />
+      </div>
       <div class="flex text-white items-center">
         <img src="./images/logo.svg" alt="logo" />
         <p class="text-sm font-bold">Camp One Outdoor</p>
@@ -42,7 +44,10 @@
           />
         </div>
         <div class="w-full h-[1px] bg-white my-2"></div>
-         <div class="text-white text-sm hidden flex flex-col gap-1" id="category-section">
+        <div
+          class="text-white text-sm hidden flex flex-col gap-1"
+          id="category-section"
+        >
           <a href="./products.html">เต้นท์และทาร์ป</a>
           <a href="./products.html">เฟอร์นิเจอร์</a>
           <a href="./products.html">เครื่องนอน</a>
@@ -77,7 +82,10 @@
           />
         </div>
         <div class="w-full h-[1px] bg-white my-2"></div>
-       <div class="text-white text-sm hidden flex flex-col gap-1" id="service-section">
+        <div
+          class="text-white text-sm hidden flex flex-col gap-1"
+          id="service-section"
+        >
           <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
           <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
           <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
@@ -102,7 +110,10 @@
           />
         </div>
         <div class="w-full h-[1px] bg-white my-2"></div>
-       <div class="text-white text-sm hidden flex flex-col gap-1" id="about-section">
+        <div
+          class="text-white text-sm hidden flex flex-col gap-1"
+          id="about-section"
+        >
           <a href="./contact.html">ติดต่อเรา</a>
           <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
           <p href="./article.html">บทความ / ข่าวสาร</p>
@@ -114,652 +125,770 @@
         </div>
       </div>
     </div>
-    <nav class="h-[52px] md:h-20 bg-primary flex items-center">
-      <div class="container flex mx-auto justify-between px-4 md:px-0">
-        <div class="flex items-center">
-          <img
-            id="burger"
-            src="./images/icons/ico-menu.svg"
-            alt="logo"
-            class="w-6 mr-2 block md:hidden"
-          />
-           <a href="./index.html">
+    <div class="" id="overlay">
+      <nav class="h-[52px] md:h-20 bg-primary flex items-center">
+        <div class="container flex mx-auto justify-between px-4 md:px-0">
+          <div class="flex items-center">
             <img
-              src="./images/logo.svg"
+              id="burger"
+              src="./images/icons/ico-menu.svg"
               alt="logo"
-              class="w-9 md:w-12 md:block"
-              id="logo"
+              class="w-6 mr-2 block md:hidden"
             />
-          </a>
-          <a href="./index.html">
-            <div
-              class="text-white text-sm md:text-xl font-bold ml-0 md:ml-2 md:block"
-              id="logo-text"
+            <a href="./index.html">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="w-9 md:w-12 md:block"
+                id="logo"
+              />
+            </a>
+            <a href="./index.html">
+              <div
+                class="text-white text-sm md:text-xl font-bold ml-0 md:ml-2 md:block"
+                id="logo-text"
+              >
+                Camp One Outdoor
+              </div>
+            </a>
+          </div>
+         <div class="flex items-center gap-3 md:gap-6" id="search-container">
+            <form
+              class="rounded-3xl px-4 py-2 bg-white hidden w-full md:flex items-center"
+              id="form-search"
             >
-              Camp One Outdoor
-            </div>
-          </a>
-        </div>
-        <div class="flex items-center gap-3 md:gap-6">
-          <form
-            class="rounded-3xl px-4 py-2 bg-white hidden md:flex items-center"
-            id="form-search"
-          >
-            <input
-              type="text"
-              class="bg-white md:w-[300px] lg:w-[533px]"
-              placeholder="ค้นหา"
-            />
-            <button type="submit">
-              <img src="./images/icons/ico-search.svg" alt="logo" />
-            </button>
-          </form>
+              <input
+                type="text"
+                class="bg-white w-full md:w-[300px] lg:w-[533px]"
+                placeholder="ค้นหา"
+              />
+              <button type="submit">
+                <img src="./images/icons/ico-search.svg" alt="logo" />
+              </button>
+            </form>
 
-          <img
-            src="./images/icons/ico-search-white.svg"
-            alt="logo"
-            class="w-5 block md:hidden"
-            id="icon-search"
-          />
-          <a href="./my-account.html">
             <img
-              src="./images/icons/ico-avatar.svg"
+              src="./images/icons/ico-search-white.svg"
               alt="logo"
-              class="w-5 md:w-6 md:block"
-              id="icon-avatar"
+              class="w-5 block md:hidden"
+              id="icon-search"
             />
-          </a>
-           <a href="./cart.html">
-            <img
-              src="./images/icons/ico-cart.svg"
-              alt="logo"
-              class="w-5 md:w-6 md:block"
-              id="icon-cart"
-            />
-          </a>
-        </div>
-      </div>
-    </nav>
-    <nav class="hidden md:block h-[48px] border-[#D9D9D9] border-b relative">
-      <div class="container mx-auto h-full flex items-center">
-        <div
-          class="flex h-full p-4 items-center border-[#D9D9D9] border-r dropdown"
-          onclick="clickDropdown()"
-        >
-          <img
-            src="./images/icons/icon-category/ico-menu-black.svg"
-            alt="menu"
-            class="dropdown-item"
-          />
-          <p class="text-xs ml-2 font-medium dropdown-item">
-            หมวดหมู่สินค้าทั้งหมด
-          </p>
-        </div>
-        <div class="flex items-center justify-around w-[calc(100%_-_170px)]">
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-new.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">สินค้ามาใหม่</p>
+            <a href="./my-account.html">
+              <img
+                src="./images/icons/ico-avatar.svg"
+                alt="logo"
+                class="w-5 md:w-6 md:block"
+                id="icon-avatar"
+              />
+            </a>
+            <a href="./cart.html">
+              <img
+                src="./images/icons/ico-cart.svg"
+                alt="logo"
+                class="w-5 md:w-6 md:block"
+                id="icon-cart"
+              />
+            </a>
           </div>
-          <div class="flex items-center">
+        </div>
+      </nav>
+      <nav class="hidden md:block h-[48px] border-[#D9D9D9] border-b relative">
+        <div class="container mx-auto h-full flex items-center">
+          <div
+            class="flex h-full p-4 items-center border-[#D9D9D9] border-r dropdown"
+            onclick="clickDropdown()"
+          >
             <img
-              src="./images/icons/icon-category/ico-percent.svg"
+              src="./images/icons/icon-category/ico-menu-black.svg"
               alt="menu"
+              class="dropdown-item"
             />
-            <p class="text-xs ml-2 font-medium">สินค้าโปรโมชัน</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-tent.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">เต็นท์ & ทาร์ป</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-chair.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">เฟอร์นิเจอร์</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-gas.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">แก๊สและเชื้อเพลิง</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-trash.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">ถังน้ำแข็ง</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./images/icons/icon-category/ico-knife.svg" alt="menu" />
-            <p class="text-xs ml-2 font-medium">มีดและของมีคม</p>
-          </div>
-          <div class="flex items-center">
-            <img
-              src="./images/icons/icon-category/ico-lightbulb.svg"
-              alt="menu"
-            />
-            <p class="text-xs ml-2 font-medium">อุปกรณ์ให้ความสว่าง</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="dropdown-content hidden w-full absolute bg-white mt-[2px]"
-        id="dropdown-content"
-      >
-        <div class="container mx-auto py-6 flex gap-8">
-          <div class="py-5 bg-primary w-[182px] text-center text-white rounded">
-            <img src="./images/logo-big.svg" alt="logo" class="mx-auto" />
-            <p class="mt-2 text-sm font-medium">Camp One Outdoor</p>
-            <p class="mt-2 text-xs px-4 font-medium">
-              ร้านจำหน่ายอุปกรณ์แคมป์ปิ้ง คุณภาพดีจากต่างประเทศ
-              สำหรับผู้รักการท่องเที่ยว
+            <p class="text-xs ml-2 font-medium dropdown-item">
+              หมวดหมู่สินค้าทั้งหมด
             </p>
           </div>
-          <div class="flex flex-col">
-            <h4 class="text-base font-medium">มาใหม่และลดราคา</h4>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold"
-              >สินค้ามาใหม่</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold mt-1"
-              >สินค้าโปรโมชัน</a
-            >
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-base font-medium">ของใช้แคมป์ปิ้ง</h4>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold"
-              >เต้นท์และทาร์ป</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เฟอร์นิเจอร์</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เครื่องนอน</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >กระเป๋า เป้</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เสื้อผ้า รองเท้า</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >ตะเกียงและโคมไฟ</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >อื่น ๆ</a
-            >
-          </div>
-          <div class="flex flex-col">
-            <h4 class="text-base font-medium">เครื่องครัว ทำอาหาร</h4>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <a
-              href="./products.html"
-              class="text-sm hover:text-primary hover:font-bold"
-              >เตาแก็ส</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เตาฟืน เตาย่าง BBQ</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เชื้อเพลิง แก๊สกระป๋อง</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >อุปกรณ์ทำอาหาร</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >เครื่องครัว</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >คูลเลอร์</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >มีดและของมีคม</a
-            >
-            <a
-              href="./products.html"
-              class="text-sm mt-1 hover:text-primary hover:font-bold"
-              >อาหาร</a
-            >
+          <div class="flex items-center justify-around w-[calc(100%_-_170px)]">
+            <div class="flex items-center">
+              <img src="./images/icons/icon-category/ico-new.svg" alt="menu" />
+              <p class="text-xs ml-2 font-medium">สินค้ามาใหม่</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-percent.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">สินค้าโปรโมชัน</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./images/icons/icon-category/ico-tent.svg" alt="menu" />
+              <p class="text-xs ml-2 font-medium">เต็นท์ & ทาร์ป</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-chair.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">เฟอร์นิเจอร์</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./images/icons/icon-category/ico-gas.svg" alt="menu" />
+              <p class="text-xs ml-2 font-medium">แก๊สและเชื้อเพลิง</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-trash.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">ถังน้ำแข็ง</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-knife.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">มีดและของมีคม</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="./images/icons/icon-category/ico-lightbulb.svg"
+                alt="menu"
+              />
+              <p class="text-xs ml-2 font-medium">อุปกรณ์ให้ความสว่าง</p>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <main class="bg-[#F8F8F8]">
-      <div class="container mx-auto pb-4">
-        <section class="p-4">
-          <div class="text-xs">
-            <p class="inline-block">หน้าแรก</p>
-            <span class="text-[#d9d9d9]"> / โปรไฟล์</span>
-          </div>
-        </section>
-        <section class="mt-6 mb-4 mx-2 md:mx-0">
-          <div class="flex gap-3 flex-wrap md:flex-nowrap">
-            <div
-              class="w-full md:w-1/4 shadow-[0_1px_8px_0px_#C4C4C4] bg-white p-6 rounded"
-            >
-              <div class="flex items-center gap-2">
-                <img src="./images/profile.png" />
-                <div>
-                  <p class="text-base md:text-2xl">Sher Siris</p>
-                  <div class="flex gap-2 mt-2">
-                    <img src="./images/icons/ico-pencil.svg" />
-                    <p class="underline text-sm md:text-base">
-                      แก้ไขข้อมูลส่วนตัว
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full h-[1px] bg-[#9F9F9F] my-4"></div>
-              <div class="">
-                <p class="text-sm md:text-base font-bold">บัญชีของฉัน</p>
-                <div class="w-full h-[1px] bg-primary my-2"></div>
-                <div class="flex flex-col gap-1">
-                  <a
-                    href="./my-account.html"
-                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
-                    >ข้อมูลของฉัน</a
-                  >
-                  <a
-                    href="./my-address.html"
-                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
-                    >ที่อยู่ของฉัน</a
-                  >
-                  <a
-                    href="./my-credit.html"
-                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
-                    >บัตรเครดิต / บัตรเดบิต</a
-                  >
-                </div>
-              </div>
-              <div class="mt-4">
-                <p class="text-sm md:text-base font-bold">การซื้อของฉัน</p>
-                <div class="w-full h-[1px] bg-primary my-2"></div>
-                <div class="flex flex-col gap-1">
-                  <a
-                    href="./my-purchase.html"
-                    class="text-sm md:text-base text-primary font-bold"
-                    >ทั้งหมด</a
-                  >
-                  <a
-                    href="./my-purchase.html"
-                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
-                    >ที่ต้องชำระ</a
-                  >
-                  <a
-                    href="./my-purchase.html"
-                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
-                    >ที่ต้องจัดส่ง</a
-                  >
-                  <a
-                    href="./my-purchase.html"
-                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
-                    >ที่ต้องได้รับ</a
-                  >
-                  <a
-                    href="./my-purchase.html"
-                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
-                    >สำเร็จแล้ว</a
-                  >
-                  <a
-                    href="./my-purchase.html"
-                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
-                    >ยกเลิก</a
-                  >
-                  <a
-                    href="./my-purchase.html"
-                    class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
-                    >คืนเงิน คืนสินค้า</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              class="w-full md:w-3/4 shadow-[0_1px_8px_0px_#C4C4C4] bg-white p-6 rounded"
-            >
-              <div>
-                <h3 class="text-base md:text-2xl font-bold">การซื้อของฉัน</h3>
-                <p class="text-xs md:text-sm mt-1">
-                  รายการการซื้อของฉันทั้งหมด
-                </p>
-              </div>
-              <div class="w-full h-[1px] bg-[#9F9F9F] my-4"></div>
-              <h3 class="text-base md:text-2xl font-bold">ที่อยู่</h3>
-              <div class="flex flex-col gap-4 my-4">
-                <div
-                  class="shadow-[0_1px_8px_0px_#C4C4C4] rounded p-4 flex flex-col gap-4"
-                >
-                  <div class="grid grid-cols-8">
-                    <p class="col-span-4 font-bold text-sm md:text-base">
-                      สินค้า
-                    </p>
-                    <p class="col-span-2 font-bold text-sm md:text-base">
-                      ยอดรวม
-                    </p>
-                    <p class="col-span-2 font-bold text-sm md:text-base">
-                      สถานะ
-                    </p>
-                  </div>
-                  <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
-                  <div class="grid grid-cols-8">
-                    <div
-                      class="flex col-span-4 font-bold text-sm md:text-base gap-4 items-center"
-                    >
-                      <img
-                        src="./images/table.png"
-                        class="w-[40px] md:w-[80px]"
-                      />
-                      <p class="truncate">COSY FOLDING CHAIR (black)...</p>
-                    </div>
-                    <div
-                      class="col-span-2 text-sm md:text-base flex items-center font-medium"
-                    >
-                      ฿ 7,565
-                    </div>
-                    <div class="col-span-2 flex items-center">
-                      <p class="text-sm md:text-base bg-[#D7EEE8] p-2 rounded">
-                        พัสดุถูกจัดส่งแล้ว
-                      </p>
-                    </div>
-                  </div>
-                  <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
-                </div>
-                <div
-                  class="shadow-[0_1px_8px_0px_#C4C4C4] rounded p-4 flex flex-col gap-4"
-                >
-                  <div class="grid grid-cols-8">
-                    <p class="col-span-4 font-bold text-sm md:text-base">
-                      สินค้า
-                    </p>
-                    <p class="col-span-2 font-bold text-sm md:text-base">
-                      ยอดรวม
-                    </p>
-                    <p class="col-span-2 font-bold text-sm md:text-base">
-                      สถานะ
-                    </p>
-                  </div>
-                  <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
-                  <div class="grid grid-cols-8">
-                    <div
-                      class="flex col-span-4 font-bold text-sm md:text-base gap-4 items-center"
-                    >
-                      <img
-                        src="./images/table.png"
-                        class="w-[40px] md:w-[80px]"
-                      />
-                      <p class="truncate">COSY FOLDING CHAIR (black)...</p>
-                    </div>
-                    <div
-                      class="col-span-2 text-sm md:text-base flex items-center font-medium"
-                    >
-                      ฿ 7,565
-                    </div>
-                    <div class="col-span-2 flex items-center">
-                      <p class="text-sm md:text-base bg-[#FFF6DD] p-2 rounded">
-                        รอชำระเงิน
-                      </p>
-                    </div>
-                  </div>
-                  <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
-                </div>
-                <div
-                  class="shadow-[0_1px_8px_0px_#C4C4C4] rounded p-4 flex flex-col gap-4"
-                >
-                  <div class="grid grid-cols-8">
-                    <p class="col-span-4 font-bold text-sm md:text-base">
-                      สินค้า
-                    </p>
-                    <p class="col-span-2 font-bold text-sm md:text-base">
-                      ยอดรวม
-                    </p>
-                    <p class="col-span-2 font-bold text-sm md:text-base">
-                      สถานะ
-                    </p>
-                  </div>
-                  <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
-                  <div class="grid grid-cols-8">
-                    <div
-                      class="flex col-span-4 font-bold text-sm md:text-base gap-4 items-center"
-                    >
-                      <img
-                        src="./images/table.png"
-                        class="w-[40px] md:w-[80px]"
-                      />
-                      <p class="truncate">COSY FOLDING CHAIR (black)...</p>
-                    </div>
-                    <div
-                      class="col-span-2 text-sm md:text-base flex items-center font-medium"
-                    >
-                      ฿ 7,565
-                    </div>
-                    <div class="col-span-2 flex items-center">
-                      <p class="text-sm md:text-base bg-[#DAEAF6] p-2 rounded">
-                        กำลังจัดส่ง
-                      </p>
-                    </div>
-                  </div>
-                  <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
-                </div>
-              </div>
-              <div
-                class="shadow-[0_1px_8px_0px_#C4C4C4] rounded p-4 flex justify-center items-center flex-col"
-              >
-                <img src="./images/checklist.png" />
-                <p class="text-sm md:text-base mt-4">ยังไม่มีรายการสินค้า</p>
-                <button
-                  class="bg-primary mt-4 w-[160px] h-[54px] rounded text-white font-bold"
-                >
-                  เลือกซื้อสินค้า
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          class="bg-primary text-white rounded py-2 md:py-6 grid grid-cols-2 md:grid-cols-4 m-4 md:m-0 px-2 md:px-[100px] gap-2"
+        <div
+          class="dropdown-content hidden w-full absolute bg-white mt-[2px]"
+          id="dropdown-content"
         >
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/1.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">ช้อปง่าย</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                ซื้อของได้ตลอด 24 ชม.
+          <div class="container mx-auto py-6 flex gap-8">
+            <div
+              class="py-5 bg-primary w-[182px] text-center text-white rounded"
+            >
+              <img src="./images/logo-big.svg" alt="logo" class="mx-auto" />
+              <p class="mt-2 text-sm font-medium">Camp One Outdoor</p>
+              <p class="mt-2 text-xs px-4 font-medium">
+                ร้านจำหน่ายอุปกรณ์แคมป์ปิ้ง คุณภาพดีจากต่างประเทศ
+                สำหรับผู้รักการท่องเที่ยว
               </p>
             </div>
-          </div>
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/2.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">จัดส่งทั่วไทย</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                ใกล้ไกลแค่ไหนก็จัดส่ง
-              </p>
+            <div class="flex flex-col">
+              <h4 class="text-base font-medium">มาใหม่และลดราคา</h4>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold"
+                >สินค้ามาใหม่</a
+              >
+              <a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold mt-1"
+                >สินค้าโปรโมชัน</a
+              >
             </div>
-          </div>
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/3.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">จ่ายง่าย สะดวก</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                ช่องทางชำระเงินหลากหลาย
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-2 md:gap-4">
-            <img
-              src="./images/icons/icon-product/4.svg"
-              alt="test"
-              class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
-            />
-            <div class="">
-              <p class="text-sm md:text-base font-medium">บริการช่วยเหลือ</p>
-              <p class="text-[10px] md:text-sm mt-1 font-medium">
-                09:00 - 21:00 ทุกวัน
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="container mx-auto hidden md:block">
-      <div class="py-8 flex justify-between">
-        <div class="flex gap-[68px]">
-          <div>
-            <h3 class="text-base font-medium">ประเภทสินค้า</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex flex-col gap-1">
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+            <div class="flex flex-col">
+              <h4 class="text-base font-medium">ของใช้แคมป์ปิ้ง</h4>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold"
                 >เต้นท์และทาร์ป</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เฟอร์นิเจอร์</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เครื่องนอน</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >กระเป๋า เป้</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >เสื้อผ้า รองเท้า</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อุปกรณ์ให้ความสว่าง</a
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >ตะเกียงและโคมไฟ</a
               >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >ถังน้ำแข็ง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >มีดและของมีคม</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >แก๊สและเชื้อเพลิง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เตาแก็ส</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เตาฟืน เตาย่าง BBQ</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >เครื่องครัว</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อุปกรณ์ทำอาหาร</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
-                >อาหารและเครื่องปรุง</a
-              >
-              <a href="./product-detail.html" class="text-sm hover:text-primary"
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
                 >อื่น ๆ</a
               >
             </div>
-          </div>
-          <div>
-            <h3 class="text-base font-medium">บริการลูกค้า</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col">
+              <h4 class="text-base font-medium">เครื่องครัว ทำอาหาร</h4>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
               <a
-                href="./warantee-policy.html"
-                class="text-sm hover:text-primary"
-                >ขอเปลี่ยนสินค้า</a
+                href="./products.html"
+                class="text-sm hover:text-primary hover:font-bold"
+                >เตาแก็ส</a
               >
               <a
-                href="./warantee-policy.html"
-                class="text-sm hover:text-primary"
-                >ลงทะเบียนรับประกันสินค้า</a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >เตาฟืน เตาย่าง BBQ</a
               >
               <a
-                href="./warantee-policy.html"
-                class="text-sm hover:text-primary"
-                >นโยบายการรับประกัน</a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >เชื้อเพลิง แก๊สกระป๋อง</a
               >
               <a
-                href="./personal-policy.html"
-                class="text-sm hover:text-primary"
-                >นโยบายความเป็นส่วนตัว</a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >อุปกรณ์ทำอาหาร</a
               >
-              <a href="./shop-policy.html" class="text-sm hover:text-primary"
-                >นโยบายร้านค้า</a
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >เครื่องครัว</a
               >
-            </div>
-          </div>
-          <div>
-            <h3 class="text-base font-medium">เกี่ยวกับเรา</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex flex-col gap-1">
-              <a href="./contact.html" class="text-sm hover:text-primary"
-                >ติดต่อเรา</a
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >คูลเลอร์</a
               >
-              <a href="./contact.html" class="text-sm hover:text-primary"
-                >สาขาและสถานที่ตั้ง</a
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >มีดและของมีคม</a
               >
-               <a href="./article.html" class="text-sm hover:text-primary">
-                บทความ / ข่าวสาร
-              </a>
+              <a
+                href="./products.html"
+                class="text-sm mt-1 hover:text-primary hover:font-bold"
+                >อาหาร</a
+              >
             </div>
           </div>
         </div>
-        <div class="max-w-[324px]">
-          <div>
-            <h3 class="text-base font-medium">ติดตามเรา</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
-            <div class="flex mt-2 gap-4">
+      </nav>
+      <main class="bg-[#F8F8F8]">
+        <div class="container mx-auto pb-4">
+          <section class="p-4">
+            <div class="text-xs">
+              <p class="inline-block">หน้าแรก</p>
+              <span class="text-[#d9d9d9]"> / โปรไฟล์</span>
+            </div>
+          </section>
+          <section class="mt-6 mb-4 mx-2 md:mx-0">
+            <div class="flex gap-3 flex-wrap md:flex-nowrap">
+              <div
+                class="w-full md:w-1/4 shadow-[0_1px_8px_0px_#C4C4C4] bg-white p-6 rounded"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="./images/profile.png" />
+                  <div>
+                    <p class="text-base md:text-2xl">Sher Siris</p>
+                    <div class="flex gap-2 mt-2">
+                      <img src="./images/icons/ico-pencil.svg" />
+                      <p class="underline text-sm md:text-base">
+                        แก้ไขข้อมูลส่วนตัว
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full h-[1px] bg-[#9F9F9F] my-4"></div>
+                <div class="">
+                  <p class="text-sm md:text-base font-bold">บัญชีของฉัน</p>
+                  <div class="w-full h-[1px] bg-primary my-2"></div>
+                  <div class="flex flex-col gap-1">
+                    <a
+                      href="./my-account.html"
+                      class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                      >ข้อมูลของฉัน</a
+                    >
+                    <a
+                      href="./my-address.html"
+                      class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                      >ที่อยู่ของฉัน</a
+                    >
+                    <a
+                      href="./my-credit.html"
+                      class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                      >บัตรเครดิต / บัตรเดบิต</a
+                    >
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-sm md:text-base font-bold">การซื้อของฉัน</p>
+                  <div class="w-full h-[1px] bg-primary my-2"></div>
+                  <div class="flex flex-col gap-1">
+                    <a
+                      href="./my-purchase.html"
+                      class="text-sm md:text-base text-primary font-bold"
+                      >ทั้งหมด</a
+                    >
+                    <a
+                      href="./my-purchase.html"
+                      class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                      >ที่ต้องชำระ</a
+                    >
+                    <a
+                      href="./my-purchase.html"
+                      class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                      >ที่ต้องจัดส่ง</a
+                    >
+                    <a
+                      href="./my-purchase.html"
+                      class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                      >ที่ต้องได้รับ</a
+                    >
+                    <a
+                      href="./my-purchase.html"
+                      class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                      >สำเร็จแล้ว</a
+                    >
+                    <a
+                      href="./my-purchase.html"
+                      class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                      >ยกเลิก</a
+                    >
+                    <a
+                      href="./my-purchase.html"
+                      class="text-sm md:text-base font-medium hover:text-primary hover:font-bold"
+                      >คืนเงิน คืนสินค้า</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-full md:w-3/4 shadow-[0_1px_8px_0px_#C4C4C4] bg-white p-6 rounded"
+              >
+                <div>
+                  <h3 class="text-base md:text-2xl font-bold">การซื้อของฉัน</h3>
+                  <p class="text-xs md:text-sm mt-1">
+                    รายการการซื้อของฉันทั้งหมด
+                  </p>
+                </div>
+                <div class="w-full h-[1px] bg-[#9F9F9F] my-4"></div>
+                <h3 class="text-base md:text-2xl font-bold">ที่อยู่</h3>
+                <div class="flex flex-col gap-4 my-4">
+                  <div
+                    class="shadow-[0_1px_8px_0px_#C4C4C4] rounded p-4 flex flex-col gap-4"
+                  >
+                    <div class="grid grid-cols-8">
+                      <p class="col-span-4 font-bold text-sm md:text-base">
+                        สินค้า
+                      </p>
+                      <p class="col-span-2 font-bold text-sm md:text-base">
+                        ยอดรวม
+                      </p>
+                      <p class="col-span-2 font-bold text-sm md:text-base">
+                        สถานะ
+                      </p>
+                    </div>
+                    <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
+                    <div class="grid grid-cols-8">
+                      <div
+                        class="flex col-span-4 font-bold text-sm md:text-base gap-4 items-center"
+                      >
+                        <img
+                          src="./images/table.png"
+                          class="w-[40px] md:w-[80px]"
+                        />
+                        <p class="truncate">COSY FOLDING CHAIR (black)...</p>
+                      </div>
+                      <div
+                        class="col-span-2 text-sm md:text-base flex items-center font-medium"
+                      >
+                        ฿ 7,565
+                      </div>
+                      <div class="col-span-2 flex items-center">
+                        <p
+                          class="text-sm md:text-base bg-[#D7EEE8] p-2 rounded"
+                        >
+                          พัสดุถูกจัดส่งแล้ว
+                        </p>
+                      </div>
+                    </div>
+                    <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
+                  </div>
+                  <div
+                    class="shadow-[0_1px_8px_0px_#C4C4C4] rounded p-4 flex flex-col gap-4"
+                  >
+                    <div class="grid grid-cols-8">
+                      <p class="col-span-4 font-bold text-sm md:text-base">
+                        สินค้า
+                      </p>
+                      <p class="col-span-2 font-bold text-sm md:text-base">
+                        ยอดรวม
+                      </p>
+                      <p class="col-span-2 font-bold text-sm md:text-base">
+                        สถานะ
+                      </p>
+                    </div>
+                    <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
+                    <div class="grid grid-cols-8">
+                      <div
+                        class="flex col-span-4 font-bold text-sm md:text-base gap-4 items-center"
+                      >
+                        <img
+                          src="./images/table.png"
+                          class="w-[40px] md:w-[80px]"
+                        />
+                        <p class="truncate">COSY FOLDING CHAIR (black)...</p>
+                      </div>
+                      <div
+                        class="col-span-2 text-sm md:text-base flex items-center font-medium"
+                      >
+                        ฿ 7,565
+                      </div>
+                      <div class="col-span-2 flex items-center">
+                        <p
+                          class="text-sm md:text-base bg-[#FFF6DD] p-2 rounded"
+                        >
+                          รอชำระเงิน
+                        </p>
+                      </div>
+                    </div>
+                    <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
+                  </div>
+                  <div
+                    class="shadow-[0_1px_8px_0px_#C4C4C4] rounded p-4 flex flex-col gap-4"
+                  >
+                    <div class="grid grid-cols-8">
+                      <p class="col-span-4 font-bold text-sm md:text-base">
+                        สินค้า
+                      </p>
+                      <p class="col-span-2 font-bold text-sm md:text-base">
+                        ยอดรวม
+                      </p>
+                      <p class="col-span-2 font-bold text-sm md:text-base">
+                        สถานะ
+                      </p>
+                    </div>
+                    <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
+                    <div class="grid grid-cols-8">
+                      <div
+                        class="flex col-span-4 font-bold text-sm md:text-base gap-4 items-center"
+                      >
+                        <img
+                          src="./images/table.png"
+                          class="w-[40px] md:w-[80px]"
+                        />
+                        <p class="truncate">COSY FOLDING CHAIR (black)...</p>
+                      </div>
+                      <div
+                        class="col-span-2 text-sm md:text-base flex items-center font-medium"
+                      >
+                        ฿ 7,565
+                      </div>
+                      <div class="col-span-2 flex items-center">
+                        <p
+                          class="text-sm md:text-base bg-[#DAEAF6] p-2 rounded"
+                        >
+                          กำลังจัดส่ง
+                        </p>
+                      </div>
+                    </div>
+                    <div class="w-full h-[1px] bg-[#9F9F9F]"></div>
+                  </div>
+                </div>
+                <div
+                  class="shadow-[0_1px_8px_0px_#C4C4C4] rounded p-4 flex justify-center items-center flex-col"
+                >
+                  <img src="./images/checklist.png" />
+                  <p class="text-sm md:text-base mt-4">ยังไม่มีรายการสินค้า</p>
+                  <button
+                    class="bg-primary mt-4 w-[160px] h-[54px] rounded text-white font-bold"
+                  >
+                    เลือกซื้อสินค้า
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="bg-primary text-white rounded py-2 md:py-6 grid grid-cols-2 md:grid-cols-4 m-4 md:m-0 px-2 md:px-[100px] gap-2"
+          >
+            <div class="flex gap-2 md:gap-4">
               <img
-                src="./images/icons/icon-contact/ico-facebook.svg"
-                alt="facebook"
+                src="./images/icons/icon-product/1.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
               />
-              <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">ช้อปง่าย</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  ซื้อของได้ตลอด 24 ชม.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 md:gap-4">
               <img
-                src="./images/icons/icon-contact/ico-pinterest.svg"
-                alt="pinterest"
+                src="./images/icons/icon-product/2.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
               />
-              <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">จัดส่งทั่วไทย</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  ใกล้ไกลแค่ไหนก็จัดส่ง
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 md:gap-4">
               <img
-                src="./images/icons/icon-contact/ico-tiktok.svg"
-                alt="tiktok"
+                src="./images/icons/icon-product/3.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
               />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">จ่ายง่าย สะดวก</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  ช่องทางชำระเงินหลากหลาย
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 md:gap-4">
+              <img
+                src="./images/icons/icon-product/4.svg"
+                alt="test"
+                class="w-[24px] h-[24px] md:w-[40px] md:h-[40px]"
+              />
+              <div class="">
+                <p class="text-sm md:text-base font-medium">บริการช่วยเหลือ</p>
+                <p class="text-[10px] md:text-sm mt-1 font-medium">
+                  09:00 - 21:00 ทุกวัน
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="container mx-auto hidden md:block">
+        <div class="py-8 flex justify-between">
+          <div class="flex gap-[68px]">
+            <div>
+              <h3 class="text-base font-medium">ประเภทสินค้า</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex flex-col gap-1">
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เต้นท์และทาร์ป</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เฟอร์นิเจอร์</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เครื่องนอน</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >กระเป๋า เป้</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เสื้อผ้า รองเท้า</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อุปกรณ์ให้ความสว่าง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >ถังน้ำแข็ง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >มีดและของมีคม</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >แก๊สและเชื้อเพลิง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เตาแก็ส</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เตาฟืน เตาย่าง BBQ</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >เครื่องครัว</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อุปกรณ์ทำอาหาร</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อาหารและเครื่องปรุง</a
+                >
+                <a
+                  href="./product-detail.html"
+                  class="text-sm hover:text-primary"
+                  >อื่น ๆ</a
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="text-base font-medium">บริการลูกค้า</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex flex-col gap-1">
+                <a
+                  href="./warantee-policy.html"
+                  class="text-sm hover:text-primary"
+                  >ขอเปลี่ยนสินค้า</a
+                >
+                <a
+                  href="./warantee-policy.html"
+                  class="text-sm hover:text-primary"
+                  >ลงทะเบียนรับประกันสินค้า</a
+                >
+                <a
+                  href="./warantee-policy.html"
+                  class="text-sm hover:text-primary"
+                  >นโยบายการรับประกัน</a
+                >
+                <a
+                  href="./personal-policy.html"
+                  class="text-sm hover:text-primary"
+                  >นโยบายความเป็นส่วนตัว</a
+                >
+                <a href="./shop-policy.html" class="text-sm hover:text-primary"
+                  >นโยบายร้านค้า</a
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="text-base font-medium">เกี่ยวกับเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex flex-col gap-1">
+                <a href="./contact.html" class="text-sm hover:text-primary"
+                  >ติดต่อเรา</a
+                >
+                <a href="./contact.html" class="text-sm hover:text-primary"
+                  >สาขาและสถานที่ตั้ง</a
+                >
+                <a href="./article.html" class="text-sm hover:text-primary">
+                  บทความ / ข่าวสาร
+                </a>
+              </div>
             </div>
           </div>
-          <div class="mt-[36px]">
-            <h3 class="text-base font-medium">ติดต่อเรา</h3>
-            <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+          <div class="max-w-[324px]">
+            <div>
+              <h3 class="text-base font-medium">ติดตามเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex mt-2 gap-4">
+                <img
+                  src="./images/icons/icon-contact/ico-facebook.svg"
+                  alt="facebook"
+                />
+                <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
+                <img
+                  src="./images/icons/icon-contact/ico-pinterest.svg"
+                  alt="pinterest"
+                />
+                <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
+                <img
+                  src="./images/icons/icon-contact/ico-tiktok.svg"
+                  alt="tiktok"
+                />
+              </div>
+            </div>
+            <div class="mt-[36px]">
+              <h3 class="text-base font-medium">ติดต่อเรา</h3>
+              <div class="w-[80px] h-[1px] bg-primary my-2"></div>
+              <div class="flex items-center">
+                <img src="./images/icons/ico-tel.svg" alt="tel" />
+                <p class="ml-1 text-base">โทร 095-002-6622</p>
+              </div>
+              <div class="flex items-center">
+                <img src="./images/icons/ico-email.svg" alt="mail" />
+                <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
+              </div>
+              <p class="text-sm">
+                เว็บไซต์นี้ ดูแลโดยสาขาราชพฤกษ์ และ
+                หนองแขมหากพบปัญหาในการใช้เว็บไซต์ กรุณาติดต่อ:
+              </p>
+              <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
+                <p class="text-primary font-bold text-sm">
+                  Camp One Outdoor Store Ratchaphruek: 
+                </p>
+                <p class="text-sm">5/1 Ratchaphruek Road, T.Bang Krang A.</p>
+                <p class="text-sm">Muang-Nonthaburi 11000 Thailand</p>
+                <div class="flex items-start">
+                  <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
+                  <div class="ml-1">
+                    <p class="text-sm">062-495-5151 / 083-199-2974</p>
+                    <p class="text-sm">(Khun Anuwat M./ Khun Worachat K.)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
+                <p class="text-primary font-bold text-sm">
+                  Camp One Outdoor Store Nongkhaem: 
+                </p>
+                <p class="text-sm">
+                  626 Petchkrasem Nongkahaem Bangkok 10160 Thailand
+                </p>
+                <div class="flex items-center">
+                  <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
+                  <div class="ml-1">
+                    <p class="text-sm">095-456-8535 (Khun Thanawit T.)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center py-[30px] flex justify-center items-center">
+          <img src="./images/logo-outline.svg" alt="logo" />
+          <p class="text-sm font-medium">Copyright © 2022 camponeoutdoor.com</p>
+        </div>
+      </footer>
+      <footer class="container mx-auto block md:hidden">
+        <div class="flex justify-center py-4">
+          <img
+            src="./images/logo-outline.svg"
+            width="60"
+            height="60"
+            alt="logo"
+          />
+        </div>
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">ติดต่อเรา</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-1-button"
+              onclick="toggleFooter1(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div id="footer-1-container" class="hidden">
             <div class="flex items-center">
               <img src="./images/icons/ico-tel.svg" alt="tel" />
               <p class="ml-1 text-base">โทร 095-002-6622</p>
@@ -768,10 +897,6 @@
               <img src="./images/icons/ico-email.svg" alt="mail" />
               <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
             </div>
-            <p class="text-sm">
-              เว็บไซต์นี้ ดูแลโดยสาขาราชพฤกษ์ และ
-              หนองแขมหากพบปัญหาในการใช้เว็บไซต์ กรุณาติดต่อ:
-            </p>
             <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
               <p class="text-primary font-bold text-sm">
                 Camp One Outdoor Store Ratchaphruek: 
@@ -802,166 +927,104 @@
             </div>
           </div>
         </div>
-      </div>
-      <hr />
-      <div class="text-center py-[30px] flex justify-center items-center">
-        <img src="./images/logo-outline.svg" alt="logo" />
-        <p class="text-sm font-medium">Copyright © 2022 camponeoutdoor.com</p>
-      </div>
-    </footer>
-   <footer class="container mx-auto block md:hidden">
-      <div class="flex justify-center py-4">
-        <img
-          src="./images/logo-outline.svg"
-          width="60"
-          height="60"
-          alt="logo"
-        />
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">ติดต่อเรา</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-1-button"
-            onclick="toggleFooter1(event)"
-          />
-        </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div id="footer-1-container" class="hidden">
-          <div class="flex items-center">
-            <img src="./images/icons/ico-tel.svg" alt="tel" />
-            <p class="ml-1 text-base">โทร 095-002-6622</p>
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">ประเภทสินค้า</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-2-button"
+              onclick="toggleFooter2(event)"
+            />
           </div>
-          <div class="flex items-center">
-            <img src="./images/icons/ico-email.svg" alt="mail" />
-            <p class="ml-1 text-base">อีเมล camponeoutdoor@gmail.com</p>
-          </div>
-          <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
-            <p class="text-primary font-bold text-sm">
-              Camp One Outdoor Store Ratchaphruek: 
-            </p>
-            <p class="text-sm">5/1 Ratchaphruek Road, T.Bang Krang A.</p>
-            <p class="text-sm">Muang-Nonthaburi 11000 Thailand</p>
-            <div class="flex items-start">
-              <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
-              <div class="ml-1">
-                <p class="text-sm">062-495-5151 / 083-199-2974</p>
-                <p class="text-sm">(Khun Anuwat M./ Khun Worachat K.)</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-[#F8F8F8] p-2 mt-1 rounded">
-            <p class="text-primary font-bold text-sm">
-              Camp One Outdoor Store Nongkhaem: 
-            </p>
-            <p class="text-sm">
-              626 Petchkrasem Nongkahaem Bangkok 10160 Thailand
-            </p>
-            <div class="flex items-center">
-              <img src="./images/icons/ico-tel.svg" alt="tel" height="20" />
-              <div class="ml-1">
-                <p class="text-sm">095-456-8535 (Khun Thanawit T.)</p>
-              </div>
-            </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden flex-col gap-1" id="footer-2-container">
+            <a href="./products.html">เต้นท์และทาร์ป</a>
+            <a href="./products.html">เฟอร์นิเจอร์</a>
+            <a href="./products.html">เครื่องนอน</a>
+            <a href="./products.html">กระเป๋า เป้</a>
+            <a href="./products.html">เสื้อผ้า รองเท้า</a>
+            <a href="./products.html">อุปกรณ์ให้ความสว่าง</a>
+            <a href="./products.html">ถังน้ำแข็ง</a>
+            <a href="./products.html">มีดและของมีคม</a>
+            <a href="./products.html">แก๊สและเชื้อเพลิง</a>
+            <a href="./products.html">เตาแก็ส</a>
+            <a href="./products.html">เตาฟืน เตาย่าง BBQ</a>
+            <a href="./products.html">เครื่องครัว</a>
+            <a href="./products.html">อุปกรณ์ทำอาหาร</a>
+            <a href="./products.html">อาหารและเครื่องปรุง</a>
+            <a href="./products.html">อื่น ๆ</a>
           </div>
         </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">ประเภทสินค้า</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-2-button"
-            onclick="toggleFooter2(event)"
-          />
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">บริการลูกค้า</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-3-button"
+              onclick="toggleFooter3(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden flex-col gap-1" id="footer-3-container">
+            <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
+            <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
+            <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
+            <a href="./personal-policy.html">นโยบายความเป็นส่วนตัว</a>
+            <a href="./shop-policy.html">นโยบายร้านค้า</a>
+          </div>
         </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden flex-col gap-1" id="footer-2-container">
-          <a href="./products.html">เต้นท์และทาร์ป</a>
-          <a href="./products.html">เฟอร์นิเจอร์</a>
-          <a href="./products.html">เครื่องนอน</a>
-          <a href="./products.html">กระเป๋า เป้</a>
-          <a href="./products.html">เสื้อผ้า รองเท้า</a>
-          <a href="./products.html">อุปกรณ์ให้ความสว่าง</a>
-          <a href="./products.html">ถังน้ำแข็ง</a>
-          <a href="./products.html">มีดและของมีคม</a>
-          <a href="./products.html">แก๊สและเชื้อเพลิง</a>
-          <a href="./products.html">เตาแก็ส</a>
-          <a href="./products.html">เตาฟืน เตาย่าง BBQ</a>
-          <a href="./products.html">เครื่องครัว</a>
-          <a href="./products.html">อุปกรณ์ทำอาหาร</a>
-          <a href="./products.html">อาหารและเครื่องปรุง</a>
-          <a href="./products.html">อื่น ๆ</a>
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">เกี่ยวกับเรา</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-4-button"
+              onclick="toggleFooter4(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden flex-col gap-1" id="footer-4-container">
+            <a href="./contact.html">ติดต่อเรา</a>
+            <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
+            <p href="./article.html">บทความ / ข่าวสาร</p>
+          </div>
         </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">บริการลูกค้า</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-3-button"
-            onclick="toggleFooter3(event)"
-          />
+        <div class="px-4 py-2">
+          <div class="flex justify-between">
+            <p class="font-medium">ติดตามเรา</p>
+            <img
+              src="./images/icons/ico-plus.svg"
+              alt="-"
+              id="footer-5-button"
+              onclick="toggleFooter5(event)"
+            />
+          </div>
+          <div class="w-full h-[1px] bg-primary my-2"></div>
+          <div class="hidden mt-4 gap-4" id="footer-5-container">
+            <img
+              src="./images/icons/icon-contact/ico-facebook.svg"
+              alt="facebook"
+            />
+            <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
+            <img
+              src="./images/icons/icon-contact/ico-pinterest.svg"
+              alt="pinterest"
+            />
+            <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
+            <img
+              src="./images/icons/icon-contact/ico-tiktok.svg"
+              alt="tiktok"
+            />
+          </div>
         </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden flex-col gap-1" id="footer-3-container">
-          <a href="./warantee-policy.html">ขอเปลี่ยนสินค้า</a>
-          <a href="./warantee-policy.html">ลงทะเบียนรับประกันสินค้า</a>
-          <a href="./warantee-policy.html">นโยบายการรับประกัน</a>
-          <a href="./personal-policy.html">นโยบายความเป็นส่วนตัว</a>
-          <a href="./shop-policy.html">นโยบายร้านค้า</a>
+        <div class="text-center py-4 flex justify-center items-center">
+          <p class="text-xs font-medium">Copyright © 2022 camponeoutdoor.com</p>
         </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">เกี่ยวกับเรา</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-4-button"
-            onclick="toggleFooter4(event)"
-          />
-        </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden flex-col gap-1" id="footer-4-container">
-          <a href="./contact.html">ติดต่อเรา</a>
-          <a href="./contact.html">สาขาและสถานที่ตั้ง</a>
-          <p href="./article.html">บทความ / ข่าวสาร</p>
-        </div>
-      </div>
-      <div class="px-4 py-2">
-        <div class="flex justify-between">
-          <p class="font-medium">ติดตามเรา</p>
-          <img
-            src="./images/icons/ico-plus.svg"
-            alt="-"
-            id="footer-5-button"
-            onclick="toggleFooter5(event)"
-          />
-        </div>
-        <div class="w-full h-[1px] bg-primary my-2"></div>
-        <div class="hidden mt-4 gap-4" id="footer-5-container">
-          <img
-            src="./images/icons/icon-contact/ico-facebook.svg"
-            alt="facebook"
-          />
-          <img src="./images/icons/icon-contact/ico-ig.svg" alt="ig" />
-          <img
-            src="./images/icons/icon-contact/ico-pinterest.svg"
-            alt="pinterest"
-          />
-          <img src="./images/icons/icon-contact/ico-x.svg" alt="x" />
-          <img src="./images/icons/icon-contact/ico-tiktok.svg" alt="tiktok" />
-        </div>
-      </div>
-      <div class="text-center py-4 flex justify-center items-center">
-        <p class="text-xs font-medium">Copyright © 2022 camponeoutdoor.com</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
   <script src="./script/layout.js"></script>
   <script src="./script/footer.js"></script>
