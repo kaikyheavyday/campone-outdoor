@@ -32,77 +32,18 @@
         color: #9f9f9f;
       }
 
-      .slideshow-container {
-        width: 100%;
-        position: relative;
+      #banner-carousel .splide__arrow svg {
+        fill: #478978;
+      }
+      #banner-carousel .splide__arrow--prev {
+        left: 0 !important;
       }
 
-      /* Next & previous buttons */
-      .prev,
-      .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
+      #banner-carousel .splide__arrow--next {
+        right: 0 !important;
       }
+      #banner-carousel
 
-      .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-      }
-
-      .text-slide {
-        position: absolute;
-        top: 33px;
-        left: 33px;
-        width: 100%;
-      }
-
-      .dot-container {
-        position: absolute;
-        width: 100%;
-        bottom: 12px;
-      }
-
-      .dot {
-        cursor: pointer;
-        height: 8px;
-        width: 20px;
-        margin: 0 2px;
-        background-color: #ddece8;
-        border-radius: 4px;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
-
-      .active,
-      .dot:hover {
-        background-color: #478978;
-      }
-
-      .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
-
-      @keyframes fade {
-        from {
-          opacity: 0;
-          transform: translateX(10px);
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
       #banner2-carousel .splide__pagination.splide__pagination--ltr {
         padding: 12px !important;
         bottom: -32px !important;
@@ -218,6 +159,13 @@
         bottom: -32px !important;
       }
       .splide__pagination__page {
+        background-color: #DDECE8 !important;
+        width: 20px;
+        border-radius: 8px !important;
+        margin: 5px !important;
+      }
+      .splide__pagination__page.is-active {
+        transform: scale(1.0) !important;
         background-color: #478978 !important;
       }
       @media screen and (max-width: 768px) {
@@ -607,66 +555,131 @@
       <main class="bg-[#F8F8F8]">
         <div class="container mx-auto py-6 px-4 md:px-0">
           <section class="flex gap-2 md:gap-4 flex-wrap md:flex-nowrap">
-            <div class="slideshow-container w-full md:w-8/12">
-              <div class="mySlides fade">
-                <img src="./images/banner.png" style="width: 100%" />
-                <div
-                  class="w-full text-white absolute top-[11px] md:top-[33px] left-[11px] md:left-[33px]"
-                >
-                  <p class="text-xs md:text-sm font-medium">
-                    Solo Camping Style
-                  </p>
-                  <p class="text-base md:text-[32px] font-bold mt-0 md:mt-2">
-                    รวมสินค้าแคมป์ปิ้ง
-                  </p>
-                  <p class="text-base md:text-[32px] font-bold mt-0 md:mt-2">
-                    เอาใจคนโสด
-                  </p>
+            <div class="w-full md:w-8/12">
+              <section
+                id="banner-carousel"
+                class="splide"
+                aria-label="Beautiful Images"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide" style="width: 100% !important">
+                      <div class="w-full relative">
+                        <img src="./images/banner-full.jpg" alt="" />
+                        <div
+                          class="w-full text-white absolute top-[11px] md:top-[33px] left-[11px] md:left-[33px]"
+                        >
+                          <p class="text-xs md:text-sm font-medium">
+                            Solo Camping Style
+                          </p>
+                          <p
+                            class="text-base md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            รวมสินค้าแคมป์ปิ้ง
+                          </p>
+                          <p
+                            class="text-nase md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            เอาใจคนโสด
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide" style="width: 100% !important">
+                      <div class="w-full relative">
+                        <img src="./images/banner-full.jpg" alt="" />
+                        <div
+                          class="w-full text-white absolute top-[11px] md:top-[33px] left-[11px] md:left-[33px]"
+                        >
+                          <p class="text-xs md:text-sm font-medium">
+                            Solo Camping Style
+                          </p>
+                          <p
+                            class="text-base md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            รวมสินค้าแคมป์ปิ้ง
+                          </p>
+                          <p
+                            class="text-nase md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            เอาใจคนโสด
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide" style="width: 100% !important">
+                      <div class="w-full relative">
+                        <img src="./images/banner-full.jpg" alt="" />
+                        <div
+                          class="w-full text-white absolute top-[11px] md:top-[33px] left-[11px] md:left-[33px]"
+                        >
+                          <p class="text-xs md:text-sm font-medium">
+                            Solo Camping Style
+                          </p>
+                          <p
+                            class="text-base md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            รวมสินค้าแคมป์ปิ้ง
+                          </p>
+                          <p
+                            class="text-nase md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            เอาใจคนโสด
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide" style="width: 100% !important">
+                      <div class="w-full relative">
+                        <img src="./images/banner-full.jpg" alt="" />
+                        <div
+                          class="w-full text-white absolute top-[11px] md:top-[33px] left-[11px] md:left-[33px]"
+                        >
+                          <p class="text-xs md:text-sm font-medium">
+                            Solo Camping Style
+                          </p>
+                          <p
+                            class="text-base md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            รวมสินค้าแคมป์ปิ้ง
+                          </p>
+                          <p
+                            class="text-nase md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            เอาใจคนโสด
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide" style="width: 100% !important">
+                      <div class="w-full relative">
+                        <img src="./images/banner-full.jpg" alt="" />
+                        <div
+                          class="w-full text-white absolute top-[11px] md:top-[33px] left-[11px] md:left-[33px]"
+                        >
+                          <p class="text-xs md:text-sm font-medium">
+                            Solo Camping Style
+                          </p>
+                          <p
+                            class="text-base md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            รวมสินค้าแคมป์ปิ้ง
+                          </p>
+                          <p
+                            class="text-nase md:text-[32px] font-bold mt-0 md:mt-2"
+                          >
+                            เอาใจคนโสด
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-              <div class="mySlides fade">
-                <img src="./images/banner.png" style="width: 100%" />
-                <div
-                  class="w-full text-white absolute top-[11px] md:top-[33px] left-[11px] md:left-[33px]"
-                >
-                  <p class="text-xs md:text-sm font-medium">
-                    Solo Camping Style
-                  </p>
-                  <p class="text-base md:text-[32px] font-bold mt-0 md:mt-2">
-                    รวมสินค้าแคมป์ปิ้ง
-                  </p>
-                  <p class="text-base md:text-[32px] font-bold mt-0 md:mt-2">
-                    เอาใจคนโสด
-                  </p>
-                </div>
-              </div>
-              <div class="mySlides fade">
-                <img src="./images/banner.png" style="width: 100%" />
-                <div
-                  class="w-full text-white absolute top-[11px] md:top-[33px] left-[11px] md:left-[33px]"
-                >
-                  <p class="text-xs md:text-sm font-medium">
-                    Solo Camping Style
-                  </p>
-                  <p class="text-base md:text-[32px] font-bold mt-0 md:mt-2">
-                    รวมสินค้าแคมป์ปิ้ง
-                  </p>
-                  <p class="text-base md:text-[32px] font-bold mt-0 md:mt-2">
-                    เอาใจคนโสด
-                  </p>
-                </div>
-              </div>
-              <a class="prev" onclick="toggleSlides(-1)">❮</a>
-              <a class="next" onclick="toggleSlides(1)">❯</a>
-              <div style="text-align: center" class="dot-container">
-                <span class="dot" onclick="showSlides(1,true)"></span>
-                <span class="dot" onclick="showSlides(2,true)"></span>
-                <span class="dot" onclick="showSlides(3,true)"></span>
-              </div>
+              </section>
             </div>
             <div class="w-full md:w-4/12 flex flex-row md:flex-col gap-2">
               <div class="relative">
-                <img src="./images/banner.png" class="w-full" />
+                <img src="./images/banner-full.jpg" class="w-full" />
                 <div class="absolute top-2 md:top-4 left-2 md:left-4">
                   <p class="text-[10px] md:text-sm text-white">
                     เต็นท์ & ทาร์ป
@@ -686,7 +699,7 @@
                 </div>
               </div>
               <div class="relative">
-                <img src="./images/banner.png" class="w-full" />
+                <img src="./images/banner-full.jpg" class="w-full" />
                 <div class="absolute top-2 md:top-4 left-2 md:left-4">
                   <p class="text-[10px] md:text-sm text-white">
                     Backpack/Hiking
@@ -3353,52 +3366,6 @@
   <script src="./script/layout.js"></script>
   <script src="./script/footer.js"></script>
   <script>
-    var doAnimation = true;
-    var slideIndex = 0;
-    showSlides(slideIndex);
-
-    function toggleSlides(n) {
-      showSlides(slideIndex + n, true);
-    }
-    Array.from(document.getElementsByClassName("mySlides")).forEach(
-      (mySlide) => {
-        mySlide.addEventListener("mouseover", function () {
-          doAnimation = false;
-        });
-        mySlide.addEventListener("mouseout", function () {
-          doAnimation = true;
-        });
-      }
-    );
-    var timer;
-    function showSlides(n, force) {
-      if (doAnimation || force) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (n) {
-          slideIndex = n;
-        }
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        if (force) {
-          clearInterval(timer);
-          timer = setInterval(showSlides, 5000);
-        }
-      }
-    }
-    timer = setInterval(showSlides, 5000);
-
     document.addEventListener("DOMContentLoaded", function () {
       new Splide("#category-carousel", {
         fixedWidth: 128,
@@ -3470,6 +3437,15 @@
             perPage: 1,
           },
         },
+      }).mount();
+
+      new Splide("#banner-carousel", {
+        perPage: 1,
+        autoHeight: true,
+        autoWidth: true,
+        rewind: true,
+        pagination: true,
+        arrows: true,
       }).mount();
     });
   </script>
