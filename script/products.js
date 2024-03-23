@@ -1,13 +1,68 @@
 const filter = document.getElementById("filter");
+const sortButton = document.getElementById("sort-button");
+const sortContainer = document.getElementById("sort-container");
+const sortButtonMobile = document.getElementById("sort-button-mobile");
+const sortContainerMobile = document.getElementById("sort-container-mobile");
 
 function toggleFilter() {
   filter.classList.toggle("block");
   filter.classList.toggle("hidden");
+  sortButtonMobile.src = "./images/icons/ico-chev-down-back.svg";
+  sortContainerMobile.classList.add("hidden");
+  sortContainer.classList.remove("flex");
 }
+
 function closeFilter() {
   filter.classList.remove("block");
   filter.classList.add("hidden");
 }
+
+function toggleSort(e) {
+  if (e.target.classList.contains("toggle-sort")) {
+    if (sortButton.src.includes("down")) {
+      sortButton.src = "./images/icons/ico-chev-up-back.svg";
+      sortContainer.classList.add("flex");
+      sortContainer.classList.remove("hidden");
+    } else {
+      sortButton.src = "./images/icons/ico-chev-down-back.svg";
+      sortContainer.classList.add("hidden");
+      sortContainer.classList.remove("flex");
+    }
+  }
+}
+
+function toggleSortMobile(e) {
+  if (e.target.classList.contains("toggle-sort-mobile")) {
+    if (sortButtonMobile.src.includes("down")) {
+      sortButtonMobile.src = "./images/icons/ico-chev-up-back.svg";
+      sortContainerMobile.classList.add("flex");
+      sortContainerMobile.classList.remove("hidden");
+      filter.classList.remove("block");
+      filter.classList.add("hidden");
+    } else {
+      sortButtonMobile.src = "./images/icons/ico-chev-down-back.svg";
+      sortContainerMobile.classList.add("hidden");
+      sortContainerMobile.classList.remove("flex");
+    }
+  }
+}
+
+function select(text) {
+  const selectValue = document.getElementById("select-value");
+  selectValue.innerText = text;
+  sortButton.src = "./images/icons/ico-chev-down-back.svg";
+  sortContainer.classList.add("hidden");
+  sortContainer.classList.remove("flex");
+}
+
+function selectMobile(text) {
+  const selectValue = document.getElementById("select-value-mobile");
+  selectValue.innerText = text;
+  sortButtonMobile.src = "./images/icons/ico-chev-down-back.svg";
+  sortContainerMobile.classList.add("hidden");
+  sortContainer.classList.remove("flex");
+}
+
 function toggleCategory(e) {
   if (e.target.classList.contains("products-accordion-1")) {
     const categoryButton = document.getElementById("img-category");

@@ -594,22 +594,125 @@
                 </p>
                 <p class="text-base font-medium block md:hidden">113 results</p>
                 <div class="flex gap-2">
-                  <select
-                    class="outline-none w-[128px] md:w-auto bg-[#F8F8F8] h-[38px] p-1 font-medium text-base rounded"
+                  <div class="relative hidden md:block">
+                    <div
+                      class="flex justify-between items-center bg-[#F8F8F8] p-2 w-[200px] cursor-pointer toggle-sort"
+                      onclick="toggleSort(event)"
+                    >
+                      <p class="toggle-sort" id="select-value">
+                        Default Sorting
+                      </p>
+                      <img
+                        src="./images/icons/ico-chev-down-back.svg"
+                        id="sort-button"
+                        class="toggle-sort"
+                      />
+                    </div>
+                    <div
+                      class="hidden absolute bottom-[-245px] cursor-pointer w-full flex-col bg-[#F8F8F8]"
+                      id="sort-container"
+                    >
+                      <div
+                        class="font-medium p-2 hover:bg-[#DDECE8]"
+                        onclick="select('Default Sorting')"
+                      >
+                        Default Sorting
+                      </div>
+                      <div
+                        class="font-medium p-2 hover:bg-[#DDECE8]"
+                        onclick="select('Sort by popularity')"
+                      >
+                        Sort by popularity
+                      </div>
+                      <div
+                        class="font-medium p-2 hover:bg-[#DDECE8]"
+                        onclick="select('Sort by average rating')"
+                      >
+                        Sort by average rating
+                      </div>
+                      <div
+                        class="font-medium p-2 hover:bg-[#DDECE8]"
+                        onclick="select('Sort by latest')"
+                      >
+                        Sort by latest
+                      </div>
+                      <div
+                        class="font-medium p-2 hover:bg-[#DDECE8]"
+                        onclick="select('Sort by price: low to high')"
+                      >
+                        Sort by price: low to high
+                      </div>
+                      <div
+                        class="font-medium p-2 hover:bg-[#DDECE8]"
+                        onclick="select('Sort by price: high to low')"
+                      >
+                        Sort by price: high to low
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-between items-center bg-[#F8F8F8] p-2 gap-3 toggle-sort-mobile max-w-[150px]"
+                    onclick="toggleSortMobile(event)"
                   >
-                    <option value="volvo">Default Sorting</option>
-                    <option value="saab">Sort by popularity</option>
-                    <option value="mercedes">Sort by average rating</option>
-                    <option value="audi">Sort by latest</option>
-                    <option value="ww">Sort by price: low to high</option>
-                    <option value="223">Sort by price: high to low</option>
-                  </select>
+                    <p
+                      class="text-sm truncate toggle-sort-mobile"
+                      id="select-value-mobile"
+                    >
+                      Default Sorting
+                    </p>
+                    <img
+                      src="./images/icons/ico-chev-down-back.svg"
+                      id="sort-button-mobile"
+                      class="toggle-sort-mobile"
+                    />
+                  </div>
                   <button
                     class="block md:hidden bg-[#F8F8F8] p-2 rounded font-medium flex items-center justify-center gap-1"
                     onclick="toggleFilter()"
                   >
                     Filter <img src="./images/icons/ico-filter.svg" />
                   </button>
+                </div>
+              </div>
+              <div
+                class="mt-2 rounded hidden bg-white md:hidden py-2 px-4 flex-col"
+                id="sort-container-mobile"
+              >
+                <div
+                  class="font-medium p-2 hover:bg-[#DDECE8]"
+                  onclick="selectMobile('Default Sorting')"
+                >
+                  Default Sorting
+                </div>
+                <div
+                  class="font-medium p-2 hover:bg-[#DDECE8]"
+                  onclick="selectMobile('Sort by popularity')"
+                >
+                  Sort by popularity
+                </div>
+                <div
+                  class="font-medium p-2 hover:bg-[#DDECE8]"
+                  onclick="selectMobile('Sort by average rating')"
+                >
+                  Sort by average rating
+                </div>
+                <div
+                  class="font-medium p-2 hover:bg-[#DDECE8]"
+                  onclick="selectMobile('Sort by latest')"
+                >
+                  Sort by latest
+                </div>
+                <div
+                  class="font-medium p-2 hover:bg-[#DDECE8]"
+                  onclick="selectMobile('Sort by price: low to high')"
+                >
+                  Sort by price: low to high
+                </div>
+                <div
+                  class="font-medium p-2 hover:bg-[#DDECE8]"
+                  onclick="selectMobile('Sort by price: high to low')"
+                >
+                  Sort by price: high to low
                 </div>
               </div>
               <div
