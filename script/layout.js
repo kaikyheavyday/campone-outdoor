@@ -2,18 +2,6 @@ const drawer = document.getElementById("drawer");
 const burger = document.getElementById("burger");
 const close = document.getElementById("close");
 
-const categoryPlusButton = document.getElementById("drawer-plus-category");
-const categoryMinusButton = document.getElementById("drawer-minus-category");
-const sectionCategory = document.getElementById("category-section");
-
-const servicePlusButton = document.getElementById("drawer-plus-service");
-const serviceMinusButton = document.getElementById("drawer-minus-service");
-const serviceCategory = document.getElementById("service-section");
-
-const aboutPlusButton = document.getElementById("drawer-plus-about");
-const aboutMinusButton = document.getElementById("drawer-minus-about");
-const aboutCategory = document.getElementById("about-section");
-
 const searchIcon = document.getElementById("icon-search");
 const avatarIcon = document.getElementById("icon-avatar");
 const cartIcon = document.getElementById("icon-cart");
@@ -36,10 +24,6 @@ window.onclick = function (event) {
     document.getElementById("dropdown-content").classList.add("hidden");
     document.getElementById("dropdown-content").classList.remove("block");
   }
-  // if (!event.target.matches(".dropdown-new-product-button")) {
-  //   document.getElementById("dropdown-new-product").classList.add("hidden");
-  //   document.getElementById("dropdown-new-product").classList.remove("block");
-  // }
 };
 
 searchIcon.addEventListener("click", () => {
@@ -55,63 +39,60 @@ searchIcon.addEventListener("click", () => {
   formSearch.classList.add("flex");
 });
 
-categoryPlusButton.addEventListener("click", () => {
-  sectionCategory.classList.remove("hidden");
-  sectionCategory.classList.add("block");
-  categoryPlusButton.classList.add("hidden");
-  categoryPlusButton.classList.remove("block");
-  categoryMinusButton.classList.remove("hidden");
-  categoryMinusButton.classList.add("block");
-});
-categoryMinusButton.addEventListener("click", () => {
-  sectionCategory.classList.add("hidden");
-  sectionCategory.classList.remove("block");
-  categoryPlusButton.classList.add("block");
-  categoryPlusButton.classList.remove("hidden");
-  categoryMinusButton.classList.remove("block");
-  categoryMinusButton.classList.add("hidden");
-});
+function categoryAccordionClick(e) {
+  const sectionCategory = document.getElementById("category-section");
+  if (e.target.classList.contains("category-accordion")) {
+    const button = document.getElementById("category-accordion-button");
+    if (button.src.includes("plus")) {
+      button.src = "./images/icons/ico-minus-white.svg";
+      sectionCategory.classList.add("block");
+      sectionCategory.classList.remove("hidden");
+    } else {
+      button.src = "./images/icons/ico-plus-white.svg";
+      sectionCategory.classList.add("hidden");
+      sectionCategory.classList.remove("block");
+    }
+  }
+}
 
-servicePlusButton.addEventListener("click", () => {
-  serviceCategory.classList.remove("hidden");
-  serviceCategory.classList.add("block");
-  servicePlusButton.classList.add("hidden");
-  servicePlusButton.classList.remove("block");
-  serviceMinusButton.classList.remove("hidden");
-  serviceMinusButton.classList.add("block");
-});
-serviceMinusButton.addEventListener("click", () => {
-  serviceCategory.classList.add("hidden");
-  serviceCategory.classList.remove("block");
-  servicePlusButton.classList.add("block");
-  servicePlusButton.classList.remove("hidden");
-  serviceMinusButton.classList.remove("block");
-  serviceMinusButton.classList.add("hidden");
-});
+function serviceAccordionClick(e) {
+  const serviceCategory = document.getElementById("service-section");
+  if (e.target.classList.contains("service-accordion")) {
+    const button = document.getElementById("service-accordion-button");
+    if (button.src.includes("plus")) {
+      button.src = "./images/icons/ico-minus-white.svg";
+      serviceCategory.classList.add("block");
+      serviceCategory.classList.remove("hidden");
+    } else {
+      button.src = "./images/icons/ico-plus-white.svg";
+      serviceCategory.classList.add("hidden");
+      serviceCategory.classList.remove("block");
+    }
+  }
+}
 
-aboutPlusButton.addEventListener("click", () => {
-  aboutCategory.classList.remove("hidden");
-  aboutCategory.classList.add("block");
-  aboutPlusButton.classList.add("hidden");
-  aboutPlusButton.classList.remove("block");
-  aboutMinusButton.classList.remove("hidden");
-  aboutMinusButton.classList.add("block");
-});
-aboutMinusButton.addEventListener("click", () => {
-  aboutCategory.classList.add("hidden");
-  aboutCategory.classList.remove("block");
-  aboutPlusButton.classList.add("block");
-  aboutPlusButton.classList.remove("hidden");
-  aboutMinusButton.classList.remove("block");
-  aboutMinusButton.classList.add("hidden");
-});
+function aboutAccordionClick(e) {
+  const aboutCategory = document.getElementById("about-section");
+  if (e.target.classList.contains("about-accordion")) {
+    const button = document.getElementById("about-accordion-button");
+    if (button.src.includes("plus")) {
+      button.src = "./images/icons/ico-minus-white.svg";
+      aboutCategory.classList.add("block");
+      aboutCategory.classList.remove("hidden");
+    } else {
+      button.src = "./images/icons/ico-plus-white.svg";
+      aboutCategory.classList.add("hidden");
+      aboutCategory.classList.remove("block");
+    }
+  }
+}
 
-const overlay = document.getElementById("overlay")
+const overlay = document.getElementById("overlay");
 burger.addEventListener("click", () => {
   drawer.classList.toggle("active");
-  overlay.classList.toggle("overlay")
+  overlay.classList.toggle("overlay");
 });
 close.addEventListener("click", () => {
   drawer.classList.remove("active");
-  overlay.classList.remove("overlay")
+  overlay.classList.remove("overlay");
 });
