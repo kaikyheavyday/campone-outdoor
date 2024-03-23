@@ -25,8 +25,9 @@
     </style>
     <title>Document</title>
   </head>
+
   <body>
-     <div id="drawer" class="">
+    <div id="drawer" class="">
       <div class="mt-2 flex justify-end w-full">
         <img src="./images/icons/ico-close-white.svg" id="close" alt="close" />
       </div>
@@ -152,7 +153,7 @@
               </div>
             </a>
           </div>
-         <div class="flex items-center gap-3 md:gap-6" id="search-container">
+          <div class="flex items-center gap-3 md:gap-6" id="search-container">
             <form
               class="rounded-3xl px-4 py-2 bg-white hidden w-full md:flex items-center"
               id="form-search"
@@ -623,12 +624,15 @@
                     />
                   </div>
                   <div class="mt-6">
-                    <div class="flex justify-between">
-                      <p>ประเภทสินค้า</p>
+                    <div
+                      class="flex justify-between products-accordion-1"
+                      onclick="toggleCategory(event)"
+                    >
+                      <p class="products-accordion-1">ประเภทสินค้า</p>
                       <img
                         src="./images/icons/ico-plus.svg"
                         id="img-category"
-                        onclick="toggleCategory(event)"
+                        class="products-accordion-1"
                       />
                     </div>
                     <div class="w-full mt-2 h-[1px] bg-primary"></div>
@@ -714,12 +718,15 @@
                     </div>
                   </div>
                   <div class="mt-6">
-                    <div class="flex justify-between">
-                      <p>แบรนด์สินค้า</p>
+                    <div
+                      class="flex justify-between products-accordion-2"
+                      onclick="toggleBrand(event)"
+                    >
+                      <p class="products-accordion-2">แบรนด์สินค้า</p>
                       <img
                         src="./images/icons/ico-plus.svg"
                         id="img-brand"
-                        onclick="toggleBrand(event)"
+                        class="products-accordion-2"
                       />
                     </div>
                     <div class="w-full mt-2 h-[1px] bg-primary"></div>
@@ -787,12 +794,15 @@
                     </div>
                   </div>
                   <div class="mt-6">
-                    <div class="flex justify-between">
-                      <p>ประเทศสินค้านำเข้า</p>
+                    <div
+                      class="flex justify-between products-accordion-3"
+                      onclick="toggleCountry(event)"
+                    >
+                      <p class="products-accordion-3">ประเทศสินค้านำเข้า</p>
                       <img
                         src="./images/icons/ico-plus.svg"
                         id="img-country"
-                        onclick="toggleCountry(event)"
+                        class="products-accordion-3"
                       />
                     </div>
                     <div class="w-full mt-2 h-[1px] bg-primary"></div>
@@ -825,12 +835,15 @@
                     </div>
                   </div>
                   <div class="mt-6">
-                    <div class="flex justify-between">
-                      <p>ไลฟ์สไตล์</p>
+                    <div
+                      class="flex justify-between products-accordion-4"
+                      onclick="toggleLifestyle(event)"
+                    >
+                      <p class="products-accordion-4">ไลฟ์สไตล์</p>
                       <img
                         src="./images/icons/ico-plus.svg"
                         id="img-lifestyle"
-                        onclick="toggleLifestyle(event)"
+                        class="products-accordion-4"
                       />
                     </div>
                     <div class="w-full mt-2 h-[1px] bg-primary"></div>
@@ -881,12 +894,15 @@
                     </div>
                   </div>
                   <div class="mt-6">
-                    <div class="flex justify-between">
-                      <p>Sale & Promotion</p>
+                    <div
+                      class="flex justify-between products-accordion-5"
+                      onclick="togglePromotion(event)"
+                    >
+                      <p class="products-accordion-5">Sale & Promotion</p>
                       <img
                         src="./images/icons/ico-plus.svg"
                         id="img-promotion"
-                        onclick="togglePromotion(event)"
+                        class="products-accordion-5"
                       />
                     </div>
                     <div class="w-full mt-2 h-[1px] bg-primary"></div>
@@ -1733,13 +1749,16 @@
           />
         </div>
         <div class="px-4 py-2">
-          <div class="flex justify-between">
-            <p class="font-medium">ติดต่อเรา</p>
+          <div
+            class="flex justify-between footer-accordion-1"
+            onclick="toggleFooter1(event)"
+          >
+            <p class="font-medium footer-accordion-1">ติดต่อเรา</p>
             <img
               src="./images/icons/ico-plus.svg"
               alt="-"
               id="footer-1-button"
-              onclick="toggleFooter1(event)"
+              class="footer-accordion-1"
             />
           </div>
           <div class="w-full h-[1px] bg-primary my-2"></div>
@@ -1783,13 +1802,16 @@
           </div>
         </div>
         <div class="px-4 py-2">
-          <div class="flex justify-between">
-            <p class="font-medium">ประเภทสินค้า</p>
+          <div
+            class="flex justify-between footer-accordion-2"
+            onclick="toggleFooter2(event)"
+          >
+            <p class="font-medium footer-accordion-2">ประเภทสินค้า</p>
             <img
               src="./images/icons/ico-plus.svg"
               alt="-"
               id="footer-2-button"
-              onclick="toggleFooter2(event)"
+              class="footer-accordion-2"
             />
           </div>
           <div class="w-full h-[1px] bg-primary my-2"></div>
@@ -1812,13 +1834,16 @@
           </div>
         </div>
         <div class="px-4 py-2">
-          <div class="flex justify-between">
-            <p class="font-medium">บริการลูกค้า</p>
+          <div
+            class="flex justify-between footer-accordion-3"
+            onclick="toggleFooter3(event)"
+          >
+            <p class="font-medium footer-accordion-3">บริการลูกค้า</p>
             <img
               src="./images/icons/ico-plus.svg"
               alt="-"
+              class="footer-accordion-3"
               id="footer-3-button"
-              onclick="toggleFooter3(event)"
             />
           </div>
           <div class="w-full h-[1px] bg-primary my-2"></div>
@@ -1831,13 +1856,16 @@
           </div>
         </div>
         <div class="px-4 py-2">
-          <div class="flex justify-between">
-            <p class="font-medium">เกี่ยวกับเรา</p>
+          <div
+            class="flex justify-between footer-accordion-4"
+            onclick="toggleFooter4(event)"
+          >
+            <p class="font-medium footer-accordion-4">เกี่ยวกับเรา</p>
             <img
               src="./images/icons/ico-plus.svg"
               alt="-"
               id="footer-4-button"
-              onclick="toggleFooter4(event)"
+              class="footer-accordion-4"
             />
           </div>
           <div class="w-full h-[1px] bg-primary my-2"></div>
@@ -1848,13 +1876,16 @@
           </div>
         </div>
         <div class="px-4 py-2">
-          <div class="flex justify-between">
-            <p class="font-medium">ติดตามเรา</p>
+          <div
+            class="flex justify-between footer-accordion-5"
+            onclick="toggleFooter5(event)"
+          >
+            <p class="font-medium footer-accordion-5">ติดตามเรา</p>
             <img
               src="./images/icons/ico-plus.svg"
               alt="-"
               id="footer-5-button"
-              onclick="toggleFooter5(event)"
+              class="footer-accordion-5"
             />
           </div>
           <div class="w-full h-[1px] bg-primary my-2"></div>
@@ -1883,81 +1914,5 @@
   </body>
   <script src="./script/layout.js"></script>
   <script src="./script/footer.js"></script>
-  <script>
-    const filter = document.getElementById("filter");
-
-    function toggleFilter() {
-      filter.classList.toggle("block");
-      filter.classList.toggle("hidden");
-    }
-    function closeFilter() {
-      filter.classList.remove("block");
-      filter.classList.add("hidden");
-    }
-    function toggleCategory(e) {
-      const categoryButton = document.getElementById("img-category");
-      const categoryContainer = document.getElementById("filter-category");
-      if (e.srcElement.src.includes("plus")) {
-        categoryButton.src = "./images/icons/ico-minus.svg";
-        categoryContainer.classList.add("flex");
-        categoryContainer.classList.remove("hidden");
-      } else {
-        categoryButton.src = "./images/icons/ico-plus.svg";
-        categoryContainer.classList.add("hidden");
-        categoryContainer.classList.remove("flex");
-      }
-    }
-    function toggleBrand(e) {
-      const brandButton = document.getElementById("img-brand");
-      const brandContainer = document.getElementById("filter-brand");
-      if (e.srcElement.src.includes("plus")) {
-        brandButton.src = "./images/icons/ico-minus.svg";
-        brandContainer.classList.add("flex");
-        brandContainer.classList.remove("hidden");
-      } else {
-        brandButton.src = "./images/icons/ico-plus.svg";
-        brandContainer.classList.add("hidden");
-        brandContainer.classList.remove("flex");
-      }
-    }
-    function toggleCountry(e) {
-      const countryButton = document.getElementById("img-country");
-      const countryContainer = document.getElementById("filter-country");
-      if (e.srcElement.src.includes("plus")) {
-        countryButton.src = "./images/icons/ico-minus.svg";
-        countryContainer.classList.add("flex");
-        countryContainer.classList.remove("hidden");
-      } else {
-        countryButton.src = "./images/icons/ico-plus.svg";
-        countryContainer.classList.add("hidden");
-        countryContainer.classList.remove("flex");
-      }
-    }
-    function toggleLifestyle(e) {
-      const lifestyleButton = document.getElementById("img-lifestyle");
-      const lifestyleContainer = document.getElementById("filter-lifestyle");
-      if (e.srcElement.src.includes("plus")) {
-        lifestyleButton.src = "./images/icons/ico-minus.svg";
-        lifestyleContainer.classList.add("flex");
-        lifestyleContainer.classList.remove("hidden");
-      } else {
-        lifestyleButton.src = "./images/icons/ico-plus.svg";
-        lifestyleContainer.classList.add("hidden");
-        lifestyleContainer.classList.remove("flex");
-      }
-    }
-    function togglePromotion(e) {
-      const promotionButton = document.getElementById("img-promotion");
-      const promotionContainer = document.getElementById("filter-promotion");
-      if (e.srcElement.src.includes("plus")) {
-        promotionButton.src = "./images/icons/ico-minus.svg";
-        promotionContainer.classList.add("flex");
-        promotionContainer.classList.remove("hidden");
-      } else {
-        promotionButton.src = "./images/icons/ico-plus.svg";
-        promotionContainer.classList.add("hidden");
-        promotionContainer.classList.remove("flex");
-      }
-    }
-  </script>
+  <script src="./script/products.js"></script>
 </html>
